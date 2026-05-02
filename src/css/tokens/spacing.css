@@ -12,11 +12,9 @@
   --radius-responsive-30: 24px;
   --radius-responsive-100: 100px;
 
-  /* Spacing — static (same on all breakpoints) */
+  /* Spacing — responsive */
   --spacing-responsive-2: 2px;
   --spacing-responsive-4: 4px;
-
-  /* Spacing — responsive */
   --spacing-responsive-8: 6px;
   --spacing-responsive-12: 8px;
   --spacing-responsive-16: 12px;
@@ -44,6 +42,8 @@
     --radius-responsive-30: 28px;
 
     /* Spacing */
+    --spacing-responsive-2: 2px;
+    --spacing-responsive-4: 4px;
     --spacing-responsive-8: 8px;
     --spacing-responsive-12: 10px;
     --spacing-responsive-16: 14px;
@@ -72,6 +72,8 @@
     --radius-responsive-30: 30px;
 
     /* Spacing */
+    --spacing-responsive-2: 2px;
+    --spacing-responsive-4: 4px;
     --spacing-responsive-8: 8px;
     --spacing-responsive-12: 12px;
     --spacing-responsive-16: 16px;
