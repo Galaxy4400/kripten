@@ -24,4 +24,19 @@
     @apply bg-gray-bg text-black;
     @apply hover:bg-blue-hover hover:text-blue-dark;
   }
+
+  .btn-transparent {
+    @apply border-white-glass border bg-transparent text-white;
+    @apply hover:bg-blue-hover hover:text-blue-dark hover:border-blue-hover;
+  }
+
+  .btn-glass {
+    @apply bg-white-glass text-white;
+    @apply hover:bg-blue-hover hover:text-blue-dark;
+  }
+
+  /* mod */
+  .btn-icon {
+    @apply rounded-responsive-15 p-responsive-10 aspect-square;
+  }
 }

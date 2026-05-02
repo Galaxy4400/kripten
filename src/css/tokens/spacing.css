@@ -6,6 +6,7 @@
 /* Mobile (base) */
 @theme {
   /* Roundings */
+  --radius-responsive-15: 15px;
   --radius-responsive-20: 20px;
   --radius-responsive-100: 100px;
 
@@ -24,6 +25,7 @@
 @media (width >= theme(--breakpoint-md)) {
   :root {
     /* Roundings */
+    --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
 
@@ -43,6 +45,7 @@
 @media (width >= theme(--breakpoint-lg)) {
   :root {
     /* Roundings */
+    --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
 
