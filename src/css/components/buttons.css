@@ -1,13 +1,12 @@
 @layer components {
   /* buttons */
   .btn {
-    /* @apply cta; */
-    /* @apply transition-colors; */
-    /* @apply min-h-11 md:min-h-13; */
-    /* @apply px-responsive-24 py-responsive-12 rounded-responsive-100; */
-    /* @apply inline-flex cursor-pointer items-center justify-center; */
-    /* @apply disabled:pointer-events-none disabled:opacity-40; */
-    /* @apply aria-disabled:pointer-events-none aria-disabled:opacity-40; */
+    @apply psm cursor-pointer transition-colors;
+    @apply min-h-16;
+    @apply px-responsive-30 py-responsive-16 rounded-responsive-100;
+    @apply gap-responsive-10 inline-flex items-center justify-center;
+    @apply disabled:pointer-events-none disabled:opacity-40;
+    @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
   }
 
   /* type */
