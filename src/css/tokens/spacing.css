@@ -6,26 +6,10 @@
 /* Mobile (base) */
 @theme {
   /* Roundings */
-  --radius-responsive-8: 6px;
-  --radius-responsive-12: 8px;
   --radius-responsive-20: 16px;
-  --radius-responsive-30: 24px;
-  --radius-responsive-100: 100px;
 
   /* Spacing — responsive */
-  --spacing-responsive-2: 2px;
-  --spacing-responsive-4: 4px;
-  --spacing-responsive-8: 6px;
-  --spacing-responsive-12: 8px;
   --spacing-responsive-16: 12px;
-  --spacing-responsive-20: 14px;
-  --spacing-responsive-24: 16px;
-  --spacing-responsive-32: 20px;
-  --spacing-responsive-52: 26px;
-  --spacing-responsive-60: 32px;
-  --spacing-responsive-64: 32px;
-  --spacing-responsive-100: 60px;
-  --spacing-responsive-120: 60px;
 
   /* Frame */
   --spacing-responsive-horizontal: 16px;
@@ -36,25 +20,10 @@
 @media (width >= theme(--breakpoint-md)) {
   :root {
     /* Roundings */
-    --radius-responsive-8: 8px;
-    --radius-responsive-12: 10px;
     --radius-responsive-20: 18px;
-    --radius-responsive-30: 28px;
 
     /* Spacing */
-    --spacing-responsive-2: 2px;
-    --spacing-responsive-4: 4px;
-    --spacing-responsive-8: 8px;
-    --spacing-responsive-12: 10px;
     --spacing-responsive-16: 14px;
-    --spacing-responsive-20: 18px;
-    --spacing-responsive-24: 20px;
-    --spacing-responsive-32: 28px;
-    --spacing-responsive-52: 44px;
-    --spacing-responsive-60: 48px;
-    --spacing-responsive-64: 52px;
-    --spacing-responsive-100: 90px;
-    --spacing-responsive-120: 100px;
 
     /* Frame */
     --spacing-responsive-horizontal: 32px;
@@ -66,25 +35,10 @@
 @media (width >= theme(--breakpoint-lg)) {
   :root {
     /* Roundings */
-    --radius-responsive-8: 8px;
-    --radius-responsive-12: 12px;
     --radius-responsive-20: 20px;
-    --radius-responsive-30: 30px;
 
     /* Spacing */
-    --spacing-responsive-2: 2px;
-    --spacing-responsive-4: 4px;
-    --spacing-responsive-8: 8px;
-    --spacing-responsive-12: 12px;
     --spacing-responsive-16: 16px;
-    --spacing-responsive-20: 20px;
-    --spacing-responsive-24: 24px;
-    --spacing-responsive-32: 32px;
-    --spacing-responsive-52: 52px;
-    --spacing-responsive-60: 60px;
-    --spacing-responsive-64: 64px;
-    --spacing-responsive-100: 100px;
-    --spacing-responsive-120: 120px;
 
     /* Frame */
     --spacing-responsive-horizontal: 120px;
