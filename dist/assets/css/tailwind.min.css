@@ -48,9 +48,11 @@
     --leading-tag-r: 1.4;
     --font-tag-r: 400;
     --radius-responsive-15: 15px;
+    --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
     --spacing-responsive-10: 10px;
-    --spacing-responsive-16: 16px;
+    --spacing-responsive-15: 15px;
+    --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
     --spacing-responsive-horizontal: 16px;
   }
@@ -386,8 +388,9 @@
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
     --spacing-responsive-10: 10px;
-    --spacing-responsive-16: 16px;
+    --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;
+    --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
     --spacing-responsive-horizontal: 32px;
     --spacing-responsive-vertical: 50px;
@@ -399,8 +402,9 @@
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
     --spacing-responsive-10: 10px;
-    --spacing-responsive-16: 16px;
+    --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;
+    --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
     --spacing-responsive-horizontal: 120px;
     --spacing-responsive-vertical: 80px;
@@ -459,7 +463,7 @@
     min-height: calc(var(--spacing) * 16);
     border-radius: var(--radius-responsive-100);
     padding-inline: var(--spacing-responsive-30);
-    padding-block: var(--spacing-responsive-16);
+    padding-block: var(--spacing-responsive-15);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -561,10 +565,13 @@
     padding: var(--spacing-responsive-10);
   }
   .btn-big {
+    font-size: var(--text-big-sm);
+    line-height: var(--leading-big-sm);
+    font-weight: var(--font-big-sm);
     min-height: calc(var(--spacing) * 19.25);
-    aspect-ratio: 1 / 1;
-    border-radius: var(--radius-responsive-15);
-    padding: var(--spacing-responsive-10);
+    border-radius: var(--radius-responsive-20);
+    padding-inline: var(--spacing-responsive-25);
+    padding-block: var(--spacing-responsive-15);
   }
 }
 @layer components;

@@ -3,7 +3,7 @@
   .btn {
     @apply psm cursor-pointer transition-colors;
     @apply min-h-16;
-    @apply px-responsive-30 py-responsive-16 rounded-responsive-100;
+    @apply px-responsive-30 py-responsive-15 rounded-responsive-100;
     @apply gap-responsive-10 inline-flex items-center justify-center;
     @apply disabled:pointer-events-none disabled:opacity-40;
     @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
@@ -41,6 +41,7 @@
   }
 
   .btn-big {
+    @apply btsm;
     @apply min-h-19.25;
     @apply rounded-responsive-20 py-responsive-15 px-responsive-25;
   }
