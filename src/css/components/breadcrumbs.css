@@ -1,17 +1,17 @@
 @layer components {
   .breadcrumbs {
-    @apply flex flex-wrap items-center;
+    /* @apply flex flex-wrap items-center; */
   }
 
   .breadcrumb-item {
-    @apply transition-colors;
-    @apply text-button-teritary b2;
-    @apply inline-flex items-center;
-    @apply min-h-11.5;
-    @apply gap-responsive-16 px-responsive-16 py-responsive-12;
-    @apply not-last:pr-0;
-    @apply hover:text-on-surface-primary hover:underline hover:underline-offset-4;
-    @apply after:bg-on-surface-primary after:block after:h-px after:w-4 after:content-[''];
-    @apply last:text-on-surface-primary last:pointer-events-none last:after:hidden;
+    /* @apply transition-colors; */
+    /* @apply text-button-teritary b2; */
+    /* @apply inline-flex items-center; */
+    /* @apply min-h-11.5; */
+    /* @apply gap-responsive-16 px-responsive-16 py-responsive-12; */
+    /* @apply not-last:pr-0; */
+    /* @apply hover:text-on-surface-primary hover:underline hover:underline-offset-4; */
+    /* @apply after:bg-on-surface-primary after:block after:h-px after:w-4 after:content-['']; */
+    /* @apply last:text-on-surface-primary last:pointer-events-none last:after:hidden; */
   }
 }

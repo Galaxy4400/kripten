@@ -1,43 +1,43 @@
 @layer components {
   /* buttons */
   .btn {
-    @apply cta;
-    @apply transition-colors;
-    @apply min-h-11 md:min-h-13;
-    @apply px-responsive-24 py-responsive-12 rounded-responsive-100;
-    @apply inline-flex cursor-pointer items-center justify-center;
-    @apply disabled:pointer-events-none disabled:opacity-40;
-    @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
+    /* @apply cta; */
+    /* @apply transition-colors; */
+    /* @apply min-h-11 md:min-h-13; */
+    /* @apply px-responsive-24 py-responsive-12 rounded-responsive-100; */
+    /* @apply inline-flex cursor-pointer items-center justify-center; */
+    /* @apply disabled:pointer-events-none disabled:opacity-40; */
+    /* @apply aria-disabled:pointer-events-none aria-disabled:opacity-40; */
   }
 
   /* type */
   .btn-primary {
-    @apply bg-button-primary-default text-on-button-primary;
-    @apply hover:bg-button-primary-hover;
-    @apply active:bg-button-primary-press;
+    /* @apply bg-button-primary-default text-on-button-primary; */
+    /* @apply hover:bg-button-primary-hover; */
+    /* @apply active:bg-button-primary-press; */
   }
 
   .btn-secondary {
-    @apply bg-button-secondary-default text-on-button-secondary;
-    @apply hover:bg-button-secondary-hover;
-    @apply active:bg-button-secondary-press;
+    /* @apply bg-button-secondary-default text-on-button-secondary; */
+    /* @apply hover:bg-button-secondary-hover; */
+    /* @apply active:bg-button-secondary-press; */
   }
 
   .btn-outline {
-    @apply border-button-primary-default border;
-    @apply text-button-primary-default bg-transparent;
-    @apply hover:bg-button-secondary-hover;
-    @apply active:bg-button-secondary-press;
+    /* @apply border-button-primary-default border; */
+    /* @apply text-button-primary-default bg-transparent; */
+    /* @apply hover:bg-button-secondary-hover; */
+    /* @apply active:bg-button-secondary-press; */
   }
 
   .btn-transparent {
-    @apply text-on-surface-secondary bg-transparent;
-    @apply hover:bg-button-secondary-hover;
-    @apply active:bg-button-secondary-press;
+    /* @apply text-on-surface-secondary bg-transparent; */
+    /* @apply hover:bg-button-secondary-hover; */
+    /* @apply active:bg-button-secondary-press; */
   }
 
   /* mode */
   .btn-icon {
-    @apply p-responsive-4 aspect-square;
+    /* @apply p-responsive-4 aspect-square; */
   }
 }

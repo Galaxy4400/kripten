@@ -5,7 +5,7 @@
 
   body {
     @apply relative;
-    @apply text-on-surface-secondary;
+    @apply text-black;
     @apply flex min-h-screen flex-col;
   }
 

@@ -1,23 +1,23 @@
 @layer components {
   .link {
-    @apply transition-all;
-    @apply cursor-pointer;
-    @apply text-button-primary-default;
-    @apply hover:text-button-primary-hover;
-    @apply active:text-button-primary-press;
-    @apply disabled:pointer-events-none disabled:opacity-40;
-    @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
+    /* @apply transition-all; */
+    /* @apply cursor-pointer; */
+    /* @apply text-button-primary-default; */
+    /* @apply hover:text-button-primary-hover; */
+    /* @apply active:text-button-primary-press; */
+    /* @apply disabled:pointer-events-none disabled:opacity-40; */
+    /* @apply aria-disabled:pointer-events-none aria-disabled:opacity-40; */
   }
 
   /* types */
   .link-underline {
-    @apply cta underline underline-offset-4;
+    /* @apply cta underline underline-offset-4; */
   }
 
   .link-arrow {
-    @apply sh2;
-    @apply inline-flex items-center gap-2;
-    @apply after:inline-block after:h-2.5 after:w-1.5 after:shrink-0 after:bg-current after:content-[''];
-    @apply after:mask-[url(/icons/arrow.svg)] after:mask-contain after:mask-center after:mask-no-repeat;
+    /* @apply sh2; */
+    /* @apply inline-flex items-center gap-2; */
+    /* @apply after:inline-block after:h-2.5 after:w-1.5 after:shrink-0 after:bg-current after:content-['']; */
+    /* @apply after:mask-[url(/icons/arrow.svg)] after:mask-contain after:mask-center after:mask-no-repeat; */
   }
 }
