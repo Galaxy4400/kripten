@@ -1,0 +1,171 @@
+/* Кастомные стили скроллбара */
+@media (any-hover: hover) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-white);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+    border: 2px solid var(--color-white);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-dark);
+  }
+}
+
+/* Убрать дефолтные стрелки на цифровом инпуте */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Компенсация ширины скроллбара при блокировке скролла */
+body {
+  padding-right: var(--scrollbar-width, 0px);
+}
+
+header {
+  padding-right: var(--scrollbar-width, 0px);
+}
+
+/* Главный бекграунд */
+body::before {
+  content: '';
+  position: fixed;
+  top: -50vh;
+  left: -50vw;
+  width: 200vw;
+  height: 200vh;
+  background-image: url('../img/svg/bg-circle-pattern.svg'), url('../img/svg/bg-circle-pattern.svg');
+  background-size: 720px 720px;
+  background-position:
+    0 0,
+    360px 360px;
+  background-repeat: repeat;
+  transform: rotate(-20deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Кастомные стили селектора телефона */
+.iti__selected-country-primary {
+  @apply rounded-sm pr-3 pl-5 md:rounded-md md:pl-6;
+}
+
+.iti__tel-input {
+  @apply pl-[120px]!;
+}
+
+/* Стили трейдинга */
+[data-trading] > div {
+  @apply h-[93px]! gap-3 rounded-sm border border-gray-500 bg-white max-md:w-[90%]! max-md:shrink-0 md:rounded-md;
+}
+
+/* Базовые стили слайдеров */
+[data-slider-container] {
+  @apply flex min-w-0;
+  touch-action: pan-y pinch-zoom;
+}
+
+[data-slider-item] {
+  @apply min-w-0 shrink-0 grow-0;
+}
+
+/* Кастомные стили реинджа */
+.range {
+  @apply h-0.75 w-full appearance-none rounded-full bg-gray-500 outline-none;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  @apply bg-primary h-5 w-5 cursor-pointer rounded-full bg-linear-to-r;
+}
+
+.range::-moz-range-thumb {
+  @apply bg-primary h-5 w-5 cursor-pointer rounded-full bg-linear-to-r;
+}
+
+.range::-moz-range-track {
+  @apply h-0.75 rounded-full bg-gray-100;
+}
+
+/* Линия */
+.after-line {
+  @apply relative;
+}
+
+.after-line::after {
+  content: '';
+  @apply bg-primary-lightest absolute bottom-0 left-1/2 h-0.5 w-screen -translate-x-1/2;
+}
+
+/* Таблица */
+.table-rounded-rows {
+  @apply border-separate border-spacing-0;
+}
+
+.table-rounded-rows tbody tr:nth-child(even) td {
+  @apply bg-secondary-lightest;
+}
+
+.table-rounded-rows tr td:first-child,
+.table-rounded-rows tr th:first-child {
+  @apply rounded-l-2xl;
+}
+
+.table-rounded-rows tr td:last-child,
+.table-rounded-rows tr th:last-child {
+  @apply rounded-r-2xl;
+}
+
+.table-rounded-rows tr td:not(:last-child),
+.table-rounded-rows tr th:not(:last-child) {
+  @apply border-secondary-lighter border-r-2;
+}
+
+/* Модалки */
+[data-modal] {
+  @apply pointer-events-none fixed inset-0 z-50 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 data-active:pointer-events-auto data-active:opacity-100;
+}
+
+[data-modal-container] {
+  @apply max-w-container mx-auto box-content w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20;
+}
+
+/* Прелоадер */
+[data-preloader] {
+  @apply fixed inset-0 z-9999 flex items-center justify-center bg-black/30;
+  @apply pointer-events-none opacity-0;
+  @apply transition-opacity duration-300 ease-out;
+}
+
+[data-preloader][data-active] {
+  @apply pointer-events-auto opacity-100;
+}
+
+[data-preloader] svg path {
+  fill: var(--color-primary-darkest);
+  transition: fill 0.3s ease;
+}
+
+[data-preloader] svg path[data-lit] {
+  fill: var(--color-primary);
+}
+
+[data-preloader][data-resetting] svg path {
+  transition: none;
+}

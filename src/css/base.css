@@ -1,0 +1,49 @@
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-primary-lightest text-primary-darkest relative flex min-h-screen flex-col pt-[60px] text-sm leading-[1.4] font-semibold md:text-lg lg:pt-[105px];
+  }
+
+  main {
+    @apply flex grow flex-col overflow-clip;
+  }
+
+  h1 {
+    @apply text-[26px] leading-[1.15] font-extrabold md:text-[46px];
+  }
+
+  h2 {
+    @apply text-[20px] leading-[1.15] font-bold md:text-[36px];
+  }
+
+  h3 {
+    @apply text-lg leading-normal font-bold md:text-[24px];
+  }
+
+  h4 {
+    @apply text-sm leading-normal font-bold md:text-xl;
+  }
+
+  a {
+    @apply hover:text-primary-dark transition-colors;
+  }
+
+  picture img {
+    @apply relative w-full;
+  }
+
+  svg {
+    @apply max-h-full max-w-full;
+  }
+
+  mark {
+    @apply text-primary bg-transparent;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
