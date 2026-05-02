@@ -560,6 +560,12 @@
     border-radius: var(--radius-responsive-15);
     padding: var(--spacing-responsive-10);
   }
+  .btn-big {
+    min-height: calc(var(--spacing) * 19.25);
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-responsive-15);
+    padding: var(--spacing-responsive-10);
+  }
 }
 @layer components;
 @layer components;

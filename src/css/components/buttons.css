@@ -39,4 +39,9 @@
   .btn-icon {
     @apply rounded-responsive-15 p-responsive-10 aspect-square;
   }
+
+  .btn-big {
+    @apply min-h-19.25;
+    @apply rounded-responsive-20 py-responsive-15 px-responsive-25;
+  }
 }
