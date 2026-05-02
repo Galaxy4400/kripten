@@ -10,33 +10,18 @@
   }
 
   /* type */
-  .btn-primary {
-    /* @apply bg-button-primary-default text-on-button-primary; */
-    /* @apply hover:bg-button-primary-hover; */
-    /* @apply active:bg-button-primary-press; */
+  .btn-blue {
+    @apply bg-blue-dark text-white;
+    @apply hover:bg-blue-hover hover:text-blue-dark;
   }
 
-  .btn-secondary {
-    /* @apply bg-button-secondary-default text-on-button-secondary; */
-    /* @apply hover:bg-button-secondary-hover; */
-    /* @apply active:bg-button-secondary-press; */
+  .btn-white {
+    @apply text-blue-dark bg-white;
+    @apply hover:bg-blue-hover hover:text-blue-dark;
   }
 
-  .btn-outline {
-    /* @apply border-button-primary-default border; */
-    /* @apply text-button-primary-default bg-transparent; */
-    /* @apply hover:bg-button-secondary-hover; */
-    /* @apply active:bg-button-secondary-press; */
-  }
-
-  .btn-transparent {
-    /* @apply text-on-surface-secondary bg-transparent; */
-    /* @apply hover:bg-button-secondary-hover; */
-    /* @apply active:bg-button-secondary-press; */
-  }
-
-  /* mode */
-  .btn-icon {
-    /* @apply p-responsive-4 aspect-square; */
+  .btn-gray {
+    @apply bg-gray-bg text-black;
+    @apply hover:bg-blue-hover hover:text-blue-dark;
   }
 }

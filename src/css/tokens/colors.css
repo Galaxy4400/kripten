@@ -7,6 +7,7 @@
   --stroke-in-bg: #dbdada;
   --white: #ffffff;
   --black: #282828;
+  --white-glass: #ffffff1a;
 }
 
 @theme inline {
@@ -20,4 +21,5 @@
   --color-stroke-in-bg: var(--stroke-in-bg);
   --color-white: var(--white);
   --color-black: var(--black);
+  --color-white-glass: var(--white-glass);
 }

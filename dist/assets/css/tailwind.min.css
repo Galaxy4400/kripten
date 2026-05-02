@@ -229,6 +229,9 @@
   .hidden {
     display: none;
   }
+  .min-h-16 {
+    min-height: calc(var(--spacing) * 16);
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -320,6 +323,7 @@
   --stroke-in-bg: #dbdada;
   --white: #ffffff;
   --black: #282828;
+  --white-glass: #ffffff1a;
 }
 @font-face {
   font-family: 'Geist';
@@ -461,6 +465,48 @@
     }
     &[aria-disabled="true"] {
       opacity: 40%;
+    }
+  }
+  .btn-blue {
+    background-color: var(--blue-dark);
+    color: var(--white);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--blue-hover);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-dark);
+      }
+    }
+  }
+  .btn-white {
+    background-color: var(--white);
+    color: var(--blue-dark);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--blue-hover);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-dark);
+      }
+    }
+  }
+  .btn-gray {
+    background-color: var(--gray-bg);
+    color: var(--black);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--blue-hover);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-dark);
+      }
     }
   }
 }
