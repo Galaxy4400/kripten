@@ -4,7 +4,7 @@ import browserSync from 'browser-sync';
 
 const bs = browserSync.create();
 
-const cssInput = './src/css/tailwind.css';
+const cssInput = './src/css/global.css';
 const cssOutput = './dist/assets/css/tailwind.min.css';
 
 const styles = (done) => {
