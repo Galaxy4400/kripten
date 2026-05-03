@@ -15,7 +15,29 @@
     @apply hover:text-blue-hover;
   }
 
+  .link-blue-light {
+    @apply text-blue-hover;
+    @apply hover:text-blue-dark;
+  }
+
+  .link-glass {
+    @apply text-white/50;
+    @apply hover:text-white;
+  }
+
   .link-underline {
     @apply underline underline-offset-4;
+  }
+
+  .link-big {
+    @apply typography-psm;
+  }
+
+  .link-tag {
+    @apply typography-tagm;
+    @apply rounded-responsive-100;
+    @apply bg-white;
+    @apply px-responsive-15 py-responsive-5;
+    @apply min-h-8;
   }
 }

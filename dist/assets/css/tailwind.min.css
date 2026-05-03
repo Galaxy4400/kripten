@@ -616,9 +616,33 @@
       }
     }
   }
+  .link-blue-light {
+    color: var(--blue-hover);
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-dark);
+      }
+    }
+  }
+  .link-glass {
+    color: var(--white);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--white) 50%, transparent);
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--white);
+      }
+    }
+  }
   .link-underline {
     text-decoration-line: underline;
     text-underline-offset: 4px;
+  }
+  .link-big {
+    font-size: var(--text-p-sm);
+    line-height: var(--leading-p-sm);
+    font-weight: var(--font-p-sm);
   }
 }
 @layer components;
