@@ -18,6 +18,7 @@
   --spacing-responsive-22: 22px;
   --spacing-responsive-25: 25px;
   --spacing-responsive-30: 30px;
+  --spacing-responsive-70: 70px;
 
   /* Frame */
   --spacing-responsive-horizontal: 16px;
@@ -40,6 +41,7 @@
     --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-70: 70px;
 
     /* Frame */
     --spacing-responsive-horizontal: 32px;
@@ -63,6 +65,7 @@
     --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-70: 70px;
 
     /* Frame */
     --spacing-responsive-horizontal: 120px;

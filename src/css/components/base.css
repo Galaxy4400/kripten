@@ -20,4 +20,8 @@
   svg {
     @apply max-h-full max-w-full;
   }
+
+  button {
+    @apply cursor-pointer;
+  }
 }

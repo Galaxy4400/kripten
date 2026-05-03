@@ -55,6 +55,7 @@
     --spacing-responsive-15: 15px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 16px;
   }
 }
@@ -240,6 +241,12 @@
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
   }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .basis-\[182px\] {
+    flex-basis: 182px;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -272,6 +279,9 @@
   }
   .gap-responsive-30 {
     gap: var(--spacing-responsive-30);
+  }
+  .gap-responsive-70 {
+    gap: var(--spacing-responsive-70);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -428,6 +438,7 @@
     --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 32px;
     --spacing-responsive-vertical: 50px;
   }
@@ -444,6 +455,7 @@
     --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 120px;
     --spacing-responsive-vertical: 80px;
   }
@@ -473,6 +485,9 @@
   svg {
     max-height: 100%;
     max-width: 100%;
+  }
+  button {
+    cursor: pointer;
   }
 }
 @layer components {
