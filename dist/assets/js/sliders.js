@@ -126,7 +126,7 @@ const initSlider = (sliderTag, options = {}, plugins = []) => {
 const initSliders = () => {
   markupSliders();
 
-  initSlider('main', { loop: false }, [EmblaCarouselFade()]);
+  initSlider('main', { loop: true }, [EmblaCarouselFade(), EmblaCarouselAutoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })]);
 };
 
 //===============================================================
