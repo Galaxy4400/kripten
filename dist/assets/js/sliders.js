@@ -127,15 +127,6 @@ const initSliders = () => {
   markupSliders();
 
   initSlider('main', { loop: false }, [EmblaCarouselFade()]);
-  initSlider('partners', { loop: true, dragFree: false, align: 'start' }, [
-    EmblaCarouselAutoScroll({ speed: 1, stopOnInteraction: false, stopOnMouseEnter: false }),
-  ]);
-	initSlider('sales', { loop: false, slidesToScroll: 1 });
-	initSlider('catalog', { loop: false, slidesToScroll: 1 });
-	initSlider('reviews', { loop: false, slidesToScroll: 1 });
-	initSlider('articles', { loop: false, slidesToScroll: 1 });
-	initSlider('popular', { loop: false, slidesToScroll: 1 });
-	initSlider('viewed', { loop: false, slidesToScroll: 1 });
 };
 
 //===============================================================
