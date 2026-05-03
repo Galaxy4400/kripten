@@ -258,20 +258,23 @@
   .basis-\[182px\] {
     flex-basis: 182px;
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .grid-cols-\[1fr_435px\] {
     grid-template-columns: 1fr 435px;
   }
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .content-start {
+    align-content: flex-start;
+  }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-items-start {
     justify-items: start;
@@ -857,11 +860,8 @@
     flex-direction: column;
     gap: var(--spacing-responsive-15);
   }
-  .card-new-title {
+  .card-new-content {
     flex-grow: 1;
-    font-size: var(--text-h5);
-    line-height: var(--leading-h5);
-    font-weight: var(--font-h5);
   }
   .card-new-date {
     display: flex;

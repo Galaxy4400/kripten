@@ -6,8 +6,8 @@
   .card-new {
     @apply gap-responsive-15 flex min-h-[318px] flex-col;
   }
-  .card-new-title {
-    @apply typography-h5 grow;
+  .card-new-content {
+    @apply grow;
   }
   .card-new-date {
     @apply gap-responsive-15 flex items-center justify-between;
