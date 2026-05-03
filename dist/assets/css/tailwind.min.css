@@ -845,15 +845,65 @@
   }
 }
 @layer components;
+@layer components {
+  .card {
+    border-radius: var(--radius-responsive-20);
+    background-color: var(--gray-bg);
+    padding: var(--spacing-responsive-30);
+  }
+  .card-new {
+    display: flex;
+    min-height: 318px;
+    flex-direction: column;
+    gap: var(--spacing-responsive-15);
+  }
+  .card-new-title {
+    flex-grow: 1;
+    font-size: var(--text-h5);
+    line-height: var(--leading-h5);
+    font-weight: var(--font-h5);
+  }
+  .card-new-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-responsive-15);
+    padding-top: var(--spacing-responsive-30);
+    font-size: var(--text-big-r);
+    line-height: var(--leading-big-r);
+    font-weight: var(--font-big-r);
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+    border-color: var(--stroke-in-bg);
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 1.5);
+    }
+    &::after {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 1.5);
+    }
+    &::after {
+      content: var(--tw-content);
+      background-color: var(--gray-element);
+    }
+  }
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-content: "";
     }
   }
 }
