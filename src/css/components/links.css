@@ -9,6 +9,9 @@
     @apply disabled:pointer-events-none disabled:opacity-40;
     @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
   }
+  .link svg {
+    @apply shrink-0;
+  }
 
   .link-blue {
     @apply text-blue-dark;

@@ -23,5 +23,6 @@
 
   button {
     @apply cursor-pointer;
+    @apply hover:text-blue-dark;
   }
 }

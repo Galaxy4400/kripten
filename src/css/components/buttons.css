@@ -8,6 +8,9 @@
     @apply disabled:pointer-events-none disabled:opacity-40;
     @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
   }
+  .btn svg {
+    @apply shrink-0;
+  }
 
   /* type */
   .btn-blue {

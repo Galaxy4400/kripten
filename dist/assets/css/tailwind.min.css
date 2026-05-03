@@ -55,6 +55,7 @@
     --spacing-responsive-15: 15px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-40: 40px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 16px;
   }
@@ -280,6 +281,9 @@
   .gap-responsive-30 {
     gap: var(--spacing-responsive-30);
   }
+  .gap-responsive-40 {
+    gap: var(--spacing-responsive-40);
+  }
   .gap-responsive-70 {
     gap: var(--spacing-responsive-70);
   }
@@ -361,6 +365,9 @@
     line-height: var(--leading-tag-r);
     font-weight: var(--font-tag-r);
   }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
   .text-black {
     color: var(--black);
   }
@@ -438,6 +445,7 @@
     --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-40: 40px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 32px;
     --spacing-responsive-vertical: 50px;
@@ -455,6 +463,7 @@
     --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
+    --spacing-responsive-40: 40px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 120px;
     --spacing-responsive-vertical: 80px;
@@ -488,6 +497,11 @@
   }
   button {
     cursor: pointer;
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-dark);
+      }
+    }
   }
 }
 @layer components {
@@ -533,6 +547,9 @@
     &[aria-disabled="true"] {
       opacity: 40%;
     }
+  }
+  .btn svg {
+    flex-shrink: 0;
   }
   .btn-blue {
     background-color: var(--blue-dark);
@@ -657,6 +674,9 @@
     &[aria-disabled="true"] {
       opacity: 40%;
     }
+  }
+  .link svg {
+    flex-shrink: 0;
   }
   .link-blue {
     color: var(--blue-dark);
