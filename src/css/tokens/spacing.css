@@ -6,6 +6,7 @@
 /* Mobile (base) */
 @theme {
   /* Roundings */
+  --radius-responsive-4: 4px;
   --radius-responsive-10: 10px;
   --radius-responsive-15: 15px;
   --radius-responsive-20: 20px;
@@ -22,6 +23,7 @@
   --spacing-responsive-30: 30px;
   --spacing-responsive-35: 35px;
   --spacing-responsive-40: 40px;
+  --spacing-responsive-50: 50px;
   --spacing-responsive-70: 70px;
 
   /* Frame */
@@ -33,6 +35,7 @@
 @media (width >= theme(--breakpoint-md)) {
   :root {
     /* Roundings */
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -49,6 +52,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
 
     /* Frame */
@@ -61,6 +65,7 @@
 @media (width >= theme(--breakpoint-lg)) {
   :root {
     /* Roundings */
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -77,6 +82,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
 
     /* Frame */
@@ -89,6 +95,7 @@
 @media (width >= theme(--breakpoint-xl)) {
   :root {
     /* Roundings */
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -105,6 +112,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
 
     /* Frame */
@@ -117,6 +125,7 @@
 @media (width >= theme(--breakpoint-2xl)) {
   :root {
     /* Roundings */
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -133,6 +142,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
 
     /* Frame */

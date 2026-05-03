@@ -21,7 +21,32 @@
 
   <body>
     <!-- header -->
-    <header class="mb-responsive-10">
+    <header class="mb-responsive-10 relative">
+      <!-- search -->
+      <div
+        class="py-responsive-15 absolute top-0 left-0 z-60 hidden w-full bg-white data-active:block"
+        data-search-container
+      >
+        <div class="container-base">
+          <div class="relative grow">
+            <input
+              class="py-responsive-10 px-responsive-30 pr-responsive-70 typography-pr bg-gray-bg rounded-responsive-4 h-[52px] w-full"
+              type="text"
+              placeholder="Я хочу найти..."
+              aria-label="Я хочу найти..."
+              data-search-input
+            />
+            <div class="right-responsive-30 absolute top-1/2 flex -translate-y-1/2 items-center">
+              <button class="cursor-pointer" data-search-action aria-label="Найти">
+                <svg width="20" height="20">
+                  <use href="assets/img/svg/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="bg-gray-bg">
         <div class="container-base py-responsive-15 gap-responsive-30 text-gray-text flex flex-wrap">
           <p class="gap-responsive-10 inline-flex">
@@ -135,7 +160,7 @@
                 </li>
                 <li class="group relative"><a class="link py-responsive-7 whitespace-nowrap" href="#">Контакты</a></li>
               </ul>
-              <button class="shrink-0" type="button">
+              <button class="shrink-0" type="button" data-search-open aria-label="Открыть поиск">
                 <svg width="24" height="24">
                   <use href="assets/img/svg/sprite.svg#search"></use>
                 </svg>

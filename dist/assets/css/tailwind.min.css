@@ -47,6 +47,7 @@
     --text-tag-r: 12px;
     --leading-tag-r: 1.4;
     --font-tag-r: 400;
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -60,6 +61,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 16px;
   }
@@ -222,6 +224,12 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
   .top-1\/3 {
     top: calc(1/3 * 100%);
   }
@@ -230,6 +238,9 @@
   }
   .right-responsive-10 {
     right: var(--spacing-responsive-10);
+  }
+  .right-responsive-30 {
+    right: var(--spacing-responsive-30);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -245,6 +256,9 @@
   }
   .z-30 {
     z-index: 30;
+  }
+  .z-60 {
+    z-index: 60;
   }
   .container {
     width: 100%;
@@ -279,6 +293,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .h-\[52px\] {
+    height: 52px;
+  }
   .h-full {
     height: 100%;
   }
@@ -300,14 +317,24 @@
   .shrink-0 {
     flex-shrink: 0;
   }
+  .grow {
+    flex-grow: 1;
+  }
   .basis-\[182px\] {
     flex-basis: 182px;
   }
   .basis-full {
     flex-basis: 100%;
   }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -366,6 +393,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded-responsive-4 {
+    border-radius: var(--radius-responsive-4);
+  }
   .rounded-responsive-10 {
     border-radius: var(--radius-responsive-10);
   }
@@ -377,6 +407,9 @@
   }
   .bg-gray-bg {
     background-color: var(--gray-bg);
+  }
+  .bg-white {
+    background-color: var(--white);
   }
   .object-cover {
     object-fit: cover;
@@ -390,14 +423,23 @@
   .p-responsive-35 {
     padding: var(--spacing-responsive-35);
   }
+  .px-responsive-30 {
+    padding-inline: var(--spacing-responsive-30);
+  }
   .py-responsive-7 {
     padding-block: var(--spacing-responsive-7);
+  }
+  .py-responsive-10 {
+    padding-block: var(--spacing-responsive-10);
   }
   .py-responsive-15 {
     padding-block: var(--spacing-responsive-15);
   }
   .py-responsive-25 {
     padding-block: var(--spacing-responsive-25);
+  }
+  .pr-responsive-70 {
+    padding-right: var(--spacing-responsive-70);
   }
   .typography-btr {
     font-size: var(--text-big-r);
@@ -517,6 +559,11 @@
       }
     }
   }
+  .data-active\:block {
+    &[data-active] {
+      display: block;
+    }
+  }
 }
 :root {
   --blue-dark: #002e6d;
@@ -578,6 +625,7 @@
 }
 @media (width >= 768px) {
   :root {
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -592,6 +640,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 32px;
     --spacing-responsive-vertical: 50px;
@@ -599,6 +648,7 @@
 }
 @media (width >= 1024px) {
   :root {
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -613,6 +663,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 32px;
     --spacing-responsive-vertical: 50px;
@@ -620,6 +671,7 @@
 }
 @media (width >= 1280px) {
   :root {
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -634,6 +686,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 32px;
     --spacing-responsive-vertical: 50px;
@@ -641,6 +694,7 @@
 }
 @media (width >= 1536px) {
   :root {
+    --radius-responsive-4: 4px;
     --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
@@ -655,6 +709,7 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-35: 35px;
     --spacing-responsive-40: 40px;
+    --spacing-responsive-50: 50px;
     --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 120px;
     --spacing-responsive-vertical: 80px;
@@ -1089,6 +1144,21 @@
   flex-shrink: 0;
   flex-grow: 0;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -1134,6 +1204,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
