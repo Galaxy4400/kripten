@@ -477,10 +477,22 @@
       color: color-mix(in oklab, var(--white) 80%, transparent);
     }
   }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .group-hover\:grid {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         display: grid;
+      }
+    }
+  }
+  .group-hover\:rotate-180 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        rotate: 180deg;
       }
     }
   }
@@ -1068,7 +1080,9 @@
 [data-slider-container] {
   display: flex;
   min-width: calc(var(--spacing) * 0);
-  touch-action: pan-y pinch-zoom;
+  --tw-pan-y: pan-y;
+  --tw-pinch-zoom: pinch-zoom;
+  touch-action: var(--tw-pan-x,) var(--tw-pan-y,) var(--tw-pinch-zoom,);
 }
 [data-slider-item] {
   min-width: calc(var(--spacing) * 0);
@@ -1105,6 +1119,18 @@
   initial-value: "";
   inherits: false;
 }
+@property --tw-pan-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-pan-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-pinch-zoom {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1115,6 +1141,9 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-content: "";
+      --tw-pan-x: initial;
+      --tw-pan-y: initial;
+      --tw-pinch-zoom: initial;
     }
   }
 }

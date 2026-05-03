@@ -1,7 +1,7 @@
 /* Базовые стили слайдеров */
 [data-slider-container] {
   @apply flex min-w-0;
-  touch-action: pan-y pinch-zoom;
+  @apply touch-pan-y touch-pinch-zoom;
 }
 
 [data-slider-item] {
