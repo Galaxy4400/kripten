@@ -35,6 +35,12 @@
     @apply hover:text-blue-hover;
   }
 
+  .link-small {
+    @apply typography-tagm;
+    @apply text-gray-text;
+    @apply hover:text-blue-dark;
+  }
+
   .link-tag {
     @apply typography-tagm;
     @apply text-blue-dark;

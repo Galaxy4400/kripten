@@ -653,6 +653,17 @@
       }
     }
   }
+  .link-small {
+    font-size: var(--text-tag-m);
+    line-height: var(--leading-tag-m);
+    font-weight: var(--font-tag-m);
+    color: var(--gray-text);
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-dark);
+      }
+    }
+  }
   .link-tag {
     font-size: var(--text-tag-m);
     line-height: var(--leading-tag-m);
