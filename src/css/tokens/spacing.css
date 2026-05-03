@@ -6,6 +6,7 @@
 /* Mobile (base) */
 @theme {
   /* Roundings */
+  --radius-responsive-10: 10px;
   --radius-responsive-15: 15px;
   --radius-responsive-20: 20px;
   --radius-responsive-100: 100px;
@@ -30,6 +31,7 @@
 @media (width >= theme(--breakpoint-md)) {
   :root {
     /* Roundings */
+    --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
@@ -55,6 +57,7 @@
 @media (width >= theme(--breakpoint-lg)) {
   :root {
     /* Roundings */
+    --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
@@ -80,6 +83,7 @@
 @media (width >= theme(--breakpoint-xl)) {
   :root {
     /* Roundings */
+    --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
@@ -105,6 +109,7 @@
 @media (width >= theme(--breakpoint-2xl)) {
   :root {
     /* Roundings */
+    --radius-responsive-10: 10px;
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
