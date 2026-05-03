@@ -390,6 +390,9 @@
   .p-responsive-35 {
     padding: var(--spacing-responsive-35);
   }
+  .py-responsive-7 {
+    padding-block: var(--spacing-responsive-7);
+  }
   .py-responsive-15 {
     padding-block: var(--spacing-responsive-15);
   }
