@@ -234,6 +234,9 @@
   .hidden {
     display: none;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
   }
@@ -255,6 +258,12 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .gap-responsive-10 {
+    gap: var(--spacing-responsive-10);
+  }
+  .gap-responsive-30 {
+    gap: var(--spacing-responsive-30);
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -266,6 +275,9 @@
   }
   .p-responsive-30 {
     padding: var(--spacing-responsive-30);
+  }
+  .py-responsive-15 {
+    padding-block: var(--spacing-responsive-15);
   }
   .typography-btr {
     font-size: var(--text-big-r);
