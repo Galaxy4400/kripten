@@ -1062,6 +1062,16 @@
     }
   }
 }
+[data-slider-container] {
+  display: flex;
+  min-width: calc(var(--spacing) * 0);
+  touch-action: pan-y pinch-zoom;
+}
+[data-slider-item] {
+  min-width: calc(var(--spacing) * 0);
+  flex-shrink: 0;
+  flex-grow: 0;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
