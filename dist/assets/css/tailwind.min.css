@@ -216,8 +216,14 @@
   .relative {
     position: relative;
   }
+  .right-responsive-10 {
+    right: var(--spacing-responsive-10);
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-responsive-10 {
+    bottom: var(--spacing-responsive-10);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -266,6 +272,9 @@
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .grow {
+    flex-grow: 1;
   }
   .basis-\[182px\] {
     flex-basis: 182px;
@@ -410,6 +419,30 @@
   }
   .text-gray-text {
     color: var(--gray-text);
+  }
+  .text-white {
+    color: var(--white);
+  }
+  .group-hover\:bg-blue-dark {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--blue-dark);
+      }
+    }
+  }
+  .group-hover\:text-blue-dark {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--blue-dark);
+      }
+    }
+  }
+  .group-hover\:text-white {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--white);
+      }
+    }
   }
 }
 :root {
@@ -903,12 +936,15 @@
   }
   .card-slider-link {
     position: relative;
+    overflow: hidden;
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     display: flex;
     min-height: 170px;
     flex-direction: column;
+    padding-inline: var(--spacing-responsive-30);
+    padding-block: var(--spacing-responsive-25);
     border-radius: var(--radius-responsive-20);
     background-color: var(--blue-dark);
     &:hover {
