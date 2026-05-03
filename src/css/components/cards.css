@@ -18,7 +18,7 @@
   .card-slider-link {
     @apply relative overflow-hidden;
     @apply transition-colors;
-    @apply flex min-h-[170px] flex-col;
+    @apply min-h-[170px];
     @apply py-responsive-25 px-responsive-30;
     @apply rounded-responsive-20;
     @apply bg-blue-dark;
