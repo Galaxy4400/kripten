@@ -11,6 +11,7 @@
   --radius-responsive-100: 100px;
 
   /* Spacing */
+  --spacing-responsive-5: 5px;
   --spacing-responsive-10: 10px;
   --spacing-responsive-15: 15px;
   --spacing-responsive-20: 20px;
@@ -31,6 +32,7 @@
     --radius-responsive-100: 100px;
 
     /* Spacing */
+    --spacing-responsive-5: 5px;
     --spacing-responsive-10: 10px;
     --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;
@@ -52,6 +54,7 @@
     --radius-responsive-100: 100px;
 
     /* Spacing */
+    --spacing-responsive-5: 5px;
     --spacing-responsive-10: 10px;
     --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;

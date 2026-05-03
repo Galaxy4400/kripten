@@ -31,10 +31,14 @@
 
   .link-big {
     @apply typography-psm;
+    @apply text-blue-dark;
+    @apply hover:text-blue-hover;
   }
 
   .link-tag {
     @apply typography-tagm;
+    @apply text-blue-dark;
+    @apply hover:text-blue-hover;
     @apply rounded-responsive-100;
     @apply bg-white;
     @apply px-responsive-15 py-responsive-5;

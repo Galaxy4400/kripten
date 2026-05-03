@@ -50,6 +50,7 @@
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
+    --spacing-responsive-5: 5px;
     --spacing-responsive-10: 10px;
     --spacing-responsive-15: 15px;
     --spacing-responsive-25: 25px;
@@ -390,6 +391,7 @@
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
+    --spacing-responsive-5: 5px;
     --spacing-responsive-10: 10px;
     --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;
@@ -404,6 +406,7 @@
     --radius-responsive-15: 15px;
     --radius-responsive-20: 20px;
     --radius-responsive-100: 100px;
+    --spacing-responsive-5: 5px;
     --spacing-responsive-10: 10px;
     --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;
@@ -643,6 +646,28 @@
     font-size: var(--text-p-sm);
     line-height: var(--leading-p-sm);
     font-weight: var(--font-p-sm);
+    color: var(--blue-dark);
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-hover);
+      }
+    }
+  }
+  .link-tag {
+    font-size: var(--text-tag-m);
+    line-height: var(--leading-tag-m);
+    font-weight: var(--font-tag-m);
+    color: var(--blue-dark);
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-hover);
+      }
+    }
+    border-radius: var(--radius-responsive-100);
+    background-color: var(--white);
+    padding-inline: var(--spacing-responsive-15);
+    padding-block: var(--spacing-responsive-5);
+    min-height: calc(var(--spacing) * 8);
   }
 }
 @layer components;
