@@ -587,6 +587,9 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     cursor: pointer;
     color: var(--gray-text);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-responsive-10);
     &:hover {
       @media (hover: hover) {
         color: var(--blue-hover);
@@ -612,6 +615,10 @@
         color: var(--blue-hover);
       }
     }
+  }
+  .link-underline {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
   }
 }
 @layer components;
