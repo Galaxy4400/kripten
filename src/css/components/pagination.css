@@ -21,11 +21,12 @@
   }
 
   .scroll {
-    /* @apply flex flex-wrap items-center gap-2; */
+    @apply gap-responsive-7 top-responsive-30 left-responsive-35 absolute flex flex-wrap items-center;
   }
 
   .bullet {
-    /* @apply bg-on-surface-tertiary inline-block h-2 w-2 cursor-pointer rounded-full; */
-    /* @apply aria-selected:bg-button-teritary aria-selected:pointer-events-none aria-selected:w-19; */
+    @apply transition-all;
+    @apply inline-block h-0.75 w-10 cursor-pointer rounded-full bg-white/35;
+    @apply aria-selected:pointer-events-none aria-selected:w-20 aria-selected:bg-white;
   }
 }

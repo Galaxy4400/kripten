@@ -74,7 +74,7 @@ const addDotBtnsAndClickHandlers = (sliderApi, sliderKey) => {
     paggination.innerHTML = sliderApi
       .scrollSnapList()
       .map(
-        (_, index) => `<button class="paggination-dot" type="button" aria-label="Move to slide ${index + 1}"></button>`,
+        (_, index) => `<button class="bullet" type="button" aria-label="Move to slide ${index + 1}"></button>`,
       )
       .join('');
 
@@ -91,8 +91,8 @@ const addDotBtnsAndClickHandlers = (sliderApi, sliderKey) => {
   const toggleDotBtnsActive = () => {
     const previous = sliderApi.previousScrollSnap();
     const selected = sliderApi.selectedScrollSnap();
-    dots[previous].removeAttribute('data-active');
-    dots[selected].setAttribute('data-active', '');
+    dots[previous].removeAttribute('aria-selected');
+    dots[selected].setAttribute('aria-selected', true);
   };
 
   sliderApi
