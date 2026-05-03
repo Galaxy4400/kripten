@@ -1,9 +1,7 @@
 @layer components {
-  .card {
-    @apply bg-gray-bg rounded-responsive-20 p-responsive-30;
-  }
-
+  /* card new */
   .card-new {
+    @apply bg-gray-bg rounded-responsive-20 p-responsive-30;
     @apply gap-responsive-15 flex min-h-[318px] flex-col;
   }
   .card-new-content {
@@ -14,5 +12,15 @@
     @apply typography-btr pt-responsive-30;
     @apply border-stroke-in-bg border-t;
     @apply after:bg-gray-element after:h-1.5 after:w-1.5;
+  }
+
+  /* card main slider link */
+  .card-slider-link {
+    @apply relative;
+    @apply transition-colors;
+    @apply flex min-h-[170px] flex-col;
+    @apply rounded-responsive-20;
+    @apply bg-blue-dark;
+    @apply hover:bg-white;
   }
 }
