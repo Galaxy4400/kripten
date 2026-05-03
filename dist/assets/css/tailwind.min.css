@@ -339,6 +339,12 @@
     line-height: var(--leading-tag-r);
     font-weight: var(--font-tag-r);
   }
+  .text-black {
+    color: var(--black);
+  }
+  .text-gray-text {
+    color: var(--gray-text);
+  }
 }
 :root {
   --blue-dark: #002e6d;
