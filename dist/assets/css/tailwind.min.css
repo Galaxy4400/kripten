@@ -589,13 +589,13 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     cursor: pointer;
-    color: var(--gray-text);
+    color: var(--black);
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-responsive-10);
     &:hover {
       @media (hover: hover) {
-        color: var(--blue-hover);
+        color: var(--blue-dark);
       }
     }
     &:disabled {
