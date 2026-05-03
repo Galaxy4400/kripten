@@ -1,7 +1,7 @@
 @layer components {
   /* buttons */
   .btn {
-    @apply psm cursor-pointer transition-colors;
+    @apply typography-psm cursor-pointer transition-colors;
     @apply min-h-16;
     @apply px-responsive-30 py-responsive-15 rounded-responsive-100;
     @apply gap-responsive-10 inline-flex items-center justify-center;
@@ -41,7 +41,7 @@
   }
 
   .btn-big {
-    @apply btsm;
+    @apply typography-btsm;
     @apply min-h-19.25;
     @apply rounded-responsive-20 py-responsive-15 px-responsive-25;
   }

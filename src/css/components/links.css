@@ -1,15 +1,20 @@
 @layer components {
   .link {
-    /* @apply transition-all; */
-    /* @apply cursor-pointer; */
-    /* @apply text-button-primary-default; */
-    /* @apply hover:text-button-primary-hover; */
-    /* @apply active:text-button-primary-press; */
-    /* @apply disabled:pointer-events-none disabled:opacity-40; */
-    /* @apply aria-disabled:pointer-events-none aria-disabled:opacity-40; */
+    @apply typography-pr;
+    @apply transition-all;
+    @apply cursor-pointer;
+    @apply text-gray-text;
+    @apply hover:text-blue-hover;
+    @apply disabled:pointer-events-none disabled:opacity-40;
+    @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
   }
 
   /* types */
+  .link-blue {
+    @apply text-blue-dark;
+    @apply hover:text-blue-hover;
+  }
+
   .link-underline {
     /* @apply cta underline underline-offset-4; */
   }
