@@ -243,6 +243,12 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-items-start {
     justify-items: start;
   }
@@ -261,6 +267,9 @@
   .gap-responsive-10 {
     gap: var(--spacing-responsive-10);
   }
+  .gap-responsive-15 {
+    gap: var(--spacing-responsive-15);
+  }
   .gap-responsive-30 {
     gap: var(--spacing-responsive-30);
   }
@@ -278,6 +287,9 @@
   }
   .py-responsive-15 {
     padding-block: var(--spacing-responsive-15);
+  }
+  .py-responsive-25 {
+    padding-block: var(--spacing-responsive-25);
   }
   .typography-btr {
     font-size: var(--text-big-r);
@@ -413,6 +425,7 @@
     --spacing-responsive-10: 10px;
     --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;
+    --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
     --spacing-responsive-horizontal: 32px;
@@ -428,6 +441,7 @@
     --spacing-responsive-10: 10px;
     --spacing-responsive-15: 15px;
     --spacing-responsive-20: 20px;
+    --spacing-responsive-22: 22px;
     --spacing-responsive-25: 25px;
     --spacing-responsive-30: 30px;
     --spacing-responsive-horizontal: 120px;
