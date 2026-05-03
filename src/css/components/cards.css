@@ -1,0 +1,18 @@
+@layer components {
+  .card {
+    @apply bg-gray-bg rounded-responsive-20 p-responsive-30;
+  }
+
+  .card-new {
+    @apply gap-responsive-15 flex min-h-[318px] flex-col;
+  }
+  .card-new-title {
+    @apply typography-h5 grow;
+  }
+  .card-new-date {
+    @apply gap-responsive-15 flex items-center justify-between;
+    @apply typography-btr pt-responsive-30;
+    @apply border-gray-bg border-t;
+    @apply after:bg-gray-element after:h-1.5 after:w-1.5;
+  }
+}
