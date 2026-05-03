@@ -71,6 +71,56 @@
     --spacing-responsive-70: 70px;
 
     /* Frame */
+    --spacing-responsive-horizontal: 32px;
+    --spacing-responsive-vertical: 50px;
+  }
+}
+
+/* Desktop */
+@media (width >= theme(--breakpoint-xl)) {
+  :root {
+    /* Roundings */
+    --radius-responsive-15: 15px;
+    --radius-responsive-20: 20px;
+    --radius-responsive-100: 100px;
+
+    /* Spacing */
+    --spacing-responsive-5: 5px;
+    --spacing-responsive-10: 10px;
+    --spacing-responsive-15: 15px;
+    --spacing-responsive-20: 20px;
+    --spacing-responsive-22: 22px;
+    --spacing-responsive-25: 25px;
+    --spacing-responsive-30: 30px;
+    --spacing-responsive-40: 40px;
+    --spacing-responsive-70: 70px;
+
+    /* Frame */
+    --spacing-responsive-horizontal: 32px;
+    --spacing-responsive-vertical: 50px;
+  }
+}
+
+/* Big */
+@media (width >= theme(--breakpoint-2xl)) {
+  :root {
+    /* Roundings */
+    --radius-responsive-15: 15px;
+    --radius-responsive-20: 20px;
+    --radius-responsive-100: 100px;
+
+    /* Spacing */
+    --spacing-responsive-5: 5px;
+    --spacing-responsive-10: 10px;
+    --spacing-responsive-15: 15px;
+    --spacing-responsive-20: 20px;
+    --spacing-responsive-22: 22px;
+    --spacing-responsive-25: 25px;
+    --spacing-responsive-30: 30px;
+    --spacing-responsive-40: 40px;
+    --spacing-responsive-70: 70px;
+
+    /* Frame */
     --spacing-responsive-horizontal: 120px;
     --spacing-responsive-vertical: 80px;
   }

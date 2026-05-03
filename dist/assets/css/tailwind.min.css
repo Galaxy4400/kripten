@@ -465,6 +465,42 @@
     --spacing-responsive-30: 30px;
     --spacing-responsive-40: 40px;
     --spacing-responsive-70: 70px;
+    --spacing-responsive-horizontal: 32px;
+    --spacing-responsive-vertical: 50px;
+  }
+}
+@media (width >= 1280px) {
+  :root {
+    --radius-responsive-15: 15px;
+    --radius-responsive-20: 20px;
+    --radius-responsive-100: 100px;
+    --spacing-responsive-5: 5px;
+    --spacing-responsive-10: 10px;
+    --spacing-responsive-15: 15px;
+    --spacing-responsive-20: 20px;
+    --spacing-responsive-22: 22px;
+    --spacing-responsive-25: 25px;
+    --spacing-responsive-30: 30px;
+    --spacing-responsive-40: 40px;
+    --spacing-responsive-70: 70px;
+    --spacing-responsive-horizontal: 32px;
+    --spacing-responsive-vertical: 50px;
+  }
+}
+@media (width >= 1536px) {
+  :root {
+    --radius-responsive-15: 15px;
+    --radius-responsive-20: 20px;
+    --radius-responsive-100: 100px;
+    --spacing-responsive-5: 5px;
+    --spacing-responsive-10: 10px;
+    --spacing-responsive-15: 15px;
+    --spacing-responsive-20: 20px;
+    --spacing-responsive-22: 22px;
+    --spacing-responsive-25: 25px;
+    --spacing-responsive-30: 30px;
+    --spacing-responsive-40: 40px;
+    --spacing-responsive-70: 70px;
     --spacing-responsive-horizontal: 120px;
     --spacing-responsive-vertical: 80px;
   }
@@ -528,6 +564,7 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     min-height: calc(var(--spacing) * 16);
+    text-align: center;
     border-radius: var(--radius-responsive-100);
     padding-inline: var(--spacing-responsive-30);
     padding-block: var(--spacing-responsive-15);
