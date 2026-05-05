@@ -21,22 +21,19 @@
 
   <body>
     <!-- header -->
-    <header class="mb-2.5 relative">
+    <header class="relative mb-2.5">
       <!-- search -->
-      <div
-        class="py-4 absolute top-0 left-0 z-60 hidden w-full bg-white data-active:block"
-        data-search-container
-      >
+      <div class="absolute top-0 left-0 z-60 hidden w-full bg-white py-4 data-active:block" data-search-container>
         <div class="container-base">
           <div class="relative grow">
             <input
-              class="py-2.5 px-7.5 pr-[70px] typography-pr bg-gray-bg rounded h-[52px] w-full"
+              class="typography-pr bg-gray-bg h-[52px] w-full rounded px-7.5 py-2.5 pr-[70px]"
               type="text"
               placeholder="Я хочу найти..."
               aria-label="Я хочу найти..."
               data-search-input
             />
-            <div class="right-7.5 absolute top-1/2 flex -translate-y-1/2 items-center">
+            <div class="absolute top-1/2 right-7.5 flex -translate-y-1/2 items-center">
               <button class="cursor-pointer" data-search-action aria-label="Найти">
                 <svg width="20" height="20">
                   <use href="assets/img/svg/sprite.svg#search"></use>
@@ -48,26 +45,24 @@
       </div>
 
       <div class="bg-gray-bg max-md:hidden">
-        <div class="container-base py-4 gap-7.5 text-gray-text flex flex-wrap">
-          <p class="gap-2.5 inline-flex">
-            Адрес <span class="text-black">ул. Приборостроителей, д.2, г.Дубна</span>
-          </p>
-          <p class="gap-2.5 inline-flex">
+        <div class="container-base text-gray-text flex flex-wrap gap-7.5 py-4">
+          <p class="inline-flex gap-2.5">Адрес <span class="text-black">ул. Приборостроителей, д.2, г.Дубна</span></p>
+          <p class="inline-flex gap-2.5">
             Email <a class="text-black" href="mailto:sale@krypten.ru">sale@krypten.ru</a>
           </p>
         </div>
       </div>
       <div class="py-6">
-        <div class="container-base gap-4 flex justify-between">
-          <div class="gap-[70px] max-dm:w-full flex items-center max-md:justify-between">
+        <div class="container-base flex justify-between gap-4">
+          <div class="max-dm:w-full flex items-center gap-[70px] max-md:justify-between">
             <a class="link link-blue shrink-0 basis-[182px]">
               <svg width="182" height="29">
                 <use href="assets/img/svg/sprite.svg#logo"></use>
               </svg>
             </a>
 
-            <nav class="max-md:gap-[5px] flex items-center gap-10">
-              <ul class="gap-10 flex max-md:hidden">
+            <nav class="flex items-center gap-10 max-md:gap-[5px]">
+              <ul class="flex gap-10 max-md:hidden">
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="#">
                     О нас
@@ -76,7 +71,7 @@
                     </svg>
                   </a>
                   <ul
-                    class="p-4 bg-gray-bg rounded-lg gap-2.5 absolute top-full left-0 z-30 hidden min-w-[250px] group-hover:grid"
+                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[250px] gap-2.5 rounded-lg p-4 group-hover:grid"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -94,7 +89,7 @@
                     </svg>
                   </a>
                   <ul
-                    class="p-4 bg-gray-bg rounded-lg gap-2.5 absolute top-full left-0 z-30 hidden min-w-[250px] group-hover:grid"
+                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[250px] gap-2.5 rounded-lg p-4 group-hover:grid"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -112,7 +107,7 @@
                     </svg>
                   </a>
                   <ul
-                    class="p-4 bg-gray-bg rounded-lg gap-2.5 absolute top-full left-0 z-30 hidden min-w-[250px] group-hover:grid"
+                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[250px] gap-2.5 rounded-lg p-4 group-hover:grid"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -130,7 +125,7 @@
                     </svg>
                   </a>
                   <ul
-                    class="p-4 bg-gray-bg rounded-lg gap-2.5 absolute top-full left-0 z-30 hidden min-w-[250px] group-hover:grid"
+                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[250px] gap-2.5 rounded-lg p-4 group-hover:grid"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -148,7 +143,7 @@
                     </svg>
                   </a>
                   <ul
-                    class="p-4 bg-gray-bg rounded-lg gap-2.5 absolute top-full left-0 z-30 hidden min-w-[250px] group-hover:grid"
+                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[250px] gap-2.5 rounded-lg p-4 group-hover:grid"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -172,7 +167,7 @@
               </button>
             </nav>
           </div>
-          <div class="gap-7.5 flex items-center max-md:hidden">
+          <div class="flex items-center gap-7.5 max-md:hidden">
             <div class="grid">
               <a class="link typography-btsm whitespace-nowrap" href="tel:+74957770722">+7 (495) 777 07 22</a>
               <a class="link link-blue whitespace-nowrap" href="tel:88005006065">8 (800) 500 60 65</a>
@@ -185,7 +180,7 @@
 
     <!-- main -->
     <main>
-      <section class="min-h-[720px]">
+      <!-- <section class="min-h-[720px]">
         <div class="container-base gap-5 grid grid-cols-[1fr_435px]">
           <div class="relative">
             <div class="relative h-full">
@@ -353,7 +348,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- footer -->
