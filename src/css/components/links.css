@@ -18,6 +18,11 @@
     @apply hover:text-blue-hover;
   }
 
+  .link-white {
+    @apply text-white;
+    @apply hover:text-blue-hover;
+  }
+
   .link-blue-light {
     @apply text-blue-hover;
     @apply hover:text-blue-dark;
