@@ -4,7 +4,7 @@
     @apply transition-all;
     @apply cursor-pointer;
     @apply text-black;
-    @apply gap-2.5 inline-flex items-center;
+    @apply inline-flex items-center gap-2.5;
     @apply hover:text-blue-dark;
     @apply disabled:pointer-events-none disabled:opacity-40;
     @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
@@ -52,5 +52,9 @@
     @apply bg-white;
     @apply px-4 py-[5px];
     @apply min-h-8;
+  }
+
+  .prod-link {
+    @apply typography-h6 border-blue-dark/20 hover:text-blue-hover hover:border-blue-hover block border-b py-5 transition-colors group-hover:border-white/20 group-hover:text-white last:border-none;
   }
 }
