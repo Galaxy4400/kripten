@@ -293,9 +293,6 @@
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
   }
-  .min-h-\[720px\] {
-    min-height: 720px;
-  }
   .w-full {
     width: 100%;
   }
@@ -327,11 +324,8 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .grid-cols-\[1fr_435px\] {
-    grid-template-columns: 1fr 435px;
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -609,9 +603,19 @@
       display: none;
     }
   }
+  .max-md\:min-h-\[400px\] {
+    @media (width < 768px) {
+      min-height: 400px;
+    }
+  }
   .max-md\:w-full {
     @media (width < 768px) {
       width: 100%;
+    }
+  }
+  .max-md\:flex-col {
+    @media (width < 768px) {
+      flex-direction: column;
     }
   }
   .max-md\:gap-1\.25 {
@@ -619,9 +623,49 @@
       gap: calc(var(--spacing) * 1.25);
     }
   }
+  .md\:aspect-1345\/720 {
+    @media (width >= 768px) {
+      aspect-ratio: 1345/720;
+    }
+  }
   .md\:gap-\[70px\] {
     @media (width >= 768px) {
       gap: 70px;
+    }
+  }
+  .lg\:grid-cols-4 {
+    @media (width >= 1024px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .\32 xl\:absolute {
+    @media (width >= 1536px) {
+      position: absolute;
+    }
+  }
+  .\32 xl\:min-h-\[318px\] {
+    @media (width >= 1536px) {
+      min-height: 318px;
+    }
+  }
+  .\32 xl\:grid-cols-\[3fr_1fr\] {
+    @media (width >= 1536px) {
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+  .\32 xl\:flex-col {
+    @media (width >= 1536px) {
+      flex-direction: column;
+    }
+  }
+  .\32 xl\:justify-center {
+    @media (width >= 1536px) {
+      justify-content: center;
+    }
+  }
+  .\32 xl\:px-7\.5 {
+    @media (width >= 1536px) {
+      padding-inline: calc(var(--spacing) * 7.5);
     }
   }
 }
@@ -1168,7 +1212,6 @@
     background-color: var(--gray-bg);
     padding: calc(var(--spacing) * 7.5);
     display: flex;
-    min-height: 318px;
     flex-direction: column;
     gap: calc(var(--spacing) * 4);
   }

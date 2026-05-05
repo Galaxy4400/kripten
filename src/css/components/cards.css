@@ -6,7 +6,7 @@
   /* card new */
   .card-new {
     @apply bg-gray-bg rounded-2xl p-7.5;
-    @apply flex min-h-[318px] flex-col gap-4;
+    @apply flex flex-col gap-4;
   }
   .card-new-content {
     @apply grow;

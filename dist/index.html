@@ -362,13 +362,15 @@
 
     <!-- main -->
     <main>
-      <section class="min-h-[720px]">
-        <div class="container-base grid grid-cols-[1fr_435px] gap-5">
+      <section>
+        <div class="container-base grid gap-5 2xl:grid-cols-[3fr_1fr]">
           <div class="relative">
-            <div class="relative h-full">
-              <div class="h-full overflow-hidden rounded-2xl" data-slider="main">
-                <div class="flex h-full">
-                  <div class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px]">
+            <div class="relative">
+              <div class="overflow-hidden rounded-2xl" data-slider="main">
+                <div class="flex">
+                  <div
+                    class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px] max-md:min-h-[400px] md:aspect-1345/720"
+                  >
                     <div class="absolute inset-0">
                       <img class="h-full w-full object-cover" src="assets/img/slide-1.jpg" alt="slide" />
                     </div>
@@ -389,51 +391,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px]">
-                    <div class="absolute inset-0">
-                      <img
-                        class="h-full w-full object-cover"
-                        src="https://t3.ftcdn.net/jpg/08/23/10/18/360_F_823101872_8lT6yRjNoxjVtPiNSc4QK50vuCVNHz3w.jpg"
-                        alt="slide"
-                      />
-                    </div>
-                    <div class="relative grid gap-7.5">
-                      <div class="grid gap-2.5">
-                        <h2 class="typography-h1 text-white">Ещё один слайд</h2>
-                        <p class="typography-btr text-white/80">Текст слайда</p>
-                      </div>
-                      <div>
-                        <a class="btn btn-white" href="#">
-                          Смотреть продукцию
-                          <svg width="13" height="12">
-                            <use href="assets/img/svg/sprite.svg#arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px]">
-                    <div class="absolute inset-0">
-                      <img class="h-full w-full object-cover" src="assets/img/slide-1.jpg" alt="slide" />
-                    </div>
-                    <div class="relative grid gap-7.5">
-                      <div class="grid gap-2.5">
-                        <h1 class="text-white">АО «НПО «КРИПТЕН»</h1>
-                        <p class="typography-btr text-white/80">
-                          Защитные технологии для подтверждения подлинности изделий
-                        </p>
-                      </div>
-                      <div>
-                        <a class="btn btn-white" href="#">
-                          Смотреть продукцию
-                          <svg width="13" height="12">
-                            <use href="assets/img/svg/sprite.svg#arrow-right"></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px]">
+                  <div
+                    class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px] max-md:min-h-[400px] md:aspect-1345/720"
+                  >
                     <div class="absolute inset-0">
                       <img
                         class="h-full w-full object-cover"
@@ -460,7 +420,7 @@
               </div>
               <div class="scroll" data-paggination="main"></div>
             </div>
-            <div class="absolute bottom-0 left-0 grid w-full grid-cols-4 gap-5 p-7.5">
+            <div class="bottom-0 left-0 grid w-full grid-cols-2 gap-5 py-7.5 lg:grid-cols-4 2xl:absolute 2xl:px-7.5">
               <a class="card-slider-link group" href="#">
                 <img class="absolute top-1/3 right-2.5" src="assets/img/svg/deco-1.svg" alt="deco" />
                 <p class="typography-h6 group-hover:text-blue-dark relative text-white">О компании</p>
@@ -508,19 +468,21 @@
             </div>
           </div>
           <div class="grid content-start gap-5">
-            <article class="card-new">
-              <div class="card-new-content">
-                <a class="link typography-h5" href="#">Наш опыт участия в выставке RosUpack-2025</a>
-              </div>
-              <div class="card-new-date">25.07.2025</div>
-            </article>
-            <article class="card-new">
-              <div class="card-new-content">
-                <a class="link typography-h5" href="#">Наш опыт участия в выставке RosUpack-2025</a>
-              </div>
-              <div class="card-new-date">25.07.2025</div>
-            </article>
-            <div class="flex justify-center">
+            <div class="flex gap-5 max-md:flex-col 2xl:flex-col">
+              <article class="card-new 2xl:min-h-[318px]">
+                <div class="card-new-content">
+                  <a class="link typography-h5" href="#">Наш опыт участия в выставке RosUpack-2025</a>
+                </div>
+                <div class="card-new-date">25.07.2025</div>
+              </article>
+              <article class="card-new 2xl:min-h-[318px]">
+                <div class="card-new-content">
+                  <a class="link typography-h5" href="#">Наш опыт участия в выставке RosUpack-2025</a>
+                </div>
+                <div class="card-new-date">25.07.2025</div>
+              </article>
+            </div>
+            <div class="flex 2xl:justify-center">
               <a class="link link-big" href="#">
                 Все новости
                 <svg width="13" height="12">
