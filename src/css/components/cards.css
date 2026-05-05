@@ -1,14 +1,18 @@
 @layer components {
+  .card {
+    @apply bg-gray-bg rounded-2xl p-5;
+  }
+
   /* card new */
   .card-new {
     @apply bg-gray-bg rounded-2xl p-7.5;
-    @apply gap-4 flex min-h-[318px] flex-col;
+    @apply flex min-h-[318px] flex-col gap-4;
   }
   .card-new-content {
     @apply grow;
   }
   .card-new-date {
-    @apply gap-4 flex items-center justify-between;
+    @apply flex items-center justify-between gap-4;
     @apply typography-btr pt-7.5;
     @apply border-stroke-in-bg border-t;
     @apply after:bg-gray-element after:h-1.5 after:w-1.5;
@@ -19,7 +23,7 @@
     @apply relative overflow-hidden;
     @apply transition-colors;
     @apply min-h-[170px];
-    @apply py-6 px-7.5;
+    @apply px-7.5 py-6;
     @apply rounded-2xl;
     @apply bg-blue-dark;
     @apply hover:bg-white;

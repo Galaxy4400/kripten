@@ -417,6 +417,9 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-7\.5 {
+    padding-block: calc(var(--spacing) * 7.5);
+  }
   .py-\[7px\] {
     padding-block: 7px;
   }
@@ -491,6 +494,9 @@
   }
   .text-gray-text {
     color: var(--gray-text);
+  }
+  .text-stroke-in-bg {
+    color: var(--stroke-in-bg);
   }
   .text-white {
     color: var(--white);
@@ -702,8 +708,11 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-    min-height: calc(var(--spacing) * 16);
+    min-height: calc(var(--spacing) * 12.5);
     text-align: center;
+    @media (width >= 768px) {
+      min-height: calc(var(--spacing) * 16);
+    }
     border-radius: calc(infinity * 1px);
     padding-inline: calc(var(--spacing) * 7.5);
     padding-block: calc(var(--spacing) * 4);
@@ -1099,6 +1108,11 @@
 }
 @layer components;
 @layer components {
+  .card {
+    border-radius: var(--radius-2xl);
+    background-color: var(--gray-bg);
+    padding: calc(var(--spacing) * 5);
+  }
   .card-new {
     border-radius: var(--radius-2xl);
     background-color: var(--gray-bg);

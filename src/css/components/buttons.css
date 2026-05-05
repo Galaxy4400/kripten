@@ -2,7 +2,7 @@
   /* buttons */
   .btn {
     @apply typography-psm cursor-pointer transition-colors;
-    @apply min-h-16 text-center;
+    @apply min-h-12.5 text-center md:min-h-16;
     @apply rounded-full px-7.5 py-4;
     @apply inline-flex items-center justify-center gap-2.5;
     @apply disabled:pointer-events-none disabled:opacity-40;
