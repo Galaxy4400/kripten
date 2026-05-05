@@ -3,8 +3,8 @@
   .btn {
     @apply typography-psm cursor-pointer transition-colors;
     @apply min-h-16 text-center;
-    @apply px-7.5 py-4 rounded-full;
-    @apply gap-2.5 inline-flex items-center justify-center;
+    @apply rounded-full px-7.5 py-4;
+    @apply inline-flex items-center justify-center gap-2.5;
     @apply disabled:pointer-events-none disabled:opacity-40;
     @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
   }
@@ -40,17 +40,22 @@
 
   /* mod */
   .btn-icon {
-    @apply rounded-xl p-2.5 aspect-square;
+    @apply aspect-square rounded-xl p-2.5;
   }
 
   .btn-big {
     @apply typography-btsm;
     @apply min-h-19.25;
-    @apply rounded-2xl py-4 px-6;
+    @apply rounded-2xl px-6 py-4;
   }
 
   /* burger */
   .btn-burger {
     @apply bg-blue-dark hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full text-white md:hidden;
+  }
+
+  /* search */
+  .btn-search {
+    @apply max-md:bg-gray-bg max-md:hover:bg-blue-hover max-md:hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full;
   }
 }
