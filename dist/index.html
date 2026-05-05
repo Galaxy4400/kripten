@@ -47,7 +47,7 @@
         </div>
       </div>
 
-      <div class="bg-gray-bg">
+      <div class="bg-gray-bg max-md:hidden">
         <div class="container-base py-responsive-15 gap-responsive-30 text-gray-text flex flex-wrap">
           <p class="gap-responsive-10 inline-flex">
             Адрес <span class="text-black">ул. Приборостроителей, д.2, г.Дубна</span>
@@ -59,15 +59,15 @@
       </div>
       <div class="py-responsive-25">
         <div class="container-base gap-responsive-15 flex justify-between">
-          <div class="gap-responsive-70 flex items-center">
+          <div class="gap-responsive-70 max-dm:w-full flex items-center max-md:justify-between">
             <a class="link link-blue shrink-0 basis-[182px]">
               <svg width="182" height="29">
                 <use href="assets/img/svg/sprite.svg#logo"></use>
               </svg>
             </a>
 
-            <nav class="gap-responsive-40 flex items-center">
-              <ul class="gap-responsive-40 flex">
+            <nav class="max-md:gap-responsive-5 flex items-center gap-10">
+              <ul class="gap-responsive-40 flex max-md:hidden">
                 <li class="group relative">
                   <a class="link py-responsive-7 whitespace-nowrap" href="#">
                     О нас
@@ -165,9 +165,14 @@
                   <use href="assets/img/svg/sprite.svg#search"></use>
                 </svg>
               </button>
+              <button class="btn-burger" data-menu-icon aria-label="Открыть меню">
+                <svg width="18" height="18">
+                  <use href="assets/img/svg/sprite.svg#menu-icon"></use>
+                </svg>
+              </button>
             </nav>
           </div>
-          <div class="gap-responsive-30 flex items-center">
+          <div class="gap-responsive-30 flex items-center max-md:hidden">
             <div class="grid">
               <a class="link typography-btsm whitespace-nowrap" href="tel:+74957770722">+7 (495) 777 07 22</a>
               <a class="link link-blue whitespace-nowrap" href="tel:88005006065">8 (800) 500 60 65</a>
