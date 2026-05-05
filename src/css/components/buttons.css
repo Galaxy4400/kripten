@@ -51,16 +51,16 @@
 
   /* burger */
   .btn-burger {
-    @apply bg-blue-dark hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full text-white md:hidden;
+    @apply bg-blue-dark hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full text-white 2xl:hidden;
   }
 
   /* search */
   .btn-search {
-    @apply max-md:bg-gray-bg max-md:hover:bg-blue-hover max-md:hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full;
+    @apply max-2xl:bg-gray-bg max-2xl:hover:bg-blue-hover max-2xl:hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full;
   }
 
   /* menu-icon */
   .btn-menu {
-    @apply hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full bg-white md:hidden;
+    @apply hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full bg-white;
   }
 }
