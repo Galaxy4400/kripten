@@ -21,12 +21,12 @@
   }
 
   .scroll {
-    @apply gap-[7px] top-7.5 left-[35px] absolute flex flex-wrap items-center;
+    @apply flex flex-wrap items-center gap-[7px];
   }
 
   .bullet {
     @apply transition-all;
-    @apply inline-block h-0.75 w-10 cursor-pointer rounded-full bg-white/35;
-    @apply aria-selected:pointer-events-none aria-selected:w-20 aria-selected:bg-white;
+    @apply inline-block h-0.75 w-2.5 cursor-pointer rounded-full bg-white/35 md:w-10;
+    @apply aria-selected:pointer-events-none aria-selected:w-10 aria-selected:bg-white md:aria-selected:w-20;
   }
 }

@@ -364,17 +364,17 @@
     <main>
       <section>
         <div class="container-base grid gap-5 2xl:grid-cols-[3fr_1fr]">
-          <div class="relative">
+          <div class="relative min-w-0">
             <div class="relative">
               <div class="overflow-hidden rounded-2xl" data-slider="main">
                 <div class="flex">
                   <div
-                    class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px] max-md:min-h-[400px] md:aspect-1345/720"
+                    class="relative flex min-w-0 shrink-0 basis-full p-[35px] max-md:min-h-[400px] md:aspect-1345/720 md:items-center"
                   >
                     <div class="absolute inset-0">
                       <img class="h-full w-full object-cover" src="assets/img/slide-1.jpg" alt="slide" />
                     </div>
-                    <div class="relative grid gap-7.5">
+                    <div class="relative grid content-start gap-7.5">
                       <div class="grid gap-2.5">
                         <h1 class="text-white">АО «НПО «КРИПТЕН»</h1>
                         <p class="typography-btr text-white/80">
@@ -392,7 +392,7 @@
                     </div>
                   </div>
                   <div
-                    class="relative flex min-w-0 shrink-0 basis-full items-center p-[35px] max-md:min-h-[400px] md:aspect-1345/720"
+                    class="relative flex min-w-0 shrink-0 basis-full p-[35px] max-md:min-h-[400px] md:aspect-1345/720 md:items-center"
                   >
                     <div class="absolute inset-0">
                       <img
@@ -401,7 +401,7 @@
                         alt="slide"
                       />
                     </div>
-                    <div class="relative grid gap-7.5">
+                    <div class="relative grid content-start gap-7.5">
                       <div class="grid gap-2.5">
                         <h2 class="typography-h1 text-white">Ещё один слайд</h2>
                         <p class="typography-btr text-white/80">Текст слайда</p>
@@ -418,7 +418,7 @@
                   </div>
                 </div>
               </div>
-              <div class="scroll" data-paggination="main"></div>
+              <div class="scroll absolute left-[35px] max-md:bottom-7.5 md:top-7.5" data-paggination="main"></div>
             </div>
             <div class="bottom-0 left-0 grid w-full grid-cols-2 gap-5 py-7.5 lg:grid-cols-4 2xl:absolute 2xl:px-7.5">
               <a class="card-slider-link group" href="#">
@@ -493,6 +493,8 @@
           </div>
         </div>
       </section>
+
+      <section></section>
     </main>
 
     <!-- footer -->
