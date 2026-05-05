@@ -1,5 +1,6 @@
 :root {
   --blue-dark: #002e6d;
+  --blue-light: #0f3a76;
   --blue-hover: #91bffe;
   --gray-text: #6f6f6f;
   --gray-element: #b4b4b4;
@@ -14,6 +15,7 @@
   --color-*: initial;
 
   --color-blue-dark: var(--blue-dark);
+  --color-blue-light: var(--blue-light);
   --color-blue-hover: var(--blue-hover);
   --color-gray-text: var(--gray-text);
   --color-gray-element: var(--gray-element);

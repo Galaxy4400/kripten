@@ -594,8 +594,8 @@
     </main>
 
     <!-- footer -->
-    <footer class="bg-blue-dark py-20 text-white">
-      <div class="container-base flex justify-between gap-10">
+    <footer class="bg-blue-dark relative overflow-hidden py-20 text-white">
+      <div class="container-base relative flex justify-between gap-10">
         <div class="flex flex-col justify-between gap-10">
           <a class="link link-white max-w-[283px]">
             <svg>
@@ -610,7 +610,67 @@
             </div>
           </div>
         </div>
-        <div></div>
+        <div class="flex justify-between gap-[125px]">
+          <div class="flex flex-col justify-between gap-10">
+            <div>menu</div>
+            <div class="flex gap-10">
+              <div class="grid gap-[15px]">
+                <p class="typography-pr text-white/50">Электронный каталог</p>
+                <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                  <div class="min-w-[50px] shrink-0">
+                    <svg width="50" height="50">
+                      <use href="assets/img/svg/sprite.svg#stor"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="typography-tagm">Доступно в</p>
+                    <p class="typography-h5">RuStore</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-[15px]">
+                <p class="typography-pr text-white/50">Smart-HIT® приложение</p>
+                <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                  <div class="min-w-[50px] shrink-0">
+                    <svg width="50" height="50">
+                      <use href="assets/img/svg/sprite.svg#stor"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="typography-tagm">Доступно в</p>
+                    <p class="typography-h5">RuStore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-blue-light relative overflow-hidden rounded-[20px] p-7.5 2xl:min-w-[435px]">
+            <div
+              class="absolute top-1/2 left-[55%] h-[1471px] w-[1635px] -translate-y-1/2 rounded-full bg-[radial-gradient(46.75%_46.71%_at_50.76%_51.27%,#D1E4FF_0%,rgba(209,228,255,0.00)_100%)] blur-[22px]"
+            ></div>
+            <div class="relative grid gap-7.5">
+              <p class="typography-pr text-white/50">АО «НПО «КРИПТЕН»</p>
+              <div class="grid gap-2.5">
+                <p class="typography-h6">ул. Приборостроителей,<br />д.2, зд. 1б, пом. 204</p>
+                <p class="typography-pr">г. Дубна, Московская область</p>
+              </div>
+              <div class="grid gap-2.5">
+                <p class="typography-h6">09:00 – 12:00, 13:00 – 18:00</p>
+                <p class="typography-pr">Пн-Пт</p>
+              </div>
+              <div class="grid gap-2.5">
+                <p class="typography-h6">
+                  <a href="tel:+78005006065">8 (800) 500-60-65</a><br />
+                  <a href="tel:+74957770722">+7 (495) 777-07-22</a>
+                </p>
+                <p class="typography-pr"><a href="mailto:info@krypten.ru">info@krypten.ru</a></p>
+              </div>
+              <div>
+                <button class="btn btn-white" type="button">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
