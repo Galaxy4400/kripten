@@ -287,6 +287,9 @@
   .h-full {
     height: 100%;
   }
+  .max-h-0 {
+    max-height: calc(var(--spacing) * 0);
+  }
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
   }
@@ -351,6 +354,9 @@
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
+  .gap-3\.75 {
+    gap: calc(var(--spacing) * 3.75);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -383,6 +389,13 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-gray-bg {
+    border-color: var(--gray-bg);
   }
   .bg-blue-dark {
     background-color: var(--blue-dark);
@@ -425,6 +438,12 @@
   }
   .pr-\[70px\] {
     padding-right: 70px;
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .text-left {
+    text-align: left;
   }
   .typography-btr {
     font-size: var(--text-big-r);
@@ -507,6 +526,16 @@
       color: color-mix(in oklab, var(--white) 80%, transparent);
     }
   }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -545,6 +574,11 @@
       @media (hover: hover) {
         color: var(--white);
       }
+    }
+  }
+  .group-data-active\/item\:rotate-180 {
+    &:is(:where(.group\/item)[data-active] *) {
+      rotate: 180deg;
     }
   }
   .data-active\:block {
