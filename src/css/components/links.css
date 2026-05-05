@@ -4,7 +4,7 @@
     @apply transition-all;
     @apply cursor-pointer;
     @apply text-black;
-    @apply gap-responsive-10 inline-flex items-center;
+    @apply gap-2.5 inline-flex items-center;
     @apply hover:text-blue-dark;
     @apply disabled:pointer-events-none disabled:opacity-40;
     @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
@@ -48,9 +48,9 @@
     @apply typography-tagm;
     @apply text-blue-dark;
     @apply hover:text-blue-hover;
-    @apply rounded-responsive-100;
+    @apply rounded-full;
     @apply bg-white;
-    @apply px-responsive-15 py-responsive-5;
+    @apply px-4 py-[5px];
     @apply min-h-8;
   }
 }

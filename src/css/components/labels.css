@@ -1,19 +1,19 @@
 @layer components {
   .label {
     /* @apply inline-flex items-center justify-center; */
-    /* @apply border-on-surface-inactive text-on-surface-inactive rounded-responsive-100 border; */
+    /* @apply border-on-surface-inactive text-on-surface-inactive rounded-full border; */
   }
 
   /* type */
   .label-primary {
     /* @apply sh2; */
-    /* @apply px-responsive-12 py-responsive-8; */
+    /* @apply px-3 py-2; */
   }
 
   .label-icon {
     /* @apply gap-1; */
     /* @apply min-h-8; */
-    /* @apply px-responsive-12 py-1 md:min-h-10; */
+    /* @apply px-3 py-1 md:min-h-10; */
   }
   .label-icon svg {
     /* @apply h-5 w-5 md:h-6 md:w-6; */
@@ -22,8 +22,8 @@
   .label-big {
     /* @apply b2; */
     /* @apply min-w-56.25; */
-    /* @apply rounded-responsive-30; */
-    /* @apply px-responsive-24 py-responsive-16; */
+    /* @apply rounded-[30px]; */
+    /* @apply px-6 py-4; */
     /* @apply grid justify-start gap-2; */
   }
   .sub-label {
@@ -38,7 +38,7 @@
   .label-small {
     /* @apply b3; */
     /* @apply min-h-6; */
-    /* @apply px-responsive-12 py-1; */
+    /* @apply px-3 py-1; */
   }
 
   .label-error {
@@ -53,7 +53,7 @@
   .label-glass {
     /* @apply bg-glass; */
     /* @apply sh2; */
-    /* @apply py-responsive-8 px-responsive-12 inline-flex items-center gap-2 border border-transparent backdrop-blur-md; */
+    /* @apply py-2 px-3 inline-flex items-center gap-2 border border-transparent backdrop-blur-md; */
     /* @apply text-on-surface-tertiary; */
   }
 
@@ -62,10 +62,10 @@
   }
 
   .label-top {
-    /* @apply rounded-b-responsive-20; */
+    /* @apply rounded-b-2xl; */
   }
 
   .label-bottom {
-    /* @apply rounded-t-responsive-20; */
+    /* @apply rounded-t-2xl; */
   }
 }

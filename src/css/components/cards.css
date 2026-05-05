@@ -1,15 +1,15 @@
 @layer components {
   /* card new */
   .card-new {
-    @apply bg-gray-bg rounded-responsive-20 p-responsive-30;
-    @apply gap-responsive-15 flex min-h-[318px] flex-col;
+    @apply bg-gray-bg rounded-2xl p-7.5;
+    @apply gap-4 flex min-h-[318px] flex-col;
   }
   .card-new-content {
     @apply grow;
   }
   .card-new-date {
-    @apply gap-responsive-15 flex items-center justify-between;
-    @apply typography-btr pt-responsive-30;
+    @apply gap-4 flex items-center justify-between;
+    @apply typography-btr pt-7.5;
     @apply border-stroke-in-bg border-t;
     @apply after:bg-gray-element after:h-1.5 after:w-1.5;
   }
@@ -19,8 +19,8 @@
     @apply relative overflow-hidden;
     @apply transition-colors;
     @apply min-h-[170px];
-    @apply py-responsive-25 px-responsive-30;
-    @apply rounded-responsive-20;
+    @apply py-6 px-7.5;
+    @apply rounded-2xl;
     @apply bg-blue-dark;
     @apply hover:bg-white;
   }

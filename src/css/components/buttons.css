@@ -3,8 +3,8 @@
   .btn {
     @apply typography-psm cursor-pointer transition-colors;
     @apply min-h-16 text-center;
-    @apply px-responsive-30 py-responsive-15 rounded-responsive-100;
-    @apply gap-responsive-10 inline-flex items-center justify-center;
+    @apply px-7.5 py-4 rounded-full;
+    @apply gap-2.5 inline-flex items-center justify-center;
     @apply disabled:pointer-events-none disabled:opacity-40;
     @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
   }
@@ -40,13 +40,13 @@
 
   /* mod */
   .btn-icon {
-    @apply rounded-responsive-15 p-responsive-10 aspect-square;
+    @apply rounded-xl p-2.5 aspect-square;
   }
 
   .btn-big {
     @apply typography-btsm;
     @apply min-h-19.25;
-    @apply rounded-responsive-20 py-responsive-15 px-responsive-25;
+    @apply rounded-2xl py-4 px-6;
   }
 
   /* burger */

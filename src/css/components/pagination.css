@@ -1,17 +1,17 @@
 @layer components {
   .pagination {
-    /* @apply gap-responsive-16 flex flex-wrap items-center; */
+    /* @apply gap-4 flex flex-wrap items-center; */
   }
 
   .pagination-items {
-    /* @apply gap-responsive-12 flex flex-wrap items-center; */
+    /* @apply gap-3 flex flex-wrap items-center; */
   }
 
   .pagination-item {
     /* @apply inline-flex aspect-square shrink-0 items-center justify-center rounded-full; */
     /* @apply b2; */
     /* @apply h-10 md:h-11.25; */
-    /* @apply p-responsive-12; */
+    /* @apply p-3; */
     /* @apply bg-button-card-default; */
     /* @apply hover:bg-button-card-hover; */
     /* @apply active:bg-button-card-press; */
@@ -21,7 +21,7 @@
   }
 
   .scroll {
-    @apply gap-responsive-7 top-responsive-30 left-responsive-35 absolute flex flex-wrap items-center;
+    @apply gap-[7px] top-7.5 left-[35px] absolute flex flex-wrap items-center;
   }
 
   .bullet {
