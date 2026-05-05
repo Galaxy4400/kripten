@@ -550,6 +550,11 @@
       display: none;
     }
   }
+  .max-md\:w-full {
+    @media (width < 768px) {
+      width: 100%;
+    }
+  }
   .max-md\:justify-between {
     @media (width < 768px) {
       justify-content: space-between;
