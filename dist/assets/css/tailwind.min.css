@@ -300,6 +300,9 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
   .inline-flex {
     display: inline-flex;
   }
@@ -724,6 +727,21 @@
       rotate: 180deg;
     }
   }
+  .group-data-active\/spoiler\:hidden {
+    &:is(:where(.group\/spoiler)[data-active] *) {
+      display: none;
+    }
+  }
+  .group-data-active\/spoiler\:inline {
+    &:is(:where(.group\/spoiler)[data-active] *) {
+      display: inline;
+    }
+  }
+  .group-data-active\/spoiler\:rotate-180 {
+    &:is(:where(.group\/spoiler)[data-active] *) {
+      rotate: 180deg;
+    }
+  }
   .data-active\:block {
     &[data-active] {
       display: block;
@@ -867,6 +885,11 @@
   .md\:items-center {
     @media (width >= 768px) {
       align-items: center;
+    }
+  }
+  .md\:gap-5 {
+    @media (width >= 768px) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .md\:gap-\[70px\] {
