@@ -312,8 +312,8 @@
   .h-\[52px\] {
     height: 52px;
   }
-  .h-\[120px\] {
-    height: 120px;
+  .h-\[78px\] {
+    height: 78px;
   }
   .h-\[1471px\] {
     height: 1471px;
@@ -327,14 +327,11 @@
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
   }
-  .min-h-\[535px\] {
-    min-height: 535px;
-  }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
   }
-  .w-\[120px\] {
-    width: 120px;
+  .w-\[78px\] {
+    width: 78px;
   }
   .w-\[1635px\] {
     width: 1635px;
@@ -622,6 +619,9 @@
   .text-black {
     color: var(--black);
   }
+  .text-blue-dark {
+    color: var(--blue-dark);
+  }
   .text-gray-text {
     color: var(--gray-text);
   }
@@ -772,6 +772,21 @@
       padding-bottom: calc(var(--spacing) * 4);
     }
   }
+  .max-md\:absolute {
+    @media (width < 768px) {
+      position: absolute;
+    }
+  }
+  .max-md\:top-2\.5 {
+    @media (width < 768px) {
+      top: calc(var(--spacing) * 2.5);
+    }
+  }
+  .max-md\:right-2\.5 {
+    @media (width < 768px) {
+      right: calc(var(--spacing) * 2.5);
+    }
+  }
   .max-md\:bottom-7\.5 {
     @media (width < 768px) {
       bottom: calc(var(--spacing) * 7.5);
@@ -802,6 +817,11 @@
       gap: calc(var(--spacing) * 1.25);
     }
   }
+  .md\:relative {
+    @media (width >= 768px) {
+      position: relative;
+    }
+  }
   .md\:top-7\.5 {
     @media (width >= 768px) {
       top: calc(var(--spacing) * 7.5);
@@ -810,6 +830,21 @@
   .md\:aspect-1345\/720 {
     @media (width >= 768px) {
       aspect-ratio: 1345/720;
+    }
+  }
+  .md\:h-\[120px\] {
+    @media (width >= 768px) {
+      height: 120px;
+    }
+  }
+  .md\:min-h-\[535px\] {
+    @media (width >= 768px) {
+      min-height: 535px;
+    }
+  }
+  .md\:w-\[120px\] {
+    @media (width >= 768px) {
+      width: 120px;
     }
   }
   .md\:max-w-\[283px\] {
@@ -840,6 +875,11 @@
   .md\:p-7\.5 {
     @media (width >= 768px) {
       padding: calc(var(--spacing) * 7.5);
+    }
+  }
+  .md\:text-gray-text {
+    @media (width >= 768px) {
+      color: var(--gray-text);
     }
   }
   .md\:group-hover\:opacity-0 {
@@ -1376,16 +1416,24 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--blue-dark) 20%, transparent);
     }
-    padding-block: calc(var(--spacing) * 5);
-    font-size: var(--text-h6);
-    line-height: var(--leading-h6);
-    font-weight: var(--font-h6);
+    padding-block: 15px;
+    font-size: var(--text-p-sm);
+    line-height: var(--leading-p-sm);
+    font-weight: var(--font-p-sm);
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     &:last-child {
       --tw-border-style: none;
       border-style: none;
+    }
+    @media (width >= 768px) {
+      padding-block: calc(var(--spacing) * 5);
+    }
+    @media (width >= 768px) {
+      font-size: var(--text-h6);
+      line-height: var(--leading-h6);
+      font-weight: var(--font-h6);
     }
     &:hover {
       @media (hover: hover) {
