@@ -342,8 +342,8 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[283px\] {
-    max-width: 283px;
+  .max-w-\[141px\] {
+    max-width: 141px;
   }
   .min-w-0 {
     min-width: calc(var(--spacing) * 0);
@@ -820,6 +820,11 @@
   .md\:aspect-1345\/720 {
     @media (width >= 768px) {
       aspect-ratio: 1345/720;
+    }
+  }
+  .md\:max-w-\[283px\] {
+    @media (width >= 768px) {
+      max-width: 283px;
     }
   }
   .md\:items-center {
