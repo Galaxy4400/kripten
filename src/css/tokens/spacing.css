@@ -14,8 +14,8 @@
 @media (width >= theme(--breakpoint-md)) {
   :root {
     /* Frame */
-    --spacing-responsive-horizontal: 32px;
-    --spacing-responsive-vertical: 50px;
+    --spacing-responsive-horizontal: 26px;
+    --spacing-responsive-vertical: 40px;
   }
 }
 
@@ -23,7 +23,7 @@
 @media (width >= theme(--breakpoint-lg)) {
   :root {
     /* Frame */
-    --spacing-responsive-horizontal: 120px;
-    --spacing-responsive-vertical: 80px;
+    --spacing-responsive-horizontal: 32px;
+    --spacing-responsive-vertical: 50px;
   }
 }
