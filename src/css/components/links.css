@@ -1,7 +1,7 @@
 @layer components {
   .link {
     @apply typography-pr;
-    @apply transition-all;
+    @apply transition-colors;
     @apply cursor-pointer;
     @apply text-black;
     @apply inline-flex items-center gap-2.5;

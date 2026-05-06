@@ -667,6 +667,9 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .will-change-\[opacity\] {
+    will-change: opacity;
+  }
   .group-hover\:grid {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1192,7 +1195,7 @@
     font-size: var(--text-p-r);
     line-height: var(--leading-p-r);
     font-weight: var(--font-p-r);
-    transition-property: all;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     cursor: pointer;
