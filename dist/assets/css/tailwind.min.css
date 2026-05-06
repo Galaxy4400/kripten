@@ -291,9 +291,6 @@
   .mb-\[130px\] {
     margin-bottom: 130px;
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -403,9 +400,6 @@
   .justify-items-start {
     justify-items: start;
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
@@ -438,6 +432,9 @@
   }
   .gap-\[70px\] {
     gap: 70px;
+  }
+  .gap-\[125px\] {
+    gap: 125px;
   }
   .gap-x-10 {
     column-gap: calc(var(--spacing) * 10);
@@ -634,9 +631,6 @@
       color: color-mix(in oklab, var(--white) 80%, transparent);
     }
   }
-  .uppercase {
-    text-transform: uppercase;
-  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -746,12 +740,6 @@
       flex-direction: column;
     }
   }
-  .max-lg\:border-y-2 {
-    @media (width < 1024px) {
-      border-block-style: var(--tw-border-style);
-      border-block-width: 2px;
-    }
-  }
   .max-lg\:py-4 {
     @media (width < 1024px) {
       padding-block: calc(var(--spacing) * 4);
@@ -800,6 +788,11 @@
   .md\:items-center {
     @media (width >= 768px) {
       align-items: center;
+    }
+  }
+  .md\:gap-\[25px\] {
+    @media (width >= 768px) {
+      gap: 25px;
     }
   }
   .md\:gap-\[70px\] {
