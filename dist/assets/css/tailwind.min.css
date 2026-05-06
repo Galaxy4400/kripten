@@ -1437,16 +1437,6 @@
       line-height: var(--leading-h6);
       font-weight: var(--font-h6);
     }
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--blue-hover);
-      }
-    }
-    &:hover {
-      @media (hover: hover) {
-        color: var(--blue-hover);
-      }
-    }
     @media (width >= 768px) {
       &:is(:where(.group):hover *) {
         @media (hover: hover) {
@@ -1462,6 +1452,16 @@
         @media (hover: hover) {
           color: var(--white);
         }
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--blue-hover);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-hover);
       }
     }
   }
