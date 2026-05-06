@@ -505,7 +505,7 @@
                 <img class="h-full w-full object-cover" src="assets/img/prod-1.jpg" alt="prod-1" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
-              <div class="flex h-full flex-col gap-4 md:relative">
+              <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-1">
                 <div class="flex justify-between gap-4">
                   <p class="typography-pr md:text-gray-text text-blue-dark">Защитные этикетки</p>
                   <div
@@ -515,11 +515,19 @@
                   </div>
                 </div>
                 <div class="grid grow content-end">
-                  <a class="prod-link" href="#">Голографические этикетки</a>
-                  <a class="prod-link" href="#">Пломбировочные этикетки</a>
-                  <a class="prod-link" href="#">Комбинированные этикетки</a>
-                  <a class="prod-link" href="#">Этикетки с печатью</a>
-                  <a class="prod-link" href="#">Фотополимерные этикетки</a>
+                  <div
+                    class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                    data-spoiler-content
+                  >
+                    <a class="prod-link" href="#">Голографические этикетки</a>
+                    <a class="prod-link" href="#">Пломбировочные этикетки</a>
+                    <a class="prod-link" href="#">Комбинированные этикетки</a>
+                    <a class="prod-link" href="#">Этикетки с печатью</a>
+                    <a class="prod-link" href="#">Фотополимерные этикетки</a>
+                  </div>
+                  <div>
+                    <button class="typography-tagm text-gray-text md:hidden" data-spoiler-button>Развернуть</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -530,7 +538,7 @@
                 <img class="h-full w-full object-cover" src="assets/img/prod-2.jpg" alt="prod-2" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
-              <div class="flex h-full flex-col gap-4 md:relative">
+              <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-2">
                 <div class="flex justify-between gap-4">
                   <p class="typography-pr md:text-gray-text text-blue-dark">Защитные нити</p>
                   <div
@@ -540,9 +548,17 @@
                   </div>
                 </div>
                 <div class="grid grow content-end">
-                  <a class="prod-link" href="#">Ныряющая защитная нить</a>
-                  <a class="prod-link" href="#">Защитная нить с деметаллизацией</a>
-                  <a class="prod-link" href="#">Защитная нить со скрытым изображением “HIT”</a>
+                  <div
+                    class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                    data-spoiler-content
+                  >
+                    <a class="prod-link" href="#">Ныряющая защитная нить</a>
+                    <a class="prod-link" href="#">Защитная нить с деметаллизацией</a>
+                    <a class="prod-link" href="#">Защитная нить со скрытым изображением “HIT”</a>
+                  </div>
+                  <div>
+                    <button class="typography-tagm text-gray-text md:hidden" data-spoiler-button>Развернуть</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -553,7 +569,7 @@
                 <img class="h-full w-full object-cover" src="assets/img/prod-3.jpg" alt="prod-3" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
-              <div class="flex h-full flex-col gap-4 md:relative">
+              <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-3">
                 <div class="flex justify-between gap-4">
                   <p class="typography-pr md:text-gray-text text-blue-dark">Фольга горячего тиснения</p>
                   <div
@@ -563,8 +579,16 @@
                   </div>
                 </div>
                 <div class="grid grow content-end">
-                  <a class="prod-link" href="#">Фольга горячего тиснения с индивидуальным дизайном</a>
-                  <a class="prod-link" href="#">Фольга горячего тиснения с деметаллизированным изображением</a>
+                  <div
+                    class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                    data-spoiler-content
+                  >
+                    <a class="prod-link" href="#">Фольга горячего тиснения с индивидуальным дизайном</a>
+                    <a class="prod-link" href="#">Фольга горячего тиснения с деметаллизированным изображением</a>
+                  </div>
+                  <div>
+                    <button class="typography-tagm text-gray-text md:hidden" data-spoiler-button>Развернуть</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -575,7 +599,7 @@
                 <img class="h-full w-full object-cover" src="assets/img/prod-4.jpg" alt="prod-4" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
-              <div class="flex h-full flex-col gap-4 md:relative">
+              <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-4">
                 <div class="flex justify-between gap-4">
                   <p class="typography-pr md:text-gray-text text-blue-dark">Ламинаты</p>
                   <div
@@ -585,8 +609,16 @@
                   </div>
                 </div>
                 <div class="grid grow content-end">
-                  <a class="prod-link" href="#">Голографический ламинат</a>
-                  <a class="prod-link" href="#">Пленки для ламинирования</a>
+                  <div
+                    class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                    data-spoiler-content
+                  >
+                    <a class="prod-link" href="#">Голографический ламинат</a>
+                    <a class="prod-link" href="#">Пленки для ламинирования</a>
+                  </div>
+                  <div>
+                    <button class="typography-tagm text-gray-text md:hidden" data-spoiler-button>Развернуть</button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -829,6 +829,11 @@
       margin-bottom: calc(var(--spacing) * 12.5);
     }
   }
+  .md\:hidden {
+    @media (width >= 768px) {
+      display: none;
+    }
+  }
   .md\:aspect-1345\/720 {
     @media (width >= 768px) {
       aspect-ratio: 1345/720;
@@ -837,6 +842,11 @@
   .md\:h-\[120px\] {
     @media (width >= 768px) {
       height: 120px;
+    }
+  }
+  .md\:max-h-none\! {
+    @media (width >= 768px) {
+      max-height: none !important;
     }
   }
   .md\:min-h-\[535px\] {
@@ -872,6 +882,11 @@
   .md\:gap-\[70px\] {
     @media (width >= 768px) {
       gap: 70px;
+    }
+  }
+  .md\:overflow-visible {
+    @media (width >= 768px) {
+      overflow: visible;
     }
   }
   .md\:p-7\.5 {
