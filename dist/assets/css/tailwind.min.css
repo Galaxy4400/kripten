@@ -288,9 +288,6 @@
   .mb-7\.5 {
     margin-bottom: calc(var(--spacing) * 7.5);
   }
-  .mb-12\.5 {
-    margin-bottom: calc(var(--spacing) * 12.5);
-  }
   .mb-\[130px\] {
     margin-bottom: 130px;
   }
@@ -825,6 +822,11 @@
   .md\:top-7\.5 {
     @media (width >= 768px) {
       top: calc(var(--spacing) * 7.5);
+    }
+  }
+  .md\:mb-12\.5 {
+    @media (width >= 768px) {
+      margin-bottom: calc(var(--spacing) * 12.5);
     }
   }
   .md\:aspect-1345\/720 {
@@ -1583,7 +1585,10 @@
   .card-new {
     border-radius: var(--radius-2xl);
     background-color: var(--gray-bg);
-    padding: calc(var(--spacing) * 7.5);
+    padding: calc(var(--spacing) * 5);
+    @media (width >= 768px) {
+      padding: calc(var(--spacing) * 7.5);
+    }
     display: flex;
     flex-direction: column;
     gap: calc(var(--spacing) * 4);
