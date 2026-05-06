@@ -610,9 +610,90 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-between gap-[125px]">
+        <div class="flex justify-between gap-[65px]">
           <div class="flex flex-col justify-between gap-10">
-            <div>menu</div>
+            <div class="flex gap-x-10 gap-y-6 max-lg:flex-col">
+              <nav class="grid content-start gap-2.5" data-spoiler="footer-about">
+                <div class="group/item grid content-start gap-2.5">
+                  <button
+                    class="group/button border-primary-lighter flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold uppercase max-lg:border-y-2 max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="text-left text-xs transition-colors">Меню</span>
+                    <span class="w-2.5 transition-transform group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div
+                    class="max-h-0 overflow-hidden transition-all lg:max-h-none! lg:overflow-visible"
+                    data-spoiler-content
+                  >
+                    <ul class="grid content-start gap-2">
+                      <li><a class="block" href="#">О нас</a></li>
+                      <li><a class="block" href="#">Продукция</a></li>
+                      <li><a class="block" href="#">Технологии</a></li>
+                      <li><a class="block" href="#">Достижения Криптена</a></li>
+                      <li><a class="block" href="#">Медиа</a></li>
+                      <li><a class="block" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav class="grid content-start gap-2.5" data-spoiler="footer-prod">
+                <div class="group/item grid content-start gap-2.5">
+                  <button
+                    class="group/button border-primary-lighter flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold uppercase max-lg:border-y-2 max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="text-left text-xs transition-colors">Продукция</span>
+                    <span class="w-2.5 transition-transform group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div
+                    class="max-h-0 overflow-hidden transition-all lg:max-h-none! lg:overflow-visible"
+                    data-spoiler-content
+                  >
+                    <ul class="grid content-start gap-2">
+                      <li><a class="block" href="#">Голографические этикетки</a></li>
+                      <li><a class="block" href="#">Фотополимерные этикетки</a></li>
+                      <li><a class="block" href="#">Пломбировочные этикетки</a></li>
+                      <li><a class="block" href="#">Пломбировочный скотч</a></li>
+                      <li><a class="block" href="#">Фольги горячей припрессовки</a></li>
+                      <li><a class="block" href="#">Защитные ламинаты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav class="grid content-start gap-2.5" data-spoiler="footer-docs">
+                <div class="group/item grid content-start gap-2.5">
+                  <button
+                    class="group/button border-primary-lighter flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold uppercase max-lg:border-y-2 max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="text-left text-xs transition-colors">Документы</span>
+                    <span class="w-2.5 transition-transform group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div
+                    class="max-h-0 overflow-hidden transition-all lg:max-h-none! lg:overflow-visible"
+                    data-spoiler-content
+                  >
+                    <ul class="grid content-start gap-2">
+                      <li><a class="block" href="#">Реквизиты</a></li>
+                      <li><a class="block" href="#">Отчёт СОУТ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
             <div class="flex gap-10">
               <div class="grid gap-[15px]">
                 <p class="typography-pr text-white/50">Электронный каталог</p>
