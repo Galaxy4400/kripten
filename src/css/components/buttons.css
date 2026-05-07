@@ -5,8 +5,8 @@
     @apply min-h-12.5 text-center md:min-h-16;
     @apply rounded-full px-7.5 py-4;
     @apply inline-flex items-center justify-center gap-2.5;
-    @apply disabled:pointer-events-none disabled:opacity-40;
-    @apply aria-disabled:pointer-events-none aria-disabled:opacity-40;
+    @apply disabled:border-stroke-in-bg disabled:text-stroke-in-bg disabled:pointer-events-none disabled:border disabled:bg-transparent;
+    @apply aria-disabled:border-stroke-in-bg aria-disabled:text-stroke-in-bg aria-disabled:pointer-events-none aria-disabled:border aria-disabled:bg-transparent;
   }
   .btn svg {
     @apply shrink-0;
