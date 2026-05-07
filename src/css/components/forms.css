@@ -1,0 +1,19 @@
+@layer components {
+  .input-wrapper {
+    @apply relative;
+  }
+
+  .input-label {
+    @apply typography-pr;
+  }
+  .input-label span {
+    @apply text-error;
+  }
+
+  .input-icon {
+  }
+
+  .input {
+    @apply bg-gray-bg typography-pr min-h-16 rounded-sm pt-7.5 pr-14 pb-2.5 pl-5;
+  }
+}
