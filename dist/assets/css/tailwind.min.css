@@ -617,6 +617,9 @@
   .py-\[7px\] {
     padding-block: 7px;
   }
+  .pt-7\.5 {
+    padding-top: calc(var(--spacing) * 7.5);
+  }
   .pr-\[70px\] {
     padding-right: 70px;
   }
@@ -1753,7 +1756,92 @@
     overflow-y: auto;
   }
 }
-@layer components;
+@layer components {
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: calc(var(--spacing) * 3.5);
+  }
+  .breadcrumb-item {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    font-size: var(--text-p-r);
+    line-height: var(--leading-p-r);
+    font-weight: var(--font-p-r);
+    color: var(--gray-text);
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 3.5);
+    padding-block: calc(var(--spacing) * 3.5);
+    &:not(*:last-child) {
+      padding-right: calc(var(--spacing) * 0);
+    }
+    &::after {
+      content: var(--tw-content);
+      display: inline-block;
+    }
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 2.5);
+    }
+    &::after {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 1.5);
+    }
+    &::after {
+      content: var(--tw-content);
+      flex-shrink: 0;
+    }
+    &::after {
+      content: var(--tw-content);
+      background-color: currentcolor;
+    }
+    &::after {
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+    &::after {
+      content: var(--tw-content);
+      mask-image: url(../img/svg/to-right.svg);
+    }
+    &::after {
+      content: var(--tw-content);
+      mask-size: contain;
+    }
+    &::after {
+      content: var(--tw-content);
+      mask-position: center;
+    }
+    &::after {
+      content: var(--tw-content);
+      mask-repeat: no-repeat;
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--blue-hover);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        text-underline-offset: 4px;
+      }
+    }
+    &:last-child {
+      pointer-events: none;
+    }
+    &:last-child {
+      color: var(--gray-element);
+    }
+    &:last-child {
+      &::after {
+        content: var(--tw-content);
+        display: none;
+      }
+    }
+  }
+}
 @layer components {
   .scroll {
     display: flex;
