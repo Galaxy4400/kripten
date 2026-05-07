@@ -25,4 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
       wrapper.removeAttribute('data-active');
     }
   }
+
+  document.querySelectorAll('[data-file-input]').forEach((input) => {
+    const label = input.closest('[data-file-input-label]');
+    if (!label) return;
+    const text = label.querySelector('[data-file-text]');
+    const defaultText = text ? text.textContent : '';
+
+    input.addEventListener('change', () => {
+      if (!text) return;
+      if (input.files && input.files.length > 0) {
+        text.textContent =
+          input.files.length === 1 ? input.files[0].name : `${input.files.length} файла`;
+      } else {
+        text.textContent = defaultText;
+      }
+    });
+  });
 });

@@ -1,4 +1,25 @@
 @layer components {
+  .file-input {
+    @apply flex cursor-pointer items-center justify-between rounded-full border-2 border-dashed border-blue-dark min-h-16 px-5 w-full transition-colors duration-200;
+  }
+
+  .file-input:hover {
+    @apply border-blue-hover;
+  }
+
+  .file-input:hover .file-text,
+  .file-input:hover .file-icon {
+    @apply text-blue-hover;
+  }
+
+  .file-text {
+    @apply typography-btr text-blue-dark transition-colors duration-200;
+  }
+
+  .file-icon {
+    @apply text-blue-dark transition-colors duration-200 shrink-0;
+  }
+
   .input-wrapper {
     @apply relative;
   }

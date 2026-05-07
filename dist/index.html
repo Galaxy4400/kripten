@@ -794,14 +794,15 @@
       </section>
 
       <section class="bg-gray-bg pb-[50px] md:pb-[130px]">
-        <div class="container-base">
-          <div
-            class="bg-blue-dark relative grid h-[628px] grid-cols-2 gap-5 overflow-hidden rounded-[20px] p-5 md:p-7.5"
-          >
+        <div class="container-base relative">
+          <div class="bg-blue-dark relative grid grid-cols-2 gap-5 overflow-hidden rounded-[20px] p-5 md:p-7.5">
+            <div
+              class="absolute top-1/2 left-[35%] h-[1471px] w-[1635px] -translate-y-1/2 rounded-full bg-[radial-gradient(46.75%_46.71%_at_50.76%_51.27%,#D1E4FF_0%,rgba(209,228,255,0.00)_100%)]"
+            ></div>
             <div class="pointer-events-none absolute top-1/2 left-0 h-[898px] w-[1345px] -translate-y-1/2">
               <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
             </div>
-            <div class="flex flex-col justify-between gap-5 text-white">
+            <div class="relative flex flex-col justify-between gap-5 text-white">
               <h2 class="max-w-[570px]">Получите персональную консультацию</h2>
               <div class="grid gap-8">
                 <div class="h-[90px] w-[90px]">
@@ -813,7 +814,7 @@
                 </p>
               </div>
             </div>
-            <form class="grid gap-7.5 rounded-[10px] bg-white p-5 md:p-7.5" action="#">
+            <form class="relative grid content-start gap-7.5 rounded-[10px] bg-white p-5 md:p-7.5" action="#">
               <p class="typography-h5">Оставьте свои контакты — мы свяжемся с вами в ближайшее время</p>
               <div class="grid grid-cols-2 gap-2.5">
                 <div class="input-wrapper" data-custom-input>
@@ -862,7 +863,15 @@
                   </div>
                 </div>
               </div>
-              <div></div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <input type="file" />
+                <button class="btn btn-blue justify-between" type="submit">
+                  Отправить
+                  <svg width="13" height="12">
+                    <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
             </form>
           </div>
         </div>
