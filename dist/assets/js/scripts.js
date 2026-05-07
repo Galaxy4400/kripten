@@ -155,16 +155,8 @@ const initModals = () => {
 };
 
 //===============================================================
-const openFooterSpoilers = () => {
-  document.querySelectorAll('[data-spoiler^="footer-"] [data-spoiler-button]').forEach((btn) => {
-    btn.click();
-  });
-};
-
-//===============================================================
 initLazyLoad();
 initMobileMenu();
 initSearch();
 initSpoilers();
 initModals();
-openFooterSpoilers();
