@@ -8,7 +8,7 @@
   }
 
   .input-label {
-    @apply typography-pr text-gray-text absolute top-5 left-5;
+    @apply typography-pr text-gray-text pointer-events-none absolute top-5 left-5;
   }
   .input-label span {
     @apply text-error;

@@ -1906,6 +1906,7 @@
     }
   }
   .input-label {
+    pointer-events: none;
     position: absolute;
     top: calc(var(--spacing) * 5);
     left: calc(var(--spacing) * 5);
