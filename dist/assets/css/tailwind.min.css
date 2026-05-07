@@ -1908,12 +1908,29 @@
   .input-label {
     pointer-events: none;
     position: absolute;
-    top: calc(var(--spacing) * 5);
+    top: calc(var(--spacing) * 2);
     left: calc(var(--spacing) * 5);
+    font-size: var(--text-tag-r);
+    line-height: var(--leading-tag-r);
+    font-weight: var(--font-tag-r);
+    color: var(--gray-text);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .input:placeholder-shown:not(:focus) ~ .input-label {
+    top: calc(var(--spacing) * 5);
     font-size: var(--text-p-r);
     line-height: var(--leading-p-r);
     font-weight: var(--font-p-r);
-    color: var(--gray-text);
+  }
+  .input:-webkit-autofill ~ .input-label, [data-custom-input][data-active] .input-label {
+    top: calc(var(--spacing) * 2);
+    font-size: var(--text-tag-r);
+    line-height: var(--leading-tag-r);
+    font-weight: var(--font-tag-r);
   }
   .input-label span {
     color: var(--error);
@@ -1928,6 +1945,14 @@
     line-height: var(--leading-p-r);
     font-weight: var(--font-p-r);
     color: var(--gray-element);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .input-wrapper:has(.input:not(:placeholder-shown)) .input-icon, .input-wrapper:has(.input:-webkit-autofill) .input-icon, [data-custom-input][data-active] .input-icon {
+    color: var(--blue-hover);
   }
 }
 @property --tw-translate-x {
@@ -2128,6 +2153,10 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -2176,6 +2205,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-duration: initial;
     }
   }
 }
