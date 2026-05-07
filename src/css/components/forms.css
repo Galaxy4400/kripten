@@ -55,4 +55,14 @@
   .file-icon {
     @apply text-blue-dark shrink-0 transition-colors;
   }
+
+  /* checkbox */
+  .form-checkbox-wrapper {
+    @apply flex cursor-pointer items-center gap-3.75;
+  }
+
+  .form-checkbox {
+    @apply border-blue-dark h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-[5px] border-2 bg-white transition-colors;
+    @apply checked:bg-blue-dark checked:border-blue-dark checked:bg-check checked:bg-center checked:bg-no-repeat;
+  }
 }

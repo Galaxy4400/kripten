@@ -57,6 +57,7 @@
     --leading-tag-r: 1.4;
     --font-tag-r: 400;
     --spacing-responsive-horizontal: 16px;
+    --background-image-check: url("data:image/svg+xml;utf8,<svg fill='none' stroke='white' stroke-width='3' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M5 13l4 4L19 7'/></svg>");
   }
 }
 @layer base {
@@ -2001,6 +2002,42 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .form-checkbox-wrapper {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: calc(var(--spacing) * 3.75);
+  }
+  .form-checkbox {
+    height: calc(var(--spacing) * 5);
+    width: calc(var(--spacing) * 5);
+    flex-shrink: 0;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 5px;
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+    border-color: var(--blue-dark);
+    background-color: var(--white);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    &:checked {
+      border-color: var(--blue-dark);
+    }
+    &:checked {
+      background-color: var(--blue-dark);
+    }
+    &:checked {
+      background-image: var(--background-image-check);
+    }
+    &:checked {
+      background-position: center;
+    }
+    &:checked {
+      background-repeat: no-repeat;
+    }
   }
 }
 @property --tw-translate-x {
