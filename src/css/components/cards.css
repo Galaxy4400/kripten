@@ -5,6 +5,7 @@
 
   /* card new */
   .card-new {
+    @apply block;
     @apply bg-gray-bg rounded-2xl p-5 md:p-7.5;
     @apply flex flex-col gap-4;
   }

@@ -1986,6 +1986,7 @@
     padding: calc(var(--spacing) * 5);
   }
   .card-new {
+    display: block;
     border-radius: var(--radius-2xl);
     background-color: var(--gray-bg);
     padding: calc(var(--spacing) * 5);
