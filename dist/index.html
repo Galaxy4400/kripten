@@ -864,7 +864,13 @@
                 </div>
               </div>
               <div class="grid grid-cols-2 gap-2.5">
-                <input type="file" />
+                <label class="file-input" data-file-input-label>
+                  <input type="file" class="sr-only" data-file-input />
+                  <span class="file-text" data-file-text>Прикрепить файл</span>
+                  <svg class="file-icon" width="18" height="18">
+                    <use href="assets/img/svg/sprite.svg#clip"></use>
+                  </svg>
+                </label>
                 <button class="btn btn-blue justify-between" type="submit">
                   Отправить
                   <svg width="13" height="12">
