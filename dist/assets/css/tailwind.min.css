@@ -1884,17 +1884,12 @@
   .input-wrapper {
     position: relative;
   }
-  .input-label {
-    font-size: var(--text-p-r);
-    line-height: var(--leading-p-r);
-    font-weight: var(--font-p-r);
-  }
-  .input-label span {
-    color: var(--error);
-  }
   .input {
     min-height: calc(var(--spacing) * 16);
     border-radius: var(--radius-sm);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--gray-bg);
     background-color: var(--gray-bg);
     padding-top: calc(var(--spacing) * 7.5);
     padding-right: calc(var(--spacing) * 14);
@@ -1903,6 +1898,32 @@
     font-size: var(--text-p-r);
     line-height: var(--leading-p-r);
     font-weight: var(--font-p-r);
+    &:active {
+      border-color: var(--stroke-in-bg);
+    }
+  }
+  .input-label {
+    position: absolute;
+    top: calc(var(--spacing) * 5);
+    left: calc(var(--spacing) * 5);
+    font-size: var(--text-p-r);
+    line-height: var(--leading-p-r);
+    font-weight: var(--font-p-r);
+    color: var(--gray-text);
+  }
+  .input-label span {
+    color: var(--error);
+  }
+  .input-icon {
+    position: absolute;
+    top: calc(var(--spacing) * 5);
+    right: calc(var(--spacing) * 5);
+    height: 18px;
+    width: 18px;
+    font-size: var(--text-p-r);
+    line-height: var(--leading-p-r);
+    font-weight: var(--font-p-r);
+    color: var(--gray-text);
   }
 }
 @property --tw-translate-x {

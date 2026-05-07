@@ -3,17 +3,18 @@
     @apply relative;
   }
 
+  .input {
+    @apply bg-gray-bg typography-pr border-gray-bg active:border-stroke-in-bg min-h-16 rounded-sm border pt-7.5 pr-14 pb-2.5 pl-5;
+  }
+
   .input-label {
-    @apply typography-pr;
+    @apply typography-pr text-gray-text absolute top-5 left-5;
   }
   .input-label span {
     @apply text-error;
   }
 
   .input-icon {
-  }
-
-  .input {
-    @apply bg-gray-bg typography-pr min-h-16 rounded-sm pt-7.5 pr-14 pb-2.5 pl-5;
+    @apply typography-pr text-gray-text absolute top-5 right-5 h-[18px] w-[18px];
   }
 }
