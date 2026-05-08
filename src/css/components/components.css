@@ -5,7 +5,7 @@
 
   .quote {
     @apply typography-h6 text-gray-text;
-    @apply bg-gray-bg text-big-r relative flex items-center justify-center overflow-hidden rounded-2xl px-20 py-10 text-center;
+    @apply bg-gray-bg text-big-r relative flex items-center justify-center overflow-hidden rounded-2xl px-10 py-7 text-center md:px-20 md:py-10;
     @apply bg-[url(/assets/img/quote-pattern.png)];
   }
 
@@ -18,12 +18,12 @@
   }
 
   .quote::before {
-    @apply left-[50px];
+    @apply left-1.5 md:left-[50px];
     @apply bg-[url(/assets/img/svg/quote-left.svg)];
   }
 
   .quote::after {
-    @apply right-[50px];
+    @apply right-1.5 md:right-[50px];
     @apply bg-[url(/assets/img/svg/quote-right.svg)];
   }
 }
