@@ -2267,6 +2267,45 @@
     font-size: var(--text-tag-m);
     color: var(--white);
   }
+  .quote {
+    font-size: var(--text-h6);
+    line-height: var(--leading-h6);
+    font-weight: var(--font-h6);
+    color: var(--gray-text);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: var(--radius-2xl);
+    background-color: var(--gray-bg);
+    padding-inline: calc(var(--spacing) * 20);
+    padding-block: calc(var(--spacing) * 10);
+    text-align: center;
+    font-size: var(--text-big-r);
+    background-image: url(/assets/img/quote-pattern.png);
+  }
+  .quote::before, .quote::after {
+    --tw-content: '';
+    content: var(--tw-content);
+    position: absolute;
+    top: calc(1/2 * 100%);
+    flex-shrink: 0;
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+    height: calc(var(--spacing) * 5.5);
+    width: calc(var(--spacing) * 6.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .quote::before {
+    left: 50px;
+    background-image: url(/assets/img/svg/quote-left.svg);
+  }
+  .quote::after {
+    right: 50px;
+    background-image: url(/assets/img/svg/quote-right.svg);
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
