@@ -1,0 +1,5 @@
+@layer components {
+  .tag {
+    @apply text-tag-m bg-blue-dark inline-flex min-h-10 items-center justify-center rounded-full px-4.5 py-2 text-white;
+  }
+}
