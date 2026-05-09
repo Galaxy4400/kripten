@@ -319,9 +319,6 @@
       max-width: 1800px;
     }
   }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
@@ -330,9 +327,6 @@
   }
   .mb-7\.5 {
     margin-bottom: calc(var(--spacing) * 7.5);
-  }
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
   }
   .mb-\[50px\] {
     margin-bottom: 50px;
