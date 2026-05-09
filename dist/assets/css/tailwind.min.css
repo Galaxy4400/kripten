@@ -328,6 +328,9 @@
   .mb-7\.5 {
     margin-bottom: calc(var(--spacing) * 7.5);
   }
+  .mb-\[15px\] {
+    margin-bottom: 15px;
+  }
   .mb-\[50px\] {
     margin-bottom: 50px;
   }
@@ -707,6 +710,9 @@
   }
   .py-\[7px\] {
     padding-block: 7px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
   }
   .pt-0\! {
     padding-top: calc(var(--spacing) * 0) !important;
