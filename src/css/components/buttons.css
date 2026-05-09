@@ -38,6 +38,11 @@
     @apply hover:bg-blue-hover hover:text-blue-dark;
   }
 
+  .btn-outline {
+    @apply border-blue-dark text-blue-dark border bg-transparent;
+    @apply hover:bg-blue-dark hover:text-white;
+  }
+
   /* mod */
   .btn-icon {
     @apply aspect-square rounded-xl p-2.5;

@@ -370,6 +370,9 @@
   .h-\[52px\] {
     height: 52px;
   }
+  .h-\[65px\] {
+    height: 65px;
+  }
   .h-\[78px\] {
     height: 78px;
   }
@@ -411,6 +414,9 @@
   }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
+  }
+  .w-\[65px\] {
+    width: 65px;
   }
   .w-\[78px\] {
     width: 78px;
@@ -468,6 +474,12 @@
   }
   .min-w-\[50px\] {
     min-width: 50px;
+  }
+  .min-w-\[167px\] {
+    min-width: 167px;
+  }
+  .min-w-\[200px\] {
+    min-width: 200px;
   }
   .min-w-\[250px\] {
     min-width: 250px;
@@ -589,6 +601,9 @@
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
+  .gap-1\.25 {
+    gap: calc(var(--spacing) * 1.25);
+  }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
@@ -630,6 +645,9 @@
   }
   .gap-\[70px\] {
     gap: 70px;
+  }
+  .gap-\[150px\] {
+    gap: 150px;
   }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
@@ -751,6 +769,9 @@
   }
   .px-7\.5 {
     padding-inline: calc(var(--spacing) * 7.5);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .py-1\.25 {
     padding-block: calc(var(--spacing) * 1.25);
@@ -991,6 +1012,12 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .not-last\:border-b {
+    &:not(*:last-child) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 1px;
+    }
+  }
   .not-last\:pr-\[50px\] {
     &:not(*:last-child) {
       padding-right: 50px;
@@ -1050,6 +1077,27 @@
   }
   .group-hover\/button\:text-white {
     &:is(:where(.group\/button):hover *) {
+      @media (hover: hover) {
+        color: var(--white);
+      }
+    }
+  }
+  .group-hover\/file\:bg-blue-dark {
+    &:is(:where(.group\/file):hover *) {
+      @media (hover: hover) {
+        background-color: var(--blue-dark);
+      }
+    }
+  }
+  .group-hover\/file\:bg-white {
+    &:is(:where(.group\/file):hover *) {
+      @media (hover: hover) {
+        background-color: var(--white);
+      }
+    }
+  }
+  .group-hover\/file\:text-white {
+    &:is(:where(.group\/file):hover *) {
       @media (hover: hover) {
         color: var(--white);
       }
@@ -1124,6 +1172,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--blue-hover);
+      }
+    }
+  }
+  .hover\:bg-gray-bg {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--gray-bg);
       }
     }
   }
@@ -1952,6 +2007,23 @@
     &:hover {
       @media (hover: hover) {
         color: var(--blue-dark);
+      }
+    }
+  }
+  .btn-outline {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--blue-dark);
+    background-color: transparent;
+    color: var(--blue-dark);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--blue-dark);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--white);
       }
     }
   }
