@@ -573,6 +573,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-6\.25 {
     gap: calc(var(--spacing) * 6.25);
   }
