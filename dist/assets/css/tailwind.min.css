@@ -250,6 +250,9 @@
   .top-full {
     top: 100%;
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-2\.5 {
     right: calc(var(--spacing) * 2.5);
   }
@@ -679,6 +682,9 @@
   }
   .py-7\.5 {
     padding-block: calc(var(--spacing) * 7.5);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
