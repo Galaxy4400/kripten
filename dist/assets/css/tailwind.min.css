@@ -352,6 +352,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .aspect-182\/29 {
     aspect-ratio: 182/29;
   }
