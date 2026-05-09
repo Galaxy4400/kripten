@@ -717,6 +717,12 @@
   .pt-0\! {
     padding-top: calc(var(--spacing) * 0) !important;
   }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
   .pr-\[70px\] {
     padding-right: 70px;
   }
