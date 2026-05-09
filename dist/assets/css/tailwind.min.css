@@ -946,6 +946,9 @@
   .opacity-30 {
     opacity: 30%;
   }
+  .opacity-70 {
+    opacity: 70%;
+  }
   .opacity-100 {
     opacity: 100%;
   }
@@ -1328,11 +1331,6 @@
       display: none;
     }
   }
-  .md\:aspect-890\/500 {
-    @media (width >= 48rem) {
-      aspect-ratio: 890/500;
-    }
-  }
   .md\:aspect-890\/657 {
     @media (width >= 48rem) {
       aspect-ratio: 890/657;
@@ -1631,6 +1629,11 @@
   .\32 xl\:hidden {
     @media (width >= 96rem) {
       display: none;
+    }
+  }
+  .\32 xl\:aspect-890\/500 {
+    @media (width >= 96rem) {
+      aspect-ratio: 890/500;
     }
   }
   .\32 xl\:min-h-\[318px\] {
