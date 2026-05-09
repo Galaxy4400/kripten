@@ -46,7 +46,8 @@ const initSpoilers = () => {
 
   sliders.forEach((slider) => {
     const openByDefault = slider.hasAttribute('data-spoiler-open');
-    const items = Array.from(slider.children);
+    const spoilerItems = slider.querySelectorAll('[data-spoiler-item]');
+    const items = spoilerItems.length ? Array.from(spoilerItems) : Array.from(slider.children);
 
     items.forEach((item) => {
       const button = item.querySelector('[data-spoiler-button]');
