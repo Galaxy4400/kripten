@@ -1365,6 +1365,16 @@
       gap: calc(var(--spacing) * 10);
     }
   }
+  .md\:gap-12\.5 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 12.5);
+    }
+  }
+  .md\:gap-14\.5 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 14.5);
+    }
+  }
   .md\:gap-20 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 20);
