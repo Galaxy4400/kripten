@@ -1063,6 +1063,13 @@
       border-bottom-width: 1px;
     }
   }
+  .group-hover\:pointer-events-none {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        pointer-events: none;
+      }
+    }
+  }
   .group-hover\:grid {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
