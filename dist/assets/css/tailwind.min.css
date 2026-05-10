@@ -772,8 +772,8 @@
   .object-cover {
     object-fit: cover;
   }
-  .p-2\.5 {
-    padding: calc(var(--spacing) * 2.5);
+  .p-1\.25 {
+    padding: calc(var(--spacing) * 1.25);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -1595,6 +1595,11 @@
   .md\:rounded-\[20px\] {
     @media (width >= 48rem) {
       border-radius: 20px;
+    }
+  }
+  .md\:p-2\.5 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 2.5);
     }
   }
   .md\:p-7\.5 {
