@@ -812,6 +812,9 @@
   .pt-\[50px\] {
     padding-top: 50px;
   }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
+  }
   .pr-\[70px\] {
     padding-right: 70px;
   }
@@ -1608,6 +1611,13 @@
       color: var(--gray-text);
     }
   }
+  .md\:not-last\:pr-12 {
+    @media (width >= 48rem) {
+      &:not(*:last-child) {
+        padding-right: calc(var(--spacing) * 12);
+      }
+    }
+  }
   .md\:group-hover\:opacity-0 {
     @media (width >= 48rem) {
       &:is(:where(.group):hover *) {
@@ -1763,10 +1773,10 @@
       padding-inline: calc(var(--spacing) * 7.5);
     }
   }
-  .\32 xl\:not-last\:pr-\[100px\] {
+  .\32 xl\:not-last\:pr-24 {
     @media (width >= 96rem) {
       &:not(*:last-child) {
-        padding-right: 100px;
+        padding-right: calc(var(--spacing) * 24);
       }
     }
   }
