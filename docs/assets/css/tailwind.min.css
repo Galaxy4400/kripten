@@ -415,9 +415,6 @@
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
   }
-  .min-h-16 {
-    min-height: calc(var(--spacing) * 16);
-  }
   .min-h-\[45px\] {
     min-height: 45px;
   }
@@ -678,9 +675,6 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
-  }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
   }
   .gap-\[15px\] {
     gap: 15px;
@@ -950,11 +944,6 @@
     font-size: var(--text-h3);
     line-height: var(--leading-h3);
     font-weight: var(--font-h3);
-  }
-  .typography-h4 {
-    font-size: var(--text-h4);
-    line-height: var(--leading-h4);
-    font-weight: var(--font-h4);
   }
   .typography-h5 {
     font-size: var(--text-h5);
