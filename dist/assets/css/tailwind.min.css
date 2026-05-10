@@ -1870,6 +1870,36 @@
       border-style: none;
     }
   }
+  .xl\:col-start-1 {
+    @media (width >= 80rem) {
+      grid-column-start: 1;
+    }
+  }
+  .xl\:col-start-2 {
+    @media (width >= 80rem) {
+      grid-column-start: 2;
+    }
+  }
+  .xl\:col-start-3 {
+    @media (width >= 80rem) {
+      grid-column-start: 3;
+    }
+  }
+  .xl\:row-span-2 {
+    @media (width >= 80rem) {
+      grid-row: span 2 / span 2;
+    }
+  }
+  .xl\:row-start-1 {
+    @media (width >= 80rem) {
+      grid-row-start: 1;
+    }
+  }
+  .xl\:row-start-2 {
+    @media (width >= 80rem) {
+      grid-row-start: 2;
+    }
+  }
   .xl\:min-h-\[530px\] {
     @media (width >= 80rem) {
       min-height: 530px;
