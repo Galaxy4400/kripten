@@ -22,7 +22,7 @@
 
   <body>
     <!-- header -->
-    <header class="relative mb-2.5">
+    <header class="relative.5">
       <!-- search -->
       <div class="absolute top-0 left-0 z-60 hidden w-full bg-white py-4 data-active:block" data-search-container>
         <div class="container-base">
@@ -368,171 +368,477 @@
         <div class="container-base grid gap-5 md:gap-7.5">
           <nav class="breadcrumbs" aria-label="breadcrumbs">
             <a href="index.html" class="breadcrumb-item">Главная</a>
-            <a href="news.html" class="breadcrumb-item">Главная</a>
-            <span class="breadcrumb-item">Инновационные решения для защиты бренда на Pharmtech-2025</span>
+            <span class="breadcrumb-item">Продукция</span>
           </nav>
+          <h1>Продукция</h1>
         </div>
       </section>
 
-      <section class="mb-[50px] md:mb-[130px]">
-        <div class="container-narrow grid gap-10 md:gap-20">
-          <div class="grid gap-5 md:gap-[50px]">
-            <div class="flex justify-between gap-10">
-              <div class="tag">Новость</div>
-              <p class="typography-btr">18.08.2025</p>
-            </div>
-            <h1>Инновационные решения для защиты бренда на Pharmtech-2025</h1>
-            <div class="aspect-1194/550 w-full overflow-hidden rounded-[20px]">
-              <img class="h-full w-full object-cover" src="assets/img/new-big-1.jpg" alt="new" />
-            </div>
-          </div>
-          <div class="grid gap-7.5 md:gap-[60px]">
-            <div class="grid gap-5 md:gap-10">
-              <h2>Участие в ключевой выставке</h2>
-              <p>
-                На международной выставке <a class="link" href="#">Pharmtech-2025</a> компания представила современные
-                решения для защиты бренда и продукции от подделок. Экспозиция объединила технологии идентификации,
-                прослеживаемости и контроля подлинности, актуальные для фармацевтических производителей, дистрибьюторов
-                и контрактных площадок.
-              </p>
-            </div>
-            <div class="grid gap-5 md:gap-7.5">
-              <h4>Фокус на практическое применение</h4>
-              <div class="grid gap-5 lg:grid-cols-2 lg:gap-[60px]">
-                <div>
-                  <p>
-                    Решения ориентированы на реальные задачи фармацевтического рынка: снижение рисков контрафакта,
-                    защита репутации бренда и соблюдение регуляторных требований. Особое внимание уделено простоте
-                    внедрения и масштабируемости систем.
-                  </p>
+      <section class="pb-[50px] md:pb-[130px]">
+        <div class="container-base">
+          <div class="flex flex-wrap md:-m-5">
+            <div class="basis-full p-1.25 md:basis-1/2 md:p-2.5 xl:basis-1/3">
+              <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
+                <div class="pointer-events-none absolute inset-0 transition-opacity max-md:hidden">
+                  <img class="h-full w-full object-cover" src="assets/img/prod-1.avif" alt="prod-1" />
+                  <div
+                    class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
+                  ></div>
                 </div>
-                <div>
-                  <p>
-                    Технологии легко адаптируются под разные форматы производства — от крупных фармзаводов до
-                    контрактных производителей. Это позволяет использовать единый подход к защите бренда независимо от
-                    объёмов выпуска.
-                  </p>
+                <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-1">
+                  <div class="flex justify-between gap-4">
+                    <p
+                      class="typography-pr text-blue-dark transition-opacity md:text-white md:opacity-0 md:group-hover:opacity-100"
+                    >
+                      Защитные этикетки
+                    </p>
+                    <div
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                    >
+                      <img class="h-full w-full object-cover" src="assets/img/prod-1.avif" alt="prod-1" />
+                    </div>
+                  </div>
+                  <div
+                    class="group/spoiler grid grow content-end transition-opacity md:opacity-0 md:group-hover:opacity-100"
+                  >
+                    <div
+                      class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                      data-spoiler-content
+                    >
+                      <a class="prod-link" href="#">Голографические этикетки</a>
+                      <a class="prod-link" href="#">Пломбировочные этикетки</a>
+                      <a class="prod-link" href="#">Комбинированные этикетки</a>
+                      <a class="prod-link" href="#">Этикетки с печатью</a>
+                      <a class="prod-link" href="#">Фотополимерные этикетки</a>
+                    </div>
+                    <div>
+                      <button
+                        class="typography-tagm text-gray-text inline-flex items-center gap-2.5 md:hidden"
+                        data-spoiler-button
+                      >
+                        <span class="inline group-data-active/spoiler:hidden">Развернуть</span>
+                        <span class="hidden group-data-active/spoiler:inline">Свернуть</span>
+                        <svg class="transition-transform group-data-active/spoiler:rotate-180" width="7" height="3">
+                          <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-7.5 transition-opacity group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                >
+                  <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
+                    <div class="grid gap-2.5">
+                      <p class="typography-h5">Защитные этикетки</p>
+                      <p class="typography-pr text-gray-text">5 категорий</p>
+                    </div>
+                    <div class="inline-flex shrink-0 items-center justify-center">
+                      <div class="btn btn-blue btn-icon">
+                        <svg width="13" height="12">
+                          <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="grid content-start gap-5 lg:grid-cols-2 lg:gap-[60px]">
-              <div class="aspect-571/473 overflow-hidden rounded-[20px]">
-                <img class="h-full w-full object-cover" src="assets/img/new-big-3.jpg" alt="new" />
+            <div class="basis-full p-1.25 md:basis-1/2 md:p-2.5 xl:basis-1/3">
+              <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
+                <div class="pointer-events-none absolute inset-0 transition-opacity max-md:hidden">
+                  <img class="h-full w-full object-cover" src="assets/img/prod-3.avif" alt="prod-3" />
+                  <div
+                    class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
+                  ></div>
+                </div>
+                <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-2">
+                  <div class="flex justify-between gap-4">
+                    <p
+                      class="typography-pr text-blue-dark transition-opacity md:text-white md:opacity-0 md:group-hover:opacity-100"
+                    >
+                      Фольга горячего тиснения
+                    </p>
+                    <div
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                    >
+                      <img class="h-full w-full object-cover" src="assets/img/prod-3.avif" alt="prod-3" />
+                    </div>
+                  </div>
+                  <div
+                    class="group/spoiler grid grow content-end transition-opacity md:opacity-0 md:group-hover:opacity-100"
+                  >
+                    <div
+                      class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                      data-spoiler-content
+                    >
+                      <a class="prod-link" href="#">Фольга горячего тиснения с индивидуальным дизайном</a>
+                      <a class="prod-link" href="#">Фольга горячего тиснения с деметаллизированным изображением</a>
+                    </div>
+                    <div>
+                      <button
+                        class="typography-tagm text-gray-text inline-flex items-center gap-2.5 md:hidden"
+                        data-spoiler-button
+                      >
+                        <span class="inline group-data-active/spoiler:hidden">Развернуть</span>
+                        <span class="hidden group-data-active/spoiler:inline">Свернуть</span>
+                        <svg class="transition-transform group-data-active/spoiler:rotate-180" width="7" height="3">
+                          <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-7.5 transition-opacity group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                >
+                  <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
+                    <div class="grid gap-2.5">
+                      <p class="typography-h5">Фольга горячего тиснения</p>
+                      <p class="typography-pr text-gray-text">2 категории</p>
+                    </div>
+                    <div class="inline-flex shrink-0 items-center justify-center">
+                      <div class="btn btn-blue btn-icon">
+                        <svg width="13" height="12">
+                          <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="grid content-start gap-5 md:gap-10">
-                <h3>Какие решения были представлены</h3>
-                <div class="grid gap-5 md:gap-7.5">
-                  <p>
-                    В условиях роста параллельного импорта и усложнения логистических цепочек вопрос защиты бренда
-                    становится стратегически важным. Представленные решения позволяют контролировать путь продукции на
-                    всех этапах — от производства до конечного потребителя.
-                  </p>
-                  <div class="grid gap-2.5 md:gap-5">
-                    <p class="typography-h6">Особенности:</p>
-                    <ul class="custom-list grid gap-1 md:gap-2.5">
-                      <li>Системы сериализации и агрегации</li>
-                      <li>Защитная маркировка и специальные коды</li>
-                      <li>Цифровые платформы для мониторинга поставок</li>
-                      <li>Интеграция с государственными системами контроля</li>
-                    </ul>
+            </div>
+            <div class="basis-full p-1.25 md:basis-1/2 md:p-2.5 xl:basis-1/3">
+              <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
+                <div class="pointer-events-none absolute inset-0 transition-opacity max-md:hidden">
+                  <img class="h-full w-full object-cover" src="assets/img/prod-5.avif" alt="prod-5" />
+                  <div
+                    class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
+                  ></div>
+                </div>
+                <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-3">
+                  <div class="flex justify-between gap-4">
+                    <p
+                      class="typography-pr text-blue-dark transition-opacity md:text-white md:opacity-0 md:group-hover:opacity-100"
+                    >
+                      Голограммы
+                    </p>
+                    <div
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                    >
+                      <img class="h-full w-full object-cover" src="assets/img/prod-5.avif" alt="prod-5" />
+                    </div>
+                  </div>
+                  <div
+                    class="group/spoiler grid grow content-end transition-opacity md:opacity-0 md:group-hover:opacity-100"
+                  >
+                    <div
+                      class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                      data-spoiler-content
+                    >
+                      <a class="prod-link" href="#">Голограммы</a>
+                    </div>
+                    <div>
+                      <button
+                        class="typography-tagm text-gray-text inline-flex items-center gap-2.5 md:hidden"
+                        data-spoiler-button
+                      >
+                        <span class="inline group-data-active/spoiler:hidden">Развернуть</span>
+                        <span class="hidden group-data-active/spoiler:inline">Свернуть</span>
+                        <svg class="transition-transform group-data-active/spoiler:rotate-180" width="7" height="3">
+                          <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-7.5 transition-opacity group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                >
+                  <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
+                    <div class="grid gap-2.5">
+                      <p class="typography-h5">Голограммы</p>
+                      <p class="typography-pr text-gray-text"></p>
+                    </div>
+                    <div class="inline-flex shrink-0 items-center justify-center">
+                      <div class="btn btn-blue btn-icon">
+                        <svg width="13" height="12">
+                          <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basis-full p-1.25 md:basis-1/2 md:p-2.5">
+              <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
+                <div class="pointer-events-none absolute inset-0 transition-opacity max-md:hidden">
+                  <img class="h-full w-full object-cover" src="assets/img/prod-4.avif" alt="prod-4" />
+                  <div
+                    class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
+                  ></div>
+                </div>
+                <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-4">
+                  <div class="flex justify-between gap-4">
+                    <p
+                      class="typography-pr text-blue-dark transition-opacity md:text-white md:opacity-0 md:group-hover:opacity-100"
+                    >
+                      Ламинаты
+                    </p>
+                    <div
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                    >
+                      <img class="h-full w-full object-cover" src="assets/img/prod-4.avif" alt="prod-4" />
+                    </div>
+                  </div>
+                  <div
+                    class="group/spoiler grid grow content-end transition-opacity md:opacity-0 md:group-hover:opacity-100"
+                  >
+                    <div
+                      class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                      data-spoiler-content
+                    >
+                      <a class="prod-link" href="#">Голографический ламинат</a>
+                      <a class="prod-link" href="#">Пленки для ламинирования</a>
+                    </div>
+                    <div>
+                      <button
+                        class="typography-tagm text-gray-text inline-flex items-center gap-2.5 md:hidden"
+                        data-spoiler-button
+                      >
+                        <span class="inline group-data-active/spoiler:hidden">Развернуть</span>
+                        <span class="hidden group-data-active/spoiler:inline">Свернуть</span>
+                        <svg class="transition-transform group-data-active/spoiler:rotate-180" width="7" height="3">
+                          <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-7.5 transition-opacity group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                >
+                  <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
+                    <div class="grid gap-2.5">
+                      <p class="typography-h5">Ламинаты</p>
+                      <p class="typography-pr text-gray-text">2 категории</p>
+                    </div>
+                    <div class="inline-flex shrink-0 items-center justify-center">
+                      <div class="btn btn-blue btn-icon">
+                        <svg width="13" height="12">
+                          <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basis-full p-1.25 md:basis-1/2 md:p-2.5">
+              <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
+                <div class="pointer-events-none absolute inset-0 transition-opacity max-md:hidden">
+                  <img class="h-full w-full object-cover" src="assets/img/prod-2.avif" alt="prod-1" />
+                  <div
+                    class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"
+                  ></div>
+                </div>
+                <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-5">
+                  <div class="flex justify-between gap-4">
+                    <p
+                      class="typography-pr text-blue-dark transition-opacity md:text-white md:opacity-0 md:group-hover:opacity-100"
+                    >
+                      Защитные нити
+                    </p>
+                    <div
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                    >
+                      <img class="h-full w-full object-cover" src="assets/img/prod-2.avif" alt="prod-1" />
+                    </div>
+                  </div>
+                  <div
+                    class="group/spoiler grid grow content-end transition-opacity md:opacity-0 md:group-hover:opacity-100"
+                  >
+                    <div
+                      class="max-h-0 overflow-hidden transition-all md:max-h-none! md:overflow-visible"
+                      data-spoiler-content
+                    >
+                      <a class="prod-link" href="#">Ныряющая защитная нить</a>
+                      <a class="prod-link" href="#">Защитная нить с деметаллизацией</a>
+                      <a class="prod-link" href="#">Защитная нить со скрытым изображением “HIT”</a>
+                    </div>
+                    <div>
+                      <button
+                        class="typography-tagm text-gray-text inline-flex items-center gap-2.5 md:hidden"
+                        data-spoiler-button
+                      >
+                        <span class="inline group-data-active/spoiler:hidden">Развернуть</span>
+                        <span class="hidden group-data-active/spoiler:inline">Свернуть</span>
+                        <svg class="transition-transform group-data-active/spoiler:rotate-180" width="7" height="3">
+                          <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-7.5 transition-opacity group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                >
+                  <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
+                    <div class="grid gap-2.5">
+                      <p class="typography-h5">Защитные нити</p>
+                      <p class="typography-pr text-gray-text">3 категории</p>
+                    </div>
+                    <div class="inline-flex shrink-0 items-center justify-center">
+                      <div class="btn btn-blue btn-icon">
+                        <svg width="13" height="12">
+                          <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="grid gap-7.5 md:gap-[60px]">
-            <div class="grid gap-5 md:gap-10">
-              <h2>Технологии легко адаптируются</h2>
-              <p>
-                В условиях роста параллельного импорта и усложнения логистических цепочек вопрос защиты бренда
-                становится стратегически важным. Представленные решения позволяют контролировать путь продукции на всех
-                этапах — от производства до конечного потребителя.
+        </div>
+      </section>
+
+      <section class="pb-[50px] md:pb-[130px]">
+        <div class="container-base grid gap-5 md:gap-[50px]">
+          <h2>SEO-текст</h2>
+          <div class="grid content-start gap-7.5 md:grid-cols-2 md:gap-[60px]">
+            <div class="grid content-start gap-6">
+              <p class="typography-btr">
+                Защитные технологии для подтверждения подлинности изделий играют ключевую роль в борьбе с подделками и
+                обеспечении доверия к продуктам. В современном мире, где рынок переполнен фальсификатом, важно иметь
+                надежные методы, которые помогут потребителям и производителям удостовериться в оригинальности товаров.
+                Эти технологии включают в себя различные методы, такие как голограммы, QR-коды и специальные метки,
+                которые сложно подделать.
+              </p>
+              <p class="typography-pr text-gray-text">
+                Первое преимущество защитных технологий заключается в повышении доверия потребителей. Когда покупатели
+                видят, что продукт имеет защитные элементы, они с большей вероятностью выберут его, зная, что он
+                оригинален. Второе преимущество — это защита бренда. Компании, использующие такие технологии, могут
+                защитить свою репутацию и избежать финансовых потерь от подделок.
               </p>
             </div>
-            <div class="quote">
-              Защита бренда сегодня — это не только безопасность продукта,<br />но и доверие рынка, партнёров и
-              пациентов
-            </div>
-            <div class="grid gap-5 md:gap-7.5">
-              <h5>Преимущества представленных решений</h5>
+            <div class="grid content-start gap-6">
+              <h5>Преимущества защитных технологий</h5>
               <ul class="custom-list grid gap-1 md:gap-2.5">
-                <li>Повышение прозрачности цепочек поставок</li>
-                <li>Защита от подделок и нелегального оборота</li>
-                <li>Соответствие отраслевым и государственным стандартам</li>
-                <li>Снижение репутационных и финансовых рисков</li>
+                <li>
+                  Повышении доверия потребителей. Когда покупатели видят, что продукт имеет защитные элементы, они с
+                  большей вероятностью выберут его, зная, что он оригинален
+                </li>
+                <li>
+                  Защита бренда. Компании, использующие такие технологии, могут защитить свою репутацию и избежать
+                  финансовых потерь от подделок
+                </li>
+                <li>
+                  Защитные технологии позволяют производителям отслеживать свои изделия на всех этапах, от производства
+                  до продажи
+                </li>
               </ul>
             </div>
-            <div class="grid gap-5 md:gap-7.5">
-              <h3>Краткое сравнение подходов</h3>
-              <div class="overflow-x-auto">
-                <div class="min-w-[900px]">
-                  <div class="grid grid-cols-4 gap-x-4 px-6.25 py-5 xl:grid-cols-[2fr_1fr_1fr_1fr]">
-                    <div class="typography-tagm text-gray-text">Решение</div>
-                    <div class="typography-tagm text-gray-text">Уровень защиты</div>
-                    <div class="typography-tagm text-gray-text">Масштабируемость</div>
-                    <div class="typography-tagm text-gray-text">Интеграция</div>
-                  </div>
-                  <div class="border-stroke-in-bg overflow-hidden rounded-2xl border">
-                    <div class="even:bg-gray-bg grid grid-cols-4 gap-x-4 px-6.25 py-5 xl:grid-cols-[2fr_1fr_1fr_1fr]">
-                      <div class="typography-psm">Базовая маркировка</div>
-                      <div class="typography-pr">Средний</div>
-                      <div class="typography-pr">Ограниченная</div>
-                      <div class="typography-pr">Частичная</div>
-                    </div>
-                    <div class="even:bg-gray-bg grid grid-cols-4 gap-x-4 px-6.25 py-5 xl:grid-cols-[2fr_1fr_1fr_1fr]">
-                      <div class="typography-psm">Сериализация</div>
-                      <div class="typography-pr">Высокий</div>
-                      <div class="typography-pr">Высокая</div>
-                      <div class="typography-pr">Полная</div>
-                    </div>
-                    <div class="even:bg-gray-bg grid grid-cols-4 gap-x-4 px-6.25 py-5 xl:grid-cols-[2fr_1fr_1fr_1fr]">
-                      <div class="typography-psm">Комплексная платформа</div>
-                      <div class="typography-pr">Максимальный</div>
-                      <div class="typography-pr">Гибкая</div>
-                      <div class="typography-pr">Полная</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-          <a class="btn btn-blue" href="#">
-            Следующая новость
-            <svg width="13" height="12">
-              <use href="assets/img/svg/sprite.svg#arrow-right"></use>
-            </svg>
-          </a>
         </div>
       </section>
 
-      <section class="mb-[50px] md:mb-[130px]">
-        <div class="container-base grid gap-5 md:gap-[50px]">
-          <h2>Вам может быть интересно</h2>
-          <div class="grid gap-2.5 md:grid-cols-2 md:gap-5 2xl:grid-cols-4">
-            <a class="card-new 2xl:min-h-[318px]" href="#">
-              <div class="card-new-content">
-                <p class="typography-h5">Наш опыт участия в выставке RosUpack-2025</p>
+      <section class="md:pb-[130px]">
+        <div class="container-base relative max-md:px-0">
+          <div class="bg-blue-dark relative grid gap-5 overflow-hidden p-5 md:rounded-[20px] md:p-7.5 lg:grid-cols-2">
+            <div
+              class="pointer-events-none absolute top-1/2 left-[35%] h-[1471px] w-[1635px] -translate-y-1/2 rounded-full bg-[radial-gradient(46.75%_46.71%_at_50.76%_51.27%,#D1E4FF_0%,rgba(209,228,255,0.00)_100%)]"
+            ></div>
+            <div class="pointer-events-none absolute top-1/2 left-0 h-[898px] w-[1345px] -translate-y-1/2">
+              <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
+            </div>
+            <div class="relative flex flex-col justify-between gap-5 text-white">
+              <h2 class="max-w-[570px]">Получите персональную консультацию</h2>
+              <div class="grid gap-8">
+                <div class="h-[90px] w-[90px] max-lg:hidden">
+                  <img src="assets/img/svg/deco-3.svg" alt="deco" />
+                </div>
+                <p class="typography-h6 max-w-[500px]">
+                  Мы подберём оптимальное защитное решение для вашего проекта и подробно расскажем о возможностях наших
+                  технологий
+                </p>
               </div>
-              <div class="card-new-date">22.03.2025</div>
-            </a>
-            <a class="card-new 2xl:min-h-[318px]" href="#">
-              <div class="card-new-content">
-                <p class="typography-h5">Наш доклад на конференции TechWeek-2025</p>
+            </div>
+            <form class="relative grid content-start gap-5 rounded-[10px] bg-white p-5 md:gap-7.5 md:p-7.5" action="#">
+              <p class="typography-h5 max-md:hidden">Оставьте свои контакты — мы свяжемся с вами в ближайшее время</p>
+              <div class="grid gap-2.5 md:grid-cols-2">
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="name" type="text" placeholder=" " />
+                  <span class="input-label">Имя<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#user"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="phone" type="tel" placeholder=" " data-phone-mask />
+                  <span class="input-label">Номер телефона<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="email" type="email" placeholder=" " />
+                  <span class="input-label">Email<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#envelope"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="company" type="text" placeholder=" " />
+                  <span class="input-label">Название компании<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#building"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper md:col-span-2" data-custom-input>
+                  <textarea class="input min-h-[110px] md:min-h-[130px]" name="message" placeholder=" "></textarea>
+                  <span class="input-label">Сообщение</span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#message"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="card-new-date">30.04.2025</div>
-            </a>
-            <a class="card-new 2xl:min-h-[318px]" href="#">
-              <div class="card-new-content">
-                <p class="typography-h5">Выступление на форуме EcoTech-2025</p>
+              <div class="grid gap-5">
+                <div class="grid gap-2.5 md:grid-cols-2">
+                  <label class="file-input" data-file-input-label>
+                    <input type="file" class="sr-only" data-file-input />
+                    <span class="file-text" data-file-text>Прикрепить файл</span>
+                    <svg class="file-icon" width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#clip"></use>
+                    </svg>
+                  </label>
+                  <button class="btn btn-blue justify-between" type="submit">
+                    Отправить
+                    <svg width="13" height="12">
+                      <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <label class="form-checkbox-wrapper">
+                  <input class="form-checkbox" type="checkbox" name="consent" required />
+                  <span class="typography-psm text-gray-text">
+                    Нажимая на кнопку «Отправить», я даю согласие
+                    <a class="link link-blue-light link-underline" href="#"> на обработку моих персональных данных </a>
+                  </span>
+                </label>
               </div>
-              <div class="card-new-date">25.07.2025</div>
-            </a>
-            <a class="card-new 2xl:min-h-[318px]" href="#">
-              <div class="card-new-content">
-                <p class="typography-h5">Публикация в журнале Innovations-2025</p>
-              </div>
-              <div class="card-new-date">15.09.2025</div>
-            </a>
+            </form>
           </div>
         </div>
       </section>
@@ -691,15 +997,15 @@
             ></div>
             <div class="relative grid gap-7.5">
               <p class="typography-pr text-white/50">АО «НПО «КРИПТЕН»</p>
-              <div class="grid gap-2.5">
+              <div class="grid content-start gap-2.5">
                 <p class="typography-h6">ул. Приборостроителей,<br />д.2, зд. 1б, пом. 204</p>
                 <p class="typography-pr">г. Дубна, Московская область</p>
               </div>
-              <div class="grid gap-2.5">
+              <div class="grid content-start gap-2.5">
                 <p class="typography-h6">09:00 – 12:00, 13:00 – 18:00</p>
                 <p class="typography-pr">Пн-Пт</p>
               </div>
-              <div class="grid gap-2.5">
+              <div class="grid content-start gap-2.5">
                 <p class="typography-h6">
                   <a href="tel:+78005006065">8 (800) 500-60-65</a><br />
                   <a href="tel:+74957770722">+7 (495) 777-07-22</a>
