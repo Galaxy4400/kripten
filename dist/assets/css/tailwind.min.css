@@ -713,6 +713,12 @@
   .border-stroke-in-bg {
     border-color: var(--stroke-in-bg);
   }
+  .border-stroke-in-bg\/50 {
+    border-color: var(--stroke-in-bg);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--stroke-in-bg) 50%, transparent);
+    }
+  }
   .border-white\/50 {
     border-color: var(--white);
     @supports (color: color-mix(in lab, red, red)) {
