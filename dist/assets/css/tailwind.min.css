@@ -319,9 +319,6 @@
       max-width: 96rem;
     }
   }
-  .-m-5 {
-    margin: calc(var(--spacing) * -5);
-  }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
@@ -1408,6 +1405,11 @@
   .md\:col-span-2 {
     @media (width >= 48rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+  .md\:-m-5 {
+    @media (width >= 48rem) {
+      margin: calc(var(--spacing) * -5);
     }
   }
   .md\:mb-7\.5 {
