@@ -319,6 +319,9 @@
       max-width: 96rem;
     }
   }
+  .-m-5 {
+    margin: calc(var(--spacing) * -5);
+  }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
@@ -772,6 +775,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -1099,6 +1105,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--white);
+      }
+    }
+  }
+  .group-hover\:opacity-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 0%;
       }
     }
   }
@@ -1675,6 +1688,16 @@
       color: var(--gray-text);
     }
   }
+  .md\:text-white {
+    @media (width >= 48rem) {
+      color: var(--white);
+    }
+  }
+  .md\:opacity-0 {
+    @media (width >= 48rem) {
+      opacity: 0%;
+    }
+  }
   .md\:not-last\:pr-12 {
     @media (width >= 48rem) {
       &:not(*:last-child) {
@@ -1687,6 +1710,15 @@
       &:is(:where(.group):hover *) {
         @media (hover: hover) {
           opacity: 0%;
+        }
+      }
+    }
+  }
+  .md\:group-hover\:opacity-100 {
+    @media (width >= 48rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          opacity: 100%;
         }
       }
     }
@@ -1755,6 +1787,11 @@
   .xl\:min-h-\[530px\] {
     @media (width >= 80rem) {
       min-height: 530px;
+    }
+  }
+  .xl\:basis-1\/3 {
+    @media (width >= 80rem) {
+      flex-basis: calc(1/3 * 100%);
     }
   }
   .xl\:grid-cols-2 {
