@@ -806,11 +806,8 @@
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
-  .pt-10 {
-    padding-top: calc(var(--spacing) * 10);
-  }
-  .pt-\[50px\] {
-    padding-top: 50px;
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
   }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
@@ -1571,6 +1568,11 @@
       padding-block: calc(var(--spacing) * 7.5);
     }
   }
+  .md\:py-\[50px\] {
+    @media (width >= 48rem) {
+      padding-block: 50px;
+    }
+  }
   .md\:py-\[100px\] {
     @media (width >= 48rem) {
       padding-block: 100px;
@@ -1584,6 +1586,16 @@
   .md\:pt-7\.5 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 7.5);
+    }
+  }
+  .md\:pt-10 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:pt-\[50px\] {
+    @media (width >= 48rem) {
+      padding-top: 50px;
     }
   }
   .md\:pr-\[100px\] {
