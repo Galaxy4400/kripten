@@ -406,11 +406,17 @@
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
   }
+  .min-h-\[45px\] {
+    min-height: 45px;
+  }
   .min-h-\[110px\] {
     min-height: 110px;
   }
   .min-h-\[220px\] {
     min-height: 220px;
+  }
+  .min-h-\[394px\] {
+    min-height: 394px;
   }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
@@ -575,6 +581,9 @@
   }
   .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .grid-cols-\[40\%_1fr\] {
+    grid-template-columns: 40% 1fr;
   }
   .flex-col {
     flex-direction: column;
@@ -787,6 +796,9 @@
   .p-7\.5 {
     padding: calc(var(--spacing) * 7.5);
   }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
   }
@@ -801,6 +813,9 @@
   }
   .py-1\.25 {
     padding-block: calc(var(--spacing) * 1.25);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -1219,6 +1234,13 @@
       background-color: var(--gray-bg);
     }
   }
+  .hover\:bg-blue-dark {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--blue-dark);
+      }
+    }
+  }
   .hover\:bg-blue-hover {
     &:hover {
       @media (hover: hover) {
@@ -1237,6 +1259,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--blue-hover);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--white);
       }
     }
   }
