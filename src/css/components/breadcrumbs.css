@@ -4,7 +4,6 @@
   }
 
   .breadcrumb-item {
-    @apply transition-colors;
     @apply text-gray-text typography-pr;
     @apply inline-flex items-center;
     @apply gap-3.5;

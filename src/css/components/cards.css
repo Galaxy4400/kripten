@@ -22,7 +22,6 @@
   /* card main slider link */
   .card-slider-link {
     @apply relative overflow-hidden;
-    @apply transition-colors;
     @apply min-h-[146px] md:min-h-[170px];
     @apply p-5 md:px-7.5 md:py-6;
     @apply rounded-2xl;

@@ -25,7 +25,6 @@
   }
 
   .bullet {
-    @apply transition-all;
     @apply inline-block h-0.75 w-2.5 cursor-pointer rounded-full bg-white/35 md:w-10;
     @apply aria-selected:pointer-events-none aria-selected:w-10 aria-selected:bg-white md:aria-selected:w-20;
   }
