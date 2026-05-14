@@ -1100,26 +1100,6 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .transition-all {
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-colors {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-opacity {
-    transition-property: opacity;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-transform {
-    transition-property: transform, translate, scale, rotate;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .not-last\:border-b {
     &:not(*:last-child) {
       border-bottom-style: var(--tw-border-style);
@@ -1175,16 +1155,6 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: var(--white);
-      }
-    }
-  }
-  .group-hover\:text-white\/65 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--white);
-        @supports (color: color-mix(in lab, red, red)) {
-          color: color-mix(in oklab, var(--white) 65%, transparent);
-        }
       }
     }
   }
@@ -1826,6 +1796,18 @@
     @media (width >= 48rem) {
       &:not(*:last-child) {
         padding-right: calc(var(--spacing) * 12);
+      }
+    }
+  }
+  .md\:group-hover\:text-white\/65 {
+    @media (width >= 48rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          color: var(--white);
+          @supports (color: color-mix(in lab, red, red)) {
+            color: color-mix(in oklab, var(--white) 65%, transparent);
+          }
+        }
       }
     }
   }
