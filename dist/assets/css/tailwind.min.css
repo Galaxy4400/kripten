@@ -2844,6 +2844,24 @@
       content: var(--tw-content);
       background-color: var(--gray-element);
     }
+    &:is(:where(.group\/new-card):hover *) {
+      @media (hover: hover) {
+        border-color: var(--blue-hover);
+      }
+    }
+    &:is(:where(.group\/new-card):hover *) {
+      @media (hover: hover) {
+        color: var(--blue-hover);
+      }
+    }
+    &:is(:where(.group\/new-card):hover *) {
+      @media (hover: hover) {
+        &::after {
+          content: var(--tw-content);
+          background-color: var(--blue-hover);
+        }
+      }
+    }
   }
   .card-slider-link {
     position: relative;
