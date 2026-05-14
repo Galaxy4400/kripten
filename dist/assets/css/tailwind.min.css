@@ -1163,6 +1163,16 @@
       }
     }
   }
+  .group-hover\:text-white\/65 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--white);
+        @supports (color: color-mix(in lab, red, red)) {
+          color: color-mix(in oklab, var(--white) 65%, transparent);
+        }
+      }
+    }
+  }
   .group-hover\:opacity-0 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1415,11 +1425,6 @@
       width: 100%;
     }
   }
-  .max-md\:flex-col {
-    @media (width < 48rem) {
-      flex-direction: column;
-    }
-  }
   .max-md\:gap-1\.25 {
     @media (width < 48rem) {
       gap: calc(var(--spacing) * 1.25);
@@ -1530,11 +1535,6 @@
   .md\:aspect-890\/657 {
     @media (width >= 48rem) {
       aspect-ratio: 890/657;
-    }
-  }
-  .md\:aspect-1345\/720 {
-    @media (width >= 48rem) {
-      aspect-ratio: 1345/720;
     }
   }
   .md\:h-\[120px\] {
@@ -1995,11 +1995,6 @@
       padding-left: 100px;
     }
   }
-  .\32 xl\:absolute {
-    @media (width >= 96rem) {
-      position: absolute;
-    }
-  }
   .\32 xl\:hidden {
     @media (width >= 96rem) {
       display: none;
@@ -2043,11 +2038,6 @@
   .\32 xl\:grid-cols-\[3fr_1fr\] {
     @media (width >= 96rem) {
       grid-template-columns: 3fr 1fr;
-    }
-  }
-  .\32 xl\:flex-col {
-    @media (width >= 96rem) {
-      flex-direction: column;
     }
   }
   .\32 xl\:justify-center {
