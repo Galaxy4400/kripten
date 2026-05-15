@@ -228,11 +228,19 @@
 
       <!-- header main -->
       <div class="bg-gray-bg max-md:hidden">
-        <div class="container-base text-gray-text flex flex-wrap gap-7.5 py-4">
-          <p class="inline-flex gap-2.5">Адрес <span class="text-black">г. Дубна, ул. Приборостроителей 2</span></p>
-          <p class="inline-flex gap-2.5">
-            Email <a class="text-black" href="mailto:sale@krypten.ru">sale@krypten.ru</a>
-          </p>
+        <div class="container-base flex justify-between gap-7.5 py-4">
+          <div class="text-gray-text flex flex-wrap items-center gap-7.5">
+            <p class="inline-flex gap-2.5 text-base">г. Дубна, ул. Приборостроителей 2</p>
+            <div class="bg-gray-element h-1.5 w-1.5"></div>
+            <p class="inline-flex gap-2.5 text-base"><a href="mailto:sale@krypten.ru">sale@krypten.ru</a></p>
+          </div>
+          <div class="px-5">
+            <button class="btn-search shrink-0" type="button" data-search-open aria-label="Открыть поиск">
+              <svg width="24" height="24">
+                <use href="assets/img/svg/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <div class="py-6">
