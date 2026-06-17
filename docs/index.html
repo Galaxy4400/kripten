@@ -18,13 +18,18 @@
     <script src="assets/js/forms.js" defer></script>
     <script src="assets/js/sliders.js" defer></script>
     <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js" defer></script>
+    <script src="assets/js/smooth-scroll.js" defer></script>
   </head>
 
   <body>
     <!-- header -->
     <header class="relative mb-2.5">
       <!-- search -->
-      <div class="absolute top-0 left-0 z-60 hidden w-full bg-white py-4 data-active:block" data-search-container>
+      <div
+        class="pointer-events-none absolute top-0 left-0 z-60 w-full bg-white py-4 opacity-0 transition-opacity data-active:pointer-events-auto data-active:opacity-100"
+        data-search-container
+      >
         <div class="container-base">
           <div class="relative grow">
             <input
@@ -85,7 +90,7 @@
                 >
                   <span class="typography-btr text-left">О нас</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -108,7 +113,7 @@
                 >
                   <span class="typography-btr text-left">Продукция</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -131,7 +136,7 @@
                 >
                   <span class="typography-btr text-left">Технологии</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -154,7 +159,7 @@
                 >
                   <span class="typography-btr text-left">Достижения криптена</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -177,7 +182,7 @@
                 >
                   <span class="typography-btr text-left">Медиа</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -257,12 +262,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="about.html">
                     О нас
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -275,12 +280,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="products.html">
                     Продукция
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -293,12 +298,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="technology.html">
                     Технологии
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -311,12 +316,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="progress.html">
                     Достижения криптена
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -329,12 +334,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="news.html">
                     Медиа
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -433,10 +438,14 @@
               class="bottom-0 left-0 grid w-full grid-cols-2 gap-2.5 py-2.5 md:absolute md:gap-5 md:py-7.5 lg:grid-cols-4 2xl:px-7.5"
             >
               <a class="card-slider-link group" href="about.html">
-                <img class="absolute top-1/3 right-2.5" src="assets/img/svg/deco-1.svg" alt="deco" />
-                <p class="typography-h6 group-hover:text-blue-dark relative text-white">О компании</p>
+                <img
+                  class="absolute top-1/3 right-2.5 transition-transform group-hover:scale-110"
+                  src="assets/img/svg/deco-1.svg"
+                  alt="deco"
+                />
+                <p class="typography-h6 group-hover:text-blue-dark relative text-white transition-colors">О компании</p>
                 <div
-                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 group-hover:text-white"
+                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 transition-colors group-hover:text-white"
                 >
                   <svg width="13" height="12">
                     <use href="assets/img/svg/sprite.svg#arrow-right"></use>
@@ -444,10 +453,14 @@
                 </div>
               </a>
               <a class="card-slider-link group" href="products.html">
-                <img class="absolute top-1/3 right-2.5" src="assets/img/svg/deco-10.svg" alt="deco" />
-                <p class="typography-h6 group-hover:text-blue-dark relative text-white">Продукция</p>
+                <img
+                  class="absolute top-1/3 right-2.5 transition-transform group-hover:scale-110"
+                  src="assets/img/svg/deco-10.svg"
+                  alt="deco"
+                />
+                <p class="typography-h6 group-hover:text-blue-dark relative text-white transition-colors">Продукция</p>
                 <div
-                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 group-hover:text-white"
+                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 transition-colors group-hover:text-white"
                 >
                   <svg width="13" height="12">
                     <use href="assets/img/svg/sprite.svg#arrow-right"></use>
@@ -455,10 +468,16 @@
                 </div>
               </a>
               <a class="card-slider-link group" href="patents.html">
-                <img class="absolute top-1/3 right-2.5" src="assets/img/svg/deco-3.svg" alt="deco" />
-                <p class="typography-h6 group-hover:text-blue-dark relative text-white">Патенты<br />и инновации</p>
+                <img
+                  class="absolute top-1/3 right-2.5 transition-transform group-hover:scale-110"
+                  src="assets/img/svg/deco-3.svg"
+                  alt="deco"
+                />
+                <p class="typography-h6 group-hover:text-blue-dark relative text-white transition-colors">
+                  Патенты<br />и инновации
+                </p>
                 <div
-                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 group-hover:text-white"
+                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 transition-colors group-hover:text-white"
                 >
                   <svg width="13" height="12">
                     <use href="assets/img/svg/sprite.svg#arrow-right"></use>
@@ -466,10 +485,14 @@
                 </div>
               </a>
               <a class="card-slider-link group" href="#">
-                <img class="absolute top-1/3 right-2.5" src="assets/img/svg/deco-7.svg" alt="deco" />
-                <p class="typography-h6 group-hover:text-blue-dark relative text-white">FAQ</p>
+                <img
+                  class="absolute top-1/3 right-2.5 transition-transform group-hover:scale-110"
+                  src="assets/img/svg/deco-7.svg"
+                  alt="deco"
+                />
+                <p class="typography-h6 group-hover:text-blue-dark relative text-white transition-colors">FAQ</p>
                 <div
-                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 group-hover:text-white"
+                  class="btn btn-white btn-icon group-hover:bg-blue-dark absolute right-2.5 bottom-2.5 z-10 transition-colors group-hover:text-white"
                 >
                   <svg width="13" height="12">
                     <use href="assets/img/svg/sprite.svg#arrow-right"></use>
@@ -512,17 +535,21 @@
           <h2 class="mb-7.5 md:mb-12.5">Продукция</h2>
           <div class="mb-5 grid gap-2.5 md:mb-7.5 md:grid-cols-2 md:gap-5 2xl:grid-cols-4">
             <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
-              <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 max-md:hidden">
+              <div
+                class="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100 max-md:hidden"
+              >
                 <img class="h-full w-full object-cover" src="assets/img/prod-1.avif" alt="prod-1" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
               <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-1">
                 <div class="flex justify-between gap-4">
-                  <p class="typography-pr md:text-gray-text text-blue-dark md:group-hover:text-white/65">
+                  <p
+                    class="typography-pr md:text-gray-text text-blue-dark transition-colors md:group-hover:text-white/65"
+                  >
                     Защитные этикетки
                   </p>
                   <div
-                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
+                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
                   >
                     <img class="h-full w-full object-cover" src="assets/img/prod-1.avif" alt="prod-1" />
                   </div>
@@ -551,17 +578,21 @@
               </div>
             </div>
             <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
-              <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 max-md:hidden">
+              <div
+                class="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100 max-md:hidden"
+              >
                 <img class="h-full w-full object-cover" src="assets/img/prod-2.avif" alt="prod-2" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
               <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-2">
                 <div class="flex justify-between gap-4">
-                  <p class="typography-pr md:text-gray-text text-blue-dark md:group-hover:text-white/65">
+                  <p
+                    class="typography-pr md:text-gray-text text-blue-dark transition-colors md:group-hover:text-white/65"
+                  >
                     Защитные нити
                   </p>
                   <div
-                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
+                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
                   >
                     <img class="h-full w-full object-cover" src="assets/img/prod-2.avif" alt="prod-2" />
                   </div>
@@ -588,17 +619,21 @@
               </div>
             </div>
             <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
-              <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 max-md:hidden">
+              <div
+                class="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100 max-md:hidden"
+              >
                 <img class="h-full w-full object-cover" src="assets/img/prod-3.avif" alt="prod-3" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
               <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-3">
                 <div class="flex justify-between gap-4">
-                  <p class="typography-pr md:text-gray-text text-blue-dark md:group-hover:text-white/65">
+                  <p
+                    class="typography-pr md:text-gray-text text-blue-dark transition-colors md:group-hover:text-white/65"
+                  >
                     Фольга горячего тиснения
                   </p>
                   <div
-                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
+                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
                   >
                     <img class="h-full w-full object-cover" src="assets/img/prod-3.avif" alt="prod-3" />
                   </div>
@@ -626,15 +661,21 @@
               </div>
             </div>
             <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
-              <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 max-md:hidden">
+              <div
+                class="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100 max-md:hidden"
+              >
                 <img class="h-full w-full object-cover" src="assets/img/prod-4.avif" alt="prod-4" />
                 <div class="gradient-blue-dark absolute inset-0"></div>
               </div>
               <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-4">
                 <div class="flex justify-between gap-4">
-                  <p class="typography-pr md:text-gray-text text-blue-dark md:group-hover:text-white/65">Ламинаты</p>
+                  <p
+                    class="typography-pr md:text-gray-text text-blue-dark transition-colors md:group-hover:text-white/65"
+                  >
+                    Ламинаты
+                  </p>
                   <div
-                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
+                    class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 transition-opacity max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:group-hover:opacity-0"
                   >
                     <img class="h-full w-full object-cover" src="assets/img/prod-4.avif" alt="prod-4" />
                   </div>
@@ -715,7 +756,9 @@
                     <div class="pointer-events-none absolute -top-1/3 -left-1/3 h-[898px] w-[1345px]">
                       <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
                     </div>
-                    <div class="absolute bottom-0 left-0 flex w-full items-center justify-center md:-bottom-[20%]">
+                    <div
+                      class="absolute bottom-0 left-0 flex w-full items-center justify-center transition-transform group-hover/new:scale-110 md:-bottom-[20%]"
+                    >
                       <img src="assets/img/new-1.avif" alt="new-1" />
                     </div>
                   </a>
@@ -734,7 +777,9 @@
                     <div class="pointer-events-none absolute -top-1/3 -left-1/3 h-[898px] w-[1345px]">
                       <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
                     </div>
-                    <div class="absolute bottom-0 left-0 flex w-full items-center justify-center md:-bottom-[20%]">
+                    <div
+                      class="absolute bottom-0 left-0 flex w-full items-center justify-center transition-transform group-hover/new:scale-110 md:-bottom-[20%]"
+                    >
                       <img src="assets/img/new-2.avif" alt="new-2" />
                     </div>
                   </a>
@@ -753,7 +798,9 @@
                     <div class="pointer-events-none absolute -top-1/3 -left-1/3 h-[898px] w-[1345px]">
                       <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
                     </div>
-                    <div class="absolute bottom-0 left-0 flex w-full items-center justify-center md:-bottom-[20%]">
+                    <div
+                      class="absolute bottom-0 left-0 flex w-full items-center justify-center transition-transform group-hover/new:scale-110 md:-bottom-[20%]"
+                    >
                       <img src="assets/img/new-3.avif" alt="new-3" />
                     </div>
                   </a>
@@ -772,7 +819,9 @@
                     <div class="pointer-events-none absolute -top-1/3 -left-1/3 h-[898px] w-[1345px]">
                       <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
                     </div>
-                    <div class="absolute bottom-0 left-0 flex w-full items-center justify-center md:-bottom-[20%]">
+                    <div
+                      class="absolute bottom-0 left-0 flex w-full items-center justify-center transition-transform group-hover/new:scale-110 md:-bottom-[20%]"
+                    >
                       <img src="assets/img/new-1.avif" alt="new-1" />
                     </div>
                   </a>
