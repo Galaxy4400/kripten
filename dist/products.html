@@ -26,7 +26,7 @@
     <!-- header -->
     <header class="relative.5">
       <!-- search -->
-      <div class="absolute top-0 left-0 z-60 hidden w-full bg-white py-4 data-active:block" data-search-container>
+      <div class="pointer-events-none absolute top-0 left-0 z-60 w-full bg-white py-4 opacity-0 transition-opacity data-active:pointer-events-auto data-active:opacity-100" data-search-container>
         <div class="container-base">
           <div class="relative grow">
             <input
@@ -87,7 +87,7 @@
                 >
                   <span class="typography-btr text-left">О нас</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -110,7 +110,7 @@
                 >
                   <span class="typography-btr text-left">Продукция</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -133,7 +133,7 @@
                 >
                   <span class="typography-btr text-left">Технологии</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -156,7 +156,7 @@
                 >
                   <span class="typography-btr text-left">Достижения криптена</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -179,7 +179,7 @@
                 >
                   <span class="typography-btr text-left">Медиа</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -259,12 +259,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="about.html">
                     О нас
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -277,12 +277,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="products.html">
                     Продукция
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -295,12 +295,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="technology.html">
                     Технологии
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -313,12 +313,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="progress.html">
                     Достижения криптена
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -331,12 +331,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="news.html">
                     Медиа
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -393,20 +393,20 @@
               <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
                 <div class="pointer-events-none absolute inset-0 max-md:hidden">
                   <img class="h-full w-full object-cover" src="assets/img/prod-1.avif" alt="prod-1" />
-                  <div class="gradient-blue-dark absolute inset-0 opacity-0 group-hover:opacity-100"></div>
+                  <div class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
                 <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-1">
                   <div class="flex justify-between gap-4">
-                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:group-hover:opacity-100">
+                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                       Защитные этикетки
                     </p>
                     <div
-                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:transition-opacity md:group-hover:opacity-0"
                     >
                       <img class="h-full w-full object-cover" src="assets/img/prod-1.avif" alt="prod-1" />
                     </div>
                   </div>
-                  <div class="group/spoiler grid grow content-end md:opacity-0 md:group-hover:opacity-100">
+                  <div class="group/spoiler grid grow content-end md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                     <div class="max-h-0 overflow-hidden md:max-h-none! md:overflow-visible" data-spoiler-content>
                       <a class="prod-link" href="prod.html">Голографические этикетки</a>
                       <a class="prod-link" href="prod.html">Пломбировочные этикетки</a>
@@ -429,7 +429,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 transition-opacity max-md:hidden"
                 >
                   <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
                     <div class="grid gap-2.5">
@@ -451,20 +451,20 @@
               <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
                 <div class="pointer-events-none absolute inset-0 max-md:hidden">
                   <img class="h-full w-full object-cover" src="assets/img/prod-3.avif" alt="prod-3" />
-                  <div class="gradient-blue-dark absolute inset-0 opacity-0 group-hover:opacity-100"></div>
+                  <div class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
                 <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-2">
                   <div class="flex justify-between gap-4">
-                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:group-hover:opacity-100">
+                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                       Фольга горячего тиснения
                     </p>
                     <div
-                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:transition-opacity md:group-hover:opacity-0"
                     >
                       <img class="h-full w-full object-cover" src="assets/img/prod-3.avif" alt="prod-3" />
                     </div>
                   </div>
-                  <div class="group/spoiler grid grow content-end md:opacity-0 md:group-hover:opacity-100">
+                  <div class="group/spoiler grid grow content-end md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                     <div class="max-h-0 overflow-hidden md:max-h-none! md:overflow-visible" data-spoiler-content>
                       <a class="prod-link" href="prod.html">Фольга горячего тиснения с индивидуальным дизайном</a>
                       <a class="prod-link" href="prod.html"
@@ -486,7 +486,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 transition-opacity max-md:hidden"
                 >
                   <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
                     <div class="grid gap-2.5">
@@ -508,20 +508,20 @@
               <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
                 <div class="pointer-events-none absolute inset-0 max-md:hidden">
                   <img class="h-full w-full object-cover" src="assets/img/prod-5.avif" alt="prod-5" />
-                  <div class="gradient-blue-dark absolute inset-0 opacity-0 group-hover:opacity-100"></div>
+                  <div class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
                 <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-3">
                   <div class="flex justify-between gap-4">
-                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:group-hover:opacity-100">
+                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                       Голограммы
                     </p>
                     <div
-                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:transition-opacity md:group-hover:opacity-0"
                     >
                       <img class="h-full w-full object-cover" src="assets/img/prod-5.avif" alt="prod-5" />
                     </div>
                   </div>
-                  <div class="group/spoiler grid grow content-end md:opacity-0 md:group-hover:opacity-100">
+                  <div class="group/spoiler grid grow content-end md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                     <div class="max-h-0 overflow-hidden md:max-h-none! md:overflow-visible" data-spoiler-content>
                       <a class="prod-link" href="prod.html">Голограммы</a>
                     </div>
@@ -540,7 +540,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 transition-opacity max-md:hidden"
                 >
                   <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
                     <div class="grid gap-2.5">
@@ -562,20 +562,20 @@
               <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
                 <div class="pointer-events-none absolute inset-0 max-md:hidden">
                   <img class="h-full w-full object-cover" src="assets/img/prod-4.avif" alt="prod-4" />
-                  <div class="gradient-blue-dark absolute inset-0 opacity-0 group-hover:opacity-100"></div>
+                  <div class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
                 <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-4">
                   <div class="flex justify-between gap-4">
-                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:group-hover:opacity-100">
+                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                       Ламинаты
                     </p>
                     <div
-                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:transition-opacity md:group-hover:opacity-0"
                     >
                       <img class="h-full w-full object-cover" src="assets/img/prod-4.avif" alt="prod-4" />
                     </div>
                   </div>
-                  <div class="group/spoiler grid grow content-end md:opacity-0 md:group-hover:opacity-100">
+                  <div class="group/spoiler grid grow content-end md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                     <div class="max-h-0 overflow-hidden md:max-h-none! md:overflow-visible" data-spoiler-content>
                       <a class="prod-link" href="prod.html">Голографический ламинат</a>
                       <a class="prod-link" href="prod.html">Пленки для ламинирования</a>
@@ -595,7 +595,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 transition-opacity max-md:hidden"
                 >
                   <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
                     <div class="grid gap-2.5">
@@ -617,20 +617,20 @@
               <div class="bg-gray-bg group relative overflow-hidden rounded-[20px] p-5 md:min-h-[535px] md:p-7.5">
                 <div class="pointer-events-none absolute inset-0 max-md:hidden">
                   <img class="h-full w-full object-cover" src="assets/img/prod-2.avif" alt="prod-1" />
-                  <div class="gradient-blue-dark absolute inset-0 opacity-0 group-hover:opacity-100"></div>
+                  <div class="gradient-blue-dark absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
                 <div class="flex h-full flex-col gap-4 md:relative" data-spoiler="prod-5">
                   <div class="flex justify-between gap-4">
-                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:group-hover:opacity-100">
+                    <p class="typography-pr text-blue-dark md:text-white md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                       Защитные нити
                     </p>
                     <div
-                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:group-hover:opacity-0"
+                      class="h-[78px] w-[78px] overflow-hidden rounded-[15px] opacity-100 max-md:absolute max-md:top-2.5 max-md:right-2.5 md:h-[120px] md:w-[120px] md:opacity-0 md:transition-opacity md:group-hover:opacity-0"
                     >
                       <img class="h-full w-full object-cover" src="assets/img/prod-2.avif" alt="prod-1" />
                     </div>
                   </div>
-                  <div class="group/spoiler grid grow content-end md:opacity-0 md:group-hover:opacity-100">
+                  <div class="group/spoiler grid grow content-end md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
                     <div class="max-h-0 overflow-hidden md:max-h-none! md:overflow-visible" data-spoiler-content>
                       <a class="prod-link" href="prod.html">Ныряющая защитная нить</a>
                       <a class="prod-link" href="prod.html">Защитная нить с деметаллизацией</a>
@@ -651,7 +651,7 @@
                   </div>
                 </div>
                 <div
-                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 max-md:hidden"
+                  class="absolute bottom-0 left-0 w-full p-7.5 group-hover:pointer-events-none group-hover:opacity-0 transition-opacity max-md:hidden"
                 >
                   <div class="flex justify-between gap-2.5 rounded-[20px] bg-white p-7.5">
                     <div class="grid gap-2.5">

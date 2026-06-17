@@ -1836,6 +1836,13 @@
       opacity: 0%;
     }
   }
+  .md\:transition-opacity {
+    @media (width >= 48rem) {
+      transition-property: opacity;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
   .md\:not-last\:pr-12 {
     @media (width >= 48rem) {
       &:not(*:last-child) {

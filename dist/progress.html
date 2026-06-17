@@ -26,7 +26,7 @@
     <!-- header -->
     <header class="relative.5">
       <!-- search -->
-      <div class="absolute top-0 left-0 z-60 hidden w-full bg-white py-4 data-active:block" data-search-container>
+      <div class="pointer-events-none absolute top-0 left-0 z-60 w-full bg-white py-4 opacity-0 transition-opacity data-active:pointer-events-auto data-active:opacity-100" data-search-container>
         <div class="container-base">
           <div class="relative grow">
             <input
@@ -87,7 +87,7 @@
                 >
                   <span class="typography-btr text-left">О нас</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -110,7 +110,7 @@
                 >
                   <span class="typography-btr text-left">Продукция</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -133,7 +133,7 @@
                 >
                   <span class="typography-btr text-left">Технологии</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -156,7 +156,7 @@
                 >
                   <span class="typography-btr text-left">Достижения криптена</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -179,7 +179,7 @@
                 >
                   <span class="typography-btr text-left">Медиа</span>
                   <span class="shrink-0 group-data-active/item:rotate-180">
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </span>
@@ -259,12 +259,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="about.html">
                     О нас
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -277,12 +277,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="products.html">
                     Продукция
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -295,12 +295,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="technology.html">
                     Технологии
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -313,12 +313,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="progress.html">
                     Достижения криптена
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -331,12 +331,12 @@
                 <li class="group relative">
                   <a class="link py-[7px] whitespace-nowrap" href="news.html">
                     Медиа
-                    <svg class="group-hover:rotate-180" width="10" height="6">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
                       <use href="assets/img/svg/sprite.svg#to-bottom"></use>
                     </svg>
                   </a>
                   <ul
-                    class="bg-gray-bg absolute top-full left-0 z-30 hidden min-w-[280px] gap-2.5 rounded-lg p-4 group-hover:grid"
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
                   >
                     <li><a href="#">Голографические этикетки</a></li>
                     <li><a href="#">Фотополимерные этикетки</a></li>
@@ -418,7 +418,7 @@
       <section class="pb-[50px] md:pb-[130px]">
         <div class="container-base grid gap-5 lg:grid-cols-2">
           <a class="group relative block gap-5 overflow-hidden rounded-[20px] 2xl:aspect-890/500" href="patents.html">
-            <div class="pointer-events-none absolute inset-0 group-hover:scale-105">
+            <div class="pointer-events-none absolute inset-0 transition-transform group-hover:scale-105">
               <img class="h-full w-full object-cover" src="assets/img/new-big-5.jpg" alt="new" />
               <div class="gradient-blue-dark absolute inset-0 opacity-70"></div>
             </div>
@@ -441,7 +441,7 @@
             </div>
           </a>
           <a class="group relative block gap-5 overflow-hidden rounded-[20px] 2xl:aspect-890/500" href="#">
-            <div class="pointer-events-none absolute inset-0 group-hover:scale-105">
+            <div class="pointer-events-none absolute inset-0 transition-transform group-hover:scale-105">
               <img class="h-full w-full object-cover" src="assets/img/new-big-6.jpg" alt="new" />
               <div class="gradient-blue-dark absolute inset-0 opacity-70"></div>
             </div>
