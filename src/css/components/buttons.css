@@ -1,7 +1,7 @@
 @layer components {
   /* buttons */
   .btn {
-    @apply typography-psm cursor-pointer ;
+    @apply typography-psm cursor-pointer transition-all;
     @apply min-h-12.5 text-center md:min-h-16;
     @apply rounded-full px-7.5 py-4;
     @apply inline-flex items-center justify-center gap-2.5;
@@ -56,16 +56,16 @@
 
   /* burger */
   .btn-burger {
-    @apply bg-blue-dark hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full text-white 2xl:hidden;
+    @apply bg-blue-dark hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full text-white transition-all 2xl:hidden;
   }
 
   /* search */
   .btn-search {
-    @apply max-2xl:bg-gray-bg max-2xl:hover:bg-blue-hover max-2xl:hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full;
+    @apply max-2xl:bg-gray-bg max-2xl:hover:bg-blue-hover max-2xl:hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full transition-all;
   }
 
   /* menu-icon */
   .btn-menu {
-    @apply hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full bg-white;
+    @apply hover:bg-blue-hover hover:text-blue-dark inline-flex h-10 w-10 items-center justify-center rounded-full bg-white transition-all;
   }
 }

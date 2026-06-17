@@ -28,6 +28,6 @@
   }
 
   a {
-    @apply hover:text-blue-dark;
+    @apply hover:text-blue-dark transition-colors;
   }
 }

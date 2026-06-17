@@ -25,7 +25,7 @@
   }
 
   .input-icon {
-    @apply typography-pr text-gray-element absolute top-5 right-5 h-[18px] w-[18px] ;
+    @apply typography-pr text-gray-element absolute top-5 right-5 h-[18px] w-[18px];
   }
 
   .input-wrapper:has(.input:not(:placeholder-shown)) .input-icon,
@@ -36,7 +36,7 @@
 
   /* file */
   .file-input {
-    @apply border-blue-dark flex min-h-16 w-full cursor-pointer items-center justify-between rounded-full border-2 border-dashed px-7.5 py-2.5 ;
+    @apply border-blue-dark flex min-h-16 w-full cursor-pointer items-center justify-between rounded-full border-2 border-dashed px-7.5 py-2.5 transition-colors;
   }
 
   .file-input:hover {
@@ -49,11 +49,11 @@
   }
 
   .file-text {
-    @apply typography-psm text-blue-dark ;
+    @apply typography-psm text-blue-dark transition-colors;
   }
 
   .file-icon {
-    @apply text-blue-dark shrink-0 ;
+    @apply text-blue-dark shrink-0 transition-colors;
   }
 
   /* checkbox */
@@ -62,7 +62,7 @@
   }
 
   .form-checkbox {
-    @apply border-blue-dark h-5 w-5 shrink-0 translate-y-0.5 cursor-pointer appearance-none rounded-[5px] border-2 bg-white ;
+    @apply border-blue-dark h-5 w-5 shrink-0 translate-y-0.5 cursor-pointer appearance-none rounded-[5px] border-2 bg-white;
     @apply checked:bg-blue-dark checked:border-blue-dark checked:bg-check checked:bg-center checked:bg-no-repeat;
   }
 }
