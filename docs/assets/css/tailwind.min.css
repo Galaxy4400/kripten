@@ -1142,13 +1142,6 @@
       }
     }
   }
-  .group-hover\:grid {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        display: grid;
-      }
-    }
-  }
   .group-hover\:scale-105 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1362,11 +1355,6 @@
   .data-active\:pointer-events-auto {
     &[data-active] {
       pointer-events: auto;
-    }
-  }
-  .data-active\:block {
-    &[data-active] {
-      display: block;
     }
   }
   .data-active\:bg-blue-dark {
