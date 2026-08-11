@@ -129,6 +129,7 @@ const initSliders = () => {
   initSlider('main', { loop: true }, [EmblaCarouselFade(), EmblaCarouselAutoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })]);
 	initSlider('news', { loop: false, slidesToScroll: 1 });
 	initSlider('prod', { loop: false, slidesToScroll: 1 });
+	initSlider('awards', { loop: false, slidesToScroll: 1, align: 'start' });
 };
 
 //===============================================================
