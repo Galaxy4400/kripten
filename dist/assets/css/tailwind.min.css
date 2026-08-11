@@ -1710,11 +1710,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-\[3fr_2fr\] {
-    @media (width >= 48rem) {
-      grid-template-columns: 3fr 2fr;
-    }
-  }
   .md\:items-center {
     @media (width >= 48rem) {
       align-items: center;
