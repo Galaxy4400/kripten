@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Криптен</title>
+
+    <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    <script src="https://unpkg.com/embla-carousel@8.6.0/embla-carousel.umd.js" defer></script>
+    <script src="https://unpkg.com/embla-carousel-fade@8.6.0/embla-carousel-fade.umd.js" defer></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay@8.6.0/embla-carousel-autoplay.umd.js" defer></script>
+    <script src="https://unpkg.com/imask@7.6.1/dist/imask.js" defer></script>
+    <script src="assets/js/lazyload.min.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/custom-select.js" defer></script>
+    <script src="assets/js/forms.js" defer></script>
+    <script src="assets/js/sliders.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js" defer></script>
+    <script src="assets/js/smooth-scroll.js" defer></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="relative mb-2.5">
+      <!-- search -->
+      <div
+        class="pointer-events-none absolute top-0 left-0 z-60 w-full bg-white py-4 opacity-0 transition-opacity data-active:pointer-events-auto data-active:opacity-100"
+        data-search-container
+      >
+        <div class="container-base">
+          <div class="relative grow">
+            <input
+              class="typography-pr bg-gray-bg h-[52px] w-full rounded px-7.5 py-2.5 pr-[70px]"
+              type="text"
+              placeholder="Я хочу найти..."
+              aria-label="Я хочу найти..."
+              data-search-input
+            />
+            <div class="absolute top-1/2 right-7.5 flex -translate-y-1/2 items-center">
+              <button class="cursor-pointer" data-search-action aria-label="Найти">
+                <svg width="20" height="20">
+                  <use href="assets/img/svg/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu" data-mobile-menu>
+        <div>
+          <div class="container-base bg-gray-bg flex justify-between gap-5 py-6">
+            <div class="link link-blue shrink-0 basis-[182px]">
+              <svg width="182" height="29">
+                <use href="assets/img/svg/sprite.svg#logo"></use>
+              </svg>
+            </div>
+            <button class="btn-menu" data-menu-close aria-label="Закрыть меню">
+              <svg width="14" height="14">
+                <use href="assets/img/svg/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="container-base grid gap-10 py-7.5">
+            <div class="relative">
+              <input
+                class="typography-pr bg-gray-bg h-[52px] w-full rounded px-7.5 py-2.5 pr-[70px]"
+                type="text"
+                placeholder="Я хочу найти..."
+                aria-label="Я хочу найти..."
+                data-search-input
+              />
+              <div class="absolute top-1/2 right-7.5 flex -translate-y-1/2 items-center">
+                <button class="cursor-pointer" data-search-action aria-label="Найти">
+                  <svg width="20" height="20">
+                    <use href="assets/img/svg/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="" data-spoiler="mobile-menu">
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">О нас</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Продукция</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Технологии</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Достижения криптена</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Медиа</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item overflow-hidden">
+                <a
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  href="contacts.html"
+                >
+                  <span class="typography-btr text-left">Контакты</span>
+                </a>
+              </div>
+            </div>
+            <div class="card grid gap-7.5">
+              <div class="grid gap-5">
+                <div class="grid">
+                  <a class="link typography-btsm whitespace-nowrap" href="tel:+74957770722">+7 (495) 777 07 22</a>
+                  <a class="link link-blue whitespace-nowrap" href="tel:88005006065">8 (800) 500 60 65</a>
+                </div>
+                <div>
+                  <a class="btn btn-blue" href="#">Заказать звонок</a>
+                </div>
+              </div>
+              <hr class="text-stroke-in-bg" />
+              <div class="text-gray-text grid gap-5">
+                <p class="grid gap-2.5">
+                  <span>Email</span> <a class="text-black" href="mailto:sale@krypten.ru">sale@krypten.ru</a>
+                </p>
+                <p class="grid gap-2.5">
+                  <span>Адрес</span> <span class="text-black">г. Дубна, ул. Приборостроителей 2</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main -->
+      <div class="bg-gray-bg max-md:hidden">
+        <div class="container-base flex justify-between gap-7.5 py-4">
+          <div class="text-gray-text flex flex-wrap items-center gap-7.5">
+            <p class="inline-flex gap-2.5 text-base">г. Дубна, ул. Приборостроителей 2</p>
+            <div class="bg-gray-element h-1.5 w-1.5"></div>
+            <p class="inline-flex gap-2.5 text-base"><a href="mailto:sale@krypten.ru">sale@krypten.ru</a></p>
+          </div>
+          <div class="px-5">
+            <button class="btn-search shrink-0" type="button" data-search-open aria-label="Открыть поиск">
+              <svg width="24" height="24">
+                <use href="assets/img/svg/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="py-6">
+        <div class="container-base flex justify-between gap-[70px]">
+          <div class="flex grow items-center gap-5 max-2xl:justify-between max-md:w-full md:gap-[70px]">
+            <a class="link link-blue shrink-0 basis-[182px]">
+              <svg width="182" height="29">
+                <use href="assets/img/svg/sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+            <nav class="flex items-center gap-10 max-md:gap-1.25">
+              <ul class="flex flex-wrap justify-center gap-x-10 max-2xl:hidden">
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="about.html">
+                    О нас
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="products.html">
+                    Продукция
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="technology.html">
+                    Технологии
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="progress.html">
+                    Достижения криптена
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="news.html">
+                    Медиа
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+              <button class="btn-burger shrink-0" data-menu-icon aria-label="Открыть меню">
+                <svg width="18" height="18">
+                  <use href="assets/img/svg/sprite.svg#menu-icon"></use>
+                </svg>
+              </button>
+            </nav>
+          </div>
+          <div class="flex items-center gap-7.5 max-lg:hidden">
+            <div class="grid">
+              <a class="link typography-btsm whitespace-nowrap" href="tel:+74957770722">+7 (495) 777 07 22</a>
+              <a class="link link-blue whitespace-nowrap" href="tel:88005006065">8 (800) 500 60 65</a>
+            </div>
+            <a class="btn btn-blue whitespace-nowrap" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- breadcrumbs -->
+      <section class="py-5 md:pt-7.5 md:pb-[50px]">
+        <div class="container-base grid gap-5 md:gap-7.5">
+          <nav class="breadcrumbs" aria-label="breadcrumbs">
+            <a href="index.html" class="breadcrumb-item">Главная</a>
+            <span class="breadcrumb-item">О компании</span>
+          </nav>
+          <h1>О компании</h1>
+        </div>
+      </section>
+
+      <section class="pb-[50px] md:pb-[130px]">
+        <div class="container-base grid gap-5 lg:grid-cols-[40%_1fr]">
+          <div class="grid gap-5">
+            <div class="relative min-h-[620px]">
+              <div class="absolute size-full overflow-hidden rounded-[20px]">
+                <img class="size-full object-cover object-top" src="assets/img/persone.png" alt="persone" />
+              </div>
+            </div>
+            <!-- <div class="grid gap-5 2xl:grid-cols-2">
+              <a
+                class="bg-gray-bg group/file flex items-center justify-between gap-5 rounded-[20px] p-5 md:px-10 md:py-7.5"
+                href="#"
+              >
+                <div class="grid gap-2.5">
+                  <p class="typography-h6">Реквизиты</p>
+                  <p class="typography-btr inline-flex gap-1.25">
+                    <span>1.5 </span> <span class="text-gray-element">Мбайт</span>
+                  </p>
+                </div>
+                <div
+                  class="border-blue-dark text-blue-dark group-hover/file:bg-blue-dark inline-flex h-[65px] w-[65px] shrink-0 items-center justify-center rounded-full border group-hover/file:text-white"
+                >
+                  <svg width="24" height="24">
+                    <use href="assets/img/svg/sprite.svg#download"></use>
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="bg-gray-bg group/file flex items-center justify-between gap-5 rounded-[20px] p-5 md:px-10 md:py-7.5"
+                href="#"
+              >
+                <div class="grid gap-2.5">
+                  <p class="typography-h6">Логотип</p>
+                  <p class="typography-btr inline-flex gap-1.25">
+                    <span>2.5 </span> <span class="text-gray-element">Мбайт</span>
+                  </p>
+                </div>
+                <div
+                  class="border-blue-dark text-blue-dark group-hover/file:bg-blue-dark inline-flex h-[65px] w-[65px] shrink-0 items-center justify-center rounded-full border group-hover/file:text-white"
+                >
+                  <svg width="24" height="24">
+                    <use href="assets/img/svg/sprite.svg#download"></use>
+                  </svg>
+                </div>
+              </a>
+            </div> -->
+          </div>
+          <div class="bg-gray-bg relative overflow-hidden rounded-[20px]">
+            <div class="absolute top-0 right-0 w-[500px] translate-x-1/3 -translate-y-2/5 opacity-10 grayscale">
+              <img src="assets/img/svg/deco-10-gray.svg" alt="deco" />
+            </div>
+            <div class="grid gap-6 p-6 md:gap-[50px] md:p-[50px]">
+              <div class="grid gap-5 md:gap-[30px]">
+                <p class="typography-h6">
+                  АО «НПО «КРИПТЕН» уже более 25 лет является лидером в разработке защитных технологий, обеспечивающих
+                  подтверждение подлинности продукции и документов.
+                </p>
+                <p>
+                  Наши уникальные визуальные защитные элементы наносятся на банкноты, паспорта, упаковку и продукцию
+                  различного назначения, требующую надежную защиту от фальсификации.
+                </p>
+                <p>
+                  Созданное в 1997 году научно-производственное объединение расположено в наукограде Дубна Московской
+                  области. Сегодня компания представляет собой высокотехнологичное предприятие, оснащенное передовым
+                  оборудованием и объединяющее команду высококлассных профессионалов. Развитием новых разработок
+                  занимается команда из 50 специалистов в области оптических технологий. «НПО Криптен» активно внедряет
+                  инновационные разработки совместно с ведущими производителями мирового уровня, обеспечивая рынок
+                  эффективными защитными элементами с повышенной устойчивостью к копированию. Совместно с АО «Гознак» мы
+                  создаем и поставляем специальные защитные нити, используемые на всех российских денежных знаках, а
+                  также высокоэффективные ламинаты для паспортов и иных удостоверяющих личность документов.
+                </p>
+                <p>
+                  Для Вас открывается возможность знакомства с нашими технологиями, позволяющими надежно защитить вашу
+                  продукцию или документацию от любых попыток фальсификации.
+                </p>
+              </div>
+              <hr class="text-stroke-in-bg" />
+              <div>
+                <p>
+                  <span class="typography-btsm"
+                    >Свяжитесь с нами по электронной почте
+                    <a class="text-blue-dark underline" href="mailto:sale@krypten.ru">sale@krypten.ru</a></span
+                  >, и наши специалисты предложат оптимальное решение, разработают уникальный дизайн и обеспечат
+                  производство высококачественных защитных элементов специально для ваших нужд.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-blue-dark relative overflow-hidden py-20 text-white">
+      <div class="container-base relative flex justify-between gap-5 max-2xl:flex-col md:gap-10">
+        <div class="flex flex-col justify-between gap-10">
+          <a class="link link-white aspect-182/29 max-w-[141px] md:max-w-[283px]">
+            <svg>
+              <use href="assets/img/svg/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="typography-pr grid gap-5 max-2xl:hidden">
+            <p class="text-white/50">Политика обработки персональных данных</p>
+            <div>
+              <p>© 2021 - 2025, АО «НПО «КРИПТЕН».</p>
+              <p class="text-white/50">Все права защищены.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between gap-7.5 max-lg:flex-col md:gap-[50px] 2xl:gap-[125px]">
+          <div class="flex flex-col justify-between gap-[65px]">
+            <div class="flex gap-x-10 max-lg:flex-col lg:gap-y-6">
+              <nav
+                class="grid content-start gap-2.5 border-b border-white/50 lg:border-none"
+                data-spoiler="footer-about"
+              >
+                <div class="group/item grid content-start lg:gap-[25px]">
+                  <button
+                    class="group/button flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="typography-pr text-white/50">Меню</span>
+                    <span class="w-2.5 group-hover/button:text-white group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="max-h-0 overflow-hidden lg:max-h-none! lg:overflow-visible" data-spoiler-content>
+                    <ul class="grid content-start gap-[15px] max-lg:pb-4">
+                      <li><a class="link link-white" href="about.html">О нас</a></li>
+                      <li><a class="link link-white" href="products.html">Продукция</a></li>
+                      <li><a class="link link-white" href="technology.html">Технологии</a></li>
+                      <li><a class="link link-white" href="progress.html">Достижения Криптена</a></li>
+                      <li><a class="link link-white" href="news.html">Медиа</a></li>
+                      <li><a class="link link-white" href="contacts.html">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav
+                class="grid content-start gap-2.5 border-b border-white/50 lg:border-none"
+                data-spoiler="footer-prod"
+              >
+                <div class="group/item grid content-start lg:gap-[25px]">
+                  <button
+                    class="group/button flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="typography-pr text-white/50">Продукция</span>
+                    <span class="w-2.5 group-hover/button:text-white group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="max-h-0 overflow-hidden lg:max-h-none! lg:overflow-visible" data-spoiler-content>
+                    <ul class="grid content-start gap-[15px] max-lg:pb-4">
+                      <li><a class="link link-white" href="#">Голографические этикетки</a></li>
+                      <li><a class="link link-white" href="#">Фотополимерные этикетки</a></li>
+                      <li><a class="link link-white" href="#">Пломбировочные этикетки</a></li>
+                      <li><a class="link link-white" href="#">Пломбировочный скотч</a></li>
+                      <li><a class="link link-white" href="#">Фольги горячей припрессовки</a></li>
+                      <li><a class="link link-white" href="#">Защитные ламинаты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav
+                class="grid content-start gap-2.5 border-b border-white/50 lg:border-none"
+                data-spoiler="footer-docs"
+              >
+                <div class="group/item grid content-start lg:gap-[25px]">
+                  <button
+                    class="group/button flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="typography-pr text-white/50">Документы</span>
+                    <span class="w-2.5 group-hover/button:text-white group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="max-h-0 overflow-hidden lg:max-h-none! lg:overflow-visible" data-spoiler-content>
+                    <ul class="grid content-start gap-[15px] max-lg:pb-4">
+                      <li><a class="link link-white" href="requisites.html">Реквизиты</a></li>
+                      <li><a class="link link-white" href="report.html">Отчёт СОУТ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="flex gap-10 max-2xl:hidden">
+              <div class="grid gap-[15px]">
+                <p class="typography-pr text-white/50">Электронный каталог</p>
+                <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                  <div class="min-w-[50px] shrink-0">
+                    <svg width="50" height="50">
+                      <use href="assets/img/svg/sprite.svg#stor"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="typography-tagm">Доступно в</p>
+                    <p class="typography-h5">RuStore</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-[15px]">
+                <p class="typography-pr text-white/50">Smart-HIT® приложение</p>
+                <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                  <div class="min-w-[50px] shrink-0">
+                    <svg width="50" height="50">
+                      <use href="assets/img/svg/sprite.svg#stor"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="typography-tagm">Доступно в</p>
+                    <p class="typography-h5">RuStore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-blue-light relative overflow-hidden rounded-[20px] p-5 md:p-7.5 lg:min-w-[435px]">
+            <div
+              class="absolute top-1/2 left-[55%] h-[1471px] w-[1635px] -translate-y-1/2 rounded-full bg-[radial-gradient(46.75%_46.71%_at_50.76%_51.27%,#D1E4FF_0%,rgba(209,228,255,0.00)_100%)] blur-[22px]"
+            ></div>
+            <div class="relative grid gap-7.5">
+              <p class="typography-pr text-white/50">АО «НПО «КРИПТЕН»</p>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-h6">141981, г. Дубна, ул. Приборостроителей,<br />д.2, зд. 1б, пом. 204</p>
+                <p class="typography-pr">г. Дубна, Московская область</p>
+              </div>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-h6">08:00 – 12:00, 13:00 – 17:00</p>
+                <p class="typography-pr">Пн-Пт</p>
+              </div>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-h6">
+                  <a href="tel:+78005006065">8 (800) 500-60-65</a><br />
+                  <a href="tel:+74957770722">+7 (495) 777-07-22</a>
+                </p>
+                <p class="typography-pr"><a href="mailto:sale@krypten.ru">sale@krypten.ru</a></p>
+              </div>
+              <div>
+                <button class="btn btn-white" type="button">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-7.5 2xl:hidden">
+          <div class="flex flex-wrap gap-5 md:gap-x-10">
+            <a class="grid gap-[15px]" href="#">
+              <p class="typography-pr text-white/50">Электронный каталог</p>
+              <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                <div class="min-w-[50px] shrink-0">
+                  <svg width="50" height="50">
+                    <use href="assets/img/svg/sprite.svg#stor"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="typography-tagm">Доступно в</p>
+                  <p class="typography-h5">RuStore</p>
+                </div>
+              </div>
+            </a>
+            <a class="grid gap-[15px]" href="#">
+              <p class="typography-pr text-white/50">Smart-HIT® приложение</p>
+              <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                <div class="min-w-[50px] shrink-0">
+                  <svg width="50" height="50">
+                    <use href="assets/img/svg/sprite.svg#stor"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="typography-tagm">Доступно в</p>
+                  <p class="typography-h5">RuStore</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="typography-pr grid gap-5">
+            <p class="text-white/50">Политика обработки персональных данных</p>
+            <div>
+              <p>© 2021 - 2025, АО «НПО «КРИПТЕН».</p>
+              <p class="text-white/50">Все права защищены.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
