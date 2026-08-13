@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Криптен</title>
+
+    <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    <script src="https://unpkg.com/embla-carousel@8.6.0/embla-carousel.umd.js" defer></script>
+    <script src="https://unpkg.com/embla-carousel-fade@8.6.0/embla-carousel-fade.umd.js" defer></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay@8.6.0/embla-carousel-autoplay.umd.js" defer></script>
+    <script src="https://unpkg.com/imask@7.6.1/dist/imask.js" defer></script>
+    <script src="assets/js/lazyload.min.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/custom-select.js" defer></script>
+    <script src="assets/js/forms.js" defer></script>
+    <script src="assets/js/sliders.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js" defer></script>
+    <script src="assets/js/smooth-scroll.js" defer></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="relative mb-2.5">
+      <!-- search -->
+      <div
+        class="pointer-events-none absolute top-0 left-0 z-60 w-full bg-white py-4 opacity-0 transition-opacity data-active:pointer-events-auto data-active:opacity-100"
+        data-search-container
+      >
+        <div class="container-base">
+          <div class="relative grow">
+            <input
+              class="typography-pr bg-gray-bg h-[52px] w-full rounded px-7.5 py-2.5 pr-[70px]"
+              type="text"
+              placeholder="Я хочу найти..."
+              aria-label="Я хочу найти..."
+              data-search-input
+            />
+            <div class="absolute top-1/2 right-7.5 flex -translate-y-1/2 items-center">
+              <button class="cursor-pointer" data-search-action aria-label="Найти">
+                <svg width="20" height="20">
+                  <use href="assets/img/svg/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu" data-mobile-menu>
+        <div>
+          <div class="container-base bg-gray-bg flex justify-between gap-5 py-6">
+            <div class="link link-blue shrink-0 basis-[182px]">
+              <svg width="182" height="29">
+                <use href="assets/img/svg/sprite.svg#logo"></use>
+              </svg>
+            </div>
+            <button class="btn-menu" data-menu-close aria-label="Закрыть меню">
+              <svg width="14" height="14">
+                <use href="assets/img/svg/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="container-base grid gap-10 py-7.5">
+            <div class="relative">
+              <input
+                class="typography-pr bg-gray-bg h-[52px] w-full rounded px-7.5 py-2.5 pr-[70px]"
+                type="text"
+                placeholder="Я хочу найти..."
+                aria-label="Я хочу найти..."
+                data-search-input
+              />
+              <div class="absolute top-1/2 right-7.5 flex -translate-y-1/2 items-center">
+                <button class="cursor-pointer" data-search-action aria-label="Найти">
+                  <svg width="20" height="20">
+                    <use href="assets/img/svg/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="" data-spoiler="mobile-menu">
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">О нас</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Продукция</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Технологии</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Достижения криптена</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item border-gray-bg overflow-hidden border-b">
+                <button
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  data-spoiler-button
+                >
+                  <span class="typography-btr text-left">Медиа</span>
+                  <span class="shrink-0 group-data-active/item:rotate-180">
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </span>
+                </button>
+                <div class="max-h-0 overflow-hidden" data-spoiler-content>
+                  <ul class="typography-pr grid gap-3.75 pb-4">
+                    <li><a class="link" href="#">Голографические этикетки</a></li>
+                    <li><a class="link" href="#">Фотополимерные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочные этикетки</a></li>
+                    <li><a class="link" href="#">Пломбировочный скотч</a></li>
+                    <li><a class="link" href="#">Фольги горячей припрессовки</a></li>
+                    <li><a class="link" href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="group/item overflow-hidden">
+                <a
+                  class="group/button flex w-full cursor-pointer items-center justify-between gap-4 py-4"
+                  href="contacts.html"
+                >
+                  <span class="typography-btr text-left">Контакты</span>
+                </a>
+              </div>
+            </div>
+            <div class="card grid gap-7.5">
+              <div class="grid gap-5">
+                <div class="grid">
+                  <a class="link typography-btsm whitespace-nowrap" href="tel:+74957770722">+7 (495) 777 07 22</a>
+                  <a class="link link-blue whitespace-nowrap" href="tel:88005006065">8 (800) 500 60 65</a>
+                </div>
+                <div>
+                  <a class="btn btn-blue" href="#">Заказать звонок</a>
+                </div>
+              </div>
+              <hr class="text-stroke-in-bg" />
+              <div class="text-gray-text grid gap-5">
+                <p class="grid gap-2.5">
+                  <span>Email</span> <a class="text-black" href="mailto:sale@krypten.ru">sale@krypten.ru</a>
+                </p>
+                <p class="grid gap-2.5">
+                  <span>Адрес</span> <span class="text-black">г. Дубна, ул. Приборостроителей 2</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main -->
+      <div class="bg-gray-bg max-md:hidden">
+        <div class="container-base flex justify-between gap-7.5 py-4">
+          <div class="text-gray-text flex flex-wrap items-center gap-7.5">
+            <p class="inline-flex gap-2.5 text-base">г. Дубна, ул. Приборостроителей 2</p>
+            <div class="bg-gray-element h-1.5 w-1.5"></div>
+            <p class="inline-flex gap-2.5 text-base"><a href="mailto:sale@krypten.ru">sale@krypten.ru</a></p>
+          </div>
+          <div class="px-5">
+            <button class="btn-search shrink-0" type="button" data-search-open aria-label="Открыть поиск">
+              <svg width="24" height="24">
+                <use href="assets/img/svg/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="py-6">
+        <div class="container-base flex justify-between gap-[70px]">
+          <div class="flex grow items-center gap-5 max-2xl:justify-between max-md:w-full md:gap-[70px]">
+            <a class="link link-blue shrink-0 basis-[182px]">
+              <svg width="182" height="29">
+                <use href="assets/img/svg/sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+            <nav class="flex items-center gap-10 max-md:gap-1.25">
+              <ul class="flex flex-wrap justify-center gap-x-10 max-2xl:hidden">
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="about.html">
+                    О нас
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="products.html">
+                    Продукция
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="technology.html">
+                    Технологии
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="progress.html">
+                    Достижения криптена
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="news.html">
+                    Медиа
+                    <svg class="transition-transform group-hover:rotate-180" width="10" height="6">
+                      <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                    </svg>
+                  </a>
+                  <ul
+                    class="bg-gray-bg pointer-events-none absolute top-full left-0 z-30 grid min-w-[280px] gap-2.5 rounded-lg p-4 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100"
+                  >
+                    <li><a href="#">Голографические этикетки</a></li>
+                    <li><a href="#">Фотополимерные этикетки</a></li>
+                    <li><a href="#">Пломбировочные этикетки</a></li>
+                    <li><a href="#">Пломбировочный скотч</a></li>
+                    <li><a href="#">Фольги горячей припрессовки</a></li>
+                    <li><a href="#">Защитные ламинаты</a></li>
+                  </ul>
+                </li>
+                <li class="group relative">
+                  <a class="link py-[7px] whitespace-nowrap" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+              <button class="btn-burger shrink-0" data-menu-icon aria-label="Открыть меню">
+                <svg width="18" height="18">
+                  <use href="assets/img/svg/sprite.svg#menu-icon"></use>
+                </svg>
+              </button>
+            </nav>
+          </div>
+          <div class="flex items-center gap-7.5 max-lg:hidden">
+            <div class="grid">
+              <a class="link typography-btsm whitespace-nowrap" href="tel:+74957770722">+7 (495) 777 07 22</a>
+              <a class="link link-blue whitespace-nowrap" href="tel:88005006065">8 (800) 500 60 65</a>
+            </div>
+            <a class="btn btn-blue whitespace-nowrap" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- breadcrumbs -->
+      <section class="py-5 md:pt-7.5 md:pb-[50px]">
+        <div class="container-base grid gap-5 md:gap-7.5">
+          <nav class="breadcrumbs" aria-label="breadcrumbs">
+            <a href="index.html" class="breadcrumb-item">Главная</a>
+            <span class="breadcrumb-item">Контакты</span>
+          </nav>
+          <h1>Контакты</h1>
+        </div>
+      </section>
+
+      <section class="pb-[50px] max-lg:hidden">
+        <div class="container-base grid grid-cols-5 gap-5">
+          <a class="btn btn-gray btn-big" href="#contacts">Головной офис/Производство</a>
+          <a class="btn btn-gray btn-big" href="#dist">Официальные дистрибьюторы</a>
+          <a class="btn btn-gray btn-big" href="#map">Мы на карте</a>
+          <a class="btn btn-gray btn-big" href="#form">Оставить заявку</a>
+          <a class="btn btn-gray btn-big" href="#info">Реквизиты компании</a>
+        </div>
+      </section>
+
+      <section class="pb-20 md:pb-[130px]" id="contacts">
+        <div class="container-base grid gap-5 xl:min-h-[530px] xl:grid-cols-[3fr_1fr]">
+          <div
+            class="bg-blue-dark relative flex h-full flex-col justify-between gap-5 overflow-hidden rounded-[20px] p-5 text-white md:p-10"
+          >
+            <div class="pointer-events-none absolute top-1/2 left-0 h-[898px] w-[1345px] -translate-y-1/2">
+              <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
+            </div>
+            <div
+              class="pointer-events-none absolute bottom-0 left-1/2 h-[1100px] w-[1850px] -translate-x-3/5 translate-y-3/5 bg-[radial-gradient(46.75%_46.71%_at_50.76%_51.27%,#D1E4FF_0%,rgba(209,228,255,0.00)_100%)] blur-[200px]"
+            ></div>
+            <div class="relative flex justify-between gap-5">
+              <div class="grid gap-7.5">
+                <h2>Головной офис/Производство</h2>
+                <p class="typography-btr inline-flex flex-wrap gap-3.5">
+                  <span class="text-white/40">Адрес:</span> 141981, г. Дубна, ул. Приборостроителей, д. 2
+                </p>
+              </div>
+              <div>
+                <img src="assets/img/svg/logo-icon.svg" alt="alt" />
+              </div>
+            </div>
+            <div class="relative grid gap-5 md:grid-cols-2">
+              <div class="bg-blue-dark grid gap-7.5 rounded-[20px] p-6.25">
+                <p class="typography-btsm">Отдел заказов/прием заказов</p>
+                <div class="flex flex-wrap gap-x-14.5 gap-y-3.75">
+                  <div class="grid content-start gap-3.75">
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Телефоны:</p>
+                      <a href="tel:+74957770722">+7 (495) 777-07-22</a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <a href="tel:+78005006065">8 (800) 500-60-65</a>
+                      <p class="typography-tagm text-white/35">Звонок бесплатный</p>
+                    </div>
+                  </div>
+                  <div class="grid content-start gap-3.75">
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Email:</p>
+                      <a href="mailto:sale@krypten.ru">sale@krypten.ru</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-blue-dark grid gap-7.5 rounded-[20px] p-6.25">
+                <p class="typography-btsm">Секретариат</p>
+                <div class="flex flex-wrap gap-x-14.5 gap-y-3.75">
+                  <div class="grid content-start gap-3.75">
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Телефоны:</p>
+                      <a class="typography-psm" href="tel:+74957770722">+7 (495) 777-07-22</a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Факс</p>
+                      <a class="typography-psm" href="tel:+74957770722">+7 (495) 777-07-22</a>
+                    </div>
+                  </div>
+                  <div class="grid content-start gap-3.75">
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Email:</p>
+                      <a href="mailto:ceo@krypten.ru">ceo@krypten.ru</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-bg flex h-full flex-col justify-between gap-5 rounded-[20px] p-5 md:p-10">
+            <h4>Московское представительство</h4>
+            <div class="grid gap-6.25">
+              <div class="grid content-start gap-2.5">
+                <p class="typography-tagm text-gray-element">Адрес:</p>
+                <p>119002, г. Москва,<br />переулок Сивцев Вражек д. 25/9, стр. 1</p>
+              </div>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-tagm text-gray-element">Телефоны:</p>
+                <div class="grid content-start gap-2.5">
+                  <a class="typography-btsm" href="tel:+74992456365">+7 (499) 245–63–65</a>
+                  <a class="typography-btsm" href="tel:+79855110045">+7 (985) 511-00-45</a>
+                  <a class="typography-btsm" href="tel:+79150732444">+7 (915) 073-24-44</a>
+                </div>
+              </div>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-tagm text-gray-element">Email:</p>
+                <a href="mailto:office@krypten.ru">office@krypten.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-bg relative overflow-hidden py-10 md:py-[130px]" id="dist">
+        <div class="pointer-events-none absolute top-0 right-0 -translate-y-1/2">
+          <img class="h-full w-full" src="assets/img/svg/deco-8-gray.svg" alt="deco" />
+        </div>
+        <div class="container-base relative grid gap-5 md:gap-[50px]">
+          <h2>Официальные дистрибьюторы</h2>
+          <div class="grid gap-2.5 md:gap-5" data-spoiler="contacts">
+            <div
+              class="group/item data-active:bg-blue-dark rounded-[20px] bg-white transition-colors data-active:text-white"
+              data-spoiler-item
+            >
+              <button class="relative w-full p-5 pr-[70px] text-left md:p-7.5 md:pr-[100px]" data-spoiler-button>
+                <span class="typography-h5 text-blue-dark group-data-active/item:text-white"
+                  >Официальный дистрибьютор в Северо-западном регионе ООО «Невский знак»</span
+                >
+                <span
+                  class="btn btn-blue btn-icon group-data-active/item:text-blue-dark absolute top-2.5 right-2.5 group-data-active/item:bg-white md:top-[13px] md:right-7.5"
+                >
+                  <svg class="transition-transform group-data-active/item:rotate-180" width="13" height="12">
+                    <use href="assets/img/svg/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </span>
+              </button>
+              <div class="transition-all" data-spoiler-content>
+                <div class="grid gap-5 p-5 pt-0! md:gap-[25px] md:p-7.5">
+                  <hr class="text-white/20" />
+                  <div class="flex flex-wrap gap-5">
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Телефон:</p>
+                      <a
+                        class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                        href="tel:+74992456365"
+                      >
+                        +7 (499) 245–63–65
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Факс:</p>
+                      <a
+                        class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                        href="tel:+78123128611"
+                      >
+                        +7 (812) 312–86-11
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Email:</p>
+                      <a class="link hover:text-blue-hover text-white" href="mailto:info@nevskyznak.ru">
+                        info@nevskyznak.ru
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Сайт</p>
+                      <a
+                        class="link link-underline text-blue-hover hover:text-blue-hover"
+                        href="http://www.nevskyznak.ru"
+                        >www.nevskyznak.ru</a
+                      >
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Адрес:</p>
+                      <p>191023, г. Санкт-Петербург, ул. Жуковского, д. 3, офис 207</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group/item data-active:bg-blue-dark rounded-[20px] bg-white transition-colors data-active:text-white"
+              data-spoiler-item
+            >
+              <button class="relative w-full p-5 pr-[70px] text-left md:p-7.5 md:pr-[100px]" data-spoiler-button>
+                <span class="typography-h5 text-blue-dark group-data-active/item:text-white"
+                  >ООО «Защитные Технологии»</span
+                >
+                <span
+                  class="btn btn-blue btn-icon group-data-active/item:text-blue-dark absolute top-2.5 right-2.5 group-data-active/item:bg-white md:top-[13px] md:right-7.5"
+                >
+                  <svg class="transition-transform group-data-active/item:rotate-180" width="13" height="12">
+                    <use href="assets/img/svg/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </span>
+              </button>
+              <div class="transition-all" data-spoiler-content>
+                <div class="grid gap-5 p-5 pt-0! md:gap-[25px] md:p-7.5">
+                  <hr class="text-white/20" />
+                  <div class="grid gap-5 md:grid-cols-2">
+                    <div class="grid content-start gap-5">
+                      <div class="grid content-start gap-2.5">
+                        <p class="typography-tagm text-white/35">Юрид. адрес:</p>
+                        <p>Краснодарский край, г. Краснодар, Кубанская набережная, д. 45, офис 81</p>
+                      </div>
+                      <div class="grid content-start gap-2.5">
+                        <p class="typography-tagm text-white/35">Офис:</p>
+                        <p>Краснодарский край, г. Краснодар, ул. Вишняковой, д. 2, офис 14</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-wrap gap-5">
+                      <div class="grid content-start gap-2.5">
+                        <p class="typography-tagm text-white/35">Телефон:</p>
+                        <a
+                          class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                          href="tel:+78612397452"
+                        >
+                          +7 (861) 239-74-52
+                        </a>
+                      </div>
+                      <div class="grid content-start gap-2.5">
+                        <p class="typography-tagm text-white/35">Факс:</p>
+                        <a
+                          class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                          href="tel:+78612396938"
+                        >
+                          +7 (861) 239–69–38
+                        </a>
+                      </div>
+                      <div class="grid content-start gap-2.5">
+                        <p class="typography-tagm text-white/35">Моб. телефоны:</p>
+                        <a
+                          class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                          href="tel:+79181303957"
+                        >
+                          +7 (918) 130-39-57
+                        </a>
+                        <a
+                          class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                          href="tel:+79184628612"
+                        >
+                          +7 (918) 462-86-12
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group/item data-active:bg-blue-dark rounded-[20px] bg-white transition-colors data-active:text-white"
+              data-spoiler-item
+            >
+              <button class="relative w-full p-5 pr-[70px] text-left md:p-7.5 md:pr-[100px]" data-spoiler-button>
+                <span class="typography-h5 text-blue-dark group-data-active/item:text-white">ИП Зильберман</span>
+                <span
+                  class="btn btn-blue btn-icon group-data-active/item:text-blue-dark absolute top-2.5 right-2.5 group-data-active/item:bg-white md:top-[13px] md:right-7.5"
+                >
+                  <svg class="transition-transform group-data-active/item:rotate-180" width="13" height="12">
+                    <use href="assets/img/svg/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </span>
+              </button>
+              <div class="transition-all" data-spoiler-content>
+                <div class="grid gap-5 p-5 pt-0! md:gap-[25px] md:p-7.5">
+                  <hr class="text-white/20" />
+                  <div class="flex flex-wrap gap-5">
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Адрес:</p>
+                      <p>241035, г. Брянск, ул. Камозина, 4А, кв. 35</p>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Телефон:</p>
+                      <a
+                        class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                        href="tel:+74832513471"
+                      >
+                        +7 (4832) 513-471
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Моб. телефон:</p>
+                      <a
+                        class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                        href="tel:+79038695693"
+                      >
+                        +7 (903) 869–56–93
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Контактное лицо:</p>
+                      <p>Зильберман Эдуард Петрович</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group/item data-active:bg-blue-dark rounded-[20px] bg-white transition-colors data-active:text-white"
+              data-spoiler-item
+            >
+              <button class="relative w-full p-5 pr-[70px] text-left md:p-7.5 md:pr-[100px]" data-spoiler-button>
+                <span class="typography-h5 text-blue-dark group-data-active/item:text-white"
+                  >Официальный представитель в Поволжском регионе ООО «Криптен-Волга»</span
+                >
+                <span
+                  class="btn btn-blue btn-icon group-data-active/item:text-blue-dark absolute top-2.5 right-2.5 group-data-active/item:bg-white md:top-[13px] md:right-7.5"
+                >
+                  <svg class="transition-transform group-data-active/item:rotate-180" width="13" height="12">
+                    <use href="assets/img/svg/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </span>
+              </button>
+              <div class="transition-all" data-spoiler-content>
+                <div class="grid gap-5 p-5 pt-0! md:gap-[25px] md:p-7.5">
+                  <hr class="text-white/20" />
+                  <div class="flex flex-wrap gap-5">
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Адрес:</p>
+                      <p>443068, г. Самара, проспект Масленникова, д. 4, офис 21</p>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Телефон:</p>
+                      <a
+                        class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                        href="tel:+78002011537"
+                      >
+                        8 (800) 201-15-37
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">(для бесплатных звонков по России)</p>
+                      <a
+                        class="link typography-btsm hover:text-blue-hover whitespace-nowrap text-white"
+                        href="tel:+79626070337"
+                      >
+                        +7 (962) 607-03-37
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Email:</p>
+                      <a class="link hover:text-blue-hover text-white" href="mailto:kryptenvolga@yandex.ru">
+                        kryptenvolga@yandex.ru
+                      </a>
+                    </div>
+                    <div class="grid content-start gap-2.5">
+                      <p class="typography-tagm text-white/35">Сайт:</p>
+                      <a class="link link-underline text-blue-hover hover:text-blue-hover" href="http://kryptenvolga.ru"
+                        >kryptenvolga.ru</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-bg relative overflow-hidden pb-10 md:pb-[130px]" id="map">
+        <div class="pointer-events-none absolute bottom-0 left-0 translate-y-1/2">
+          <img class="h-full w-full" src="assets/img/svg/deco-8-gray.svg" alt="deco" />
+        </div>
+        <div class="container-base relative grid gap-5 md:gap-[50px]">
+          <h2>Мы на карте</h2>
+          <iframe
+            class="h-[300px] w-full rounded-[20px] md:h-[650px]"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1eefa0fe9662501b406fe1a09df1bbedc2b0e9f338fc393e7a7caed91ec2a75c&amp;source=constructor"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="py-[50px] md:py-[130px]" id="form">
+        <div class="container-base relative max-md:px-0">
+          <div class="bg-blue-dark relative grid gap-5 overflow-hidden p-5 md:rounded-[20px] md:p-7.5 lg:grid-cols-2">
+            <div
+              class="pointer-events-none absolute top-1/2 left-[35%] h-[1471px] w-[1635px] -translate-y-1/2 rounded-full bg-[radial-gradient(46.75%_46.71%_at_50.76%_51.27%,#D1E4FF_0%,rgba(209,228,255,0.00)_100%)]"
+            ></div>
+            <div class="pointer-events-none absolute top-1/2 left-0 h-[898px] w-[1345px] -translate-y-1/2">
+              <img class="h-full w-full" src="assets/img/svg/pattern.svg" alt="pattern" />
+            </div>
+            <div class="relative flex flex-col justify-between gap-5 text-white">
+              <h2 class="max-w-[570px]">Получите персональную консультацию</h2>
+              <div class="grid gap-8">
+                <div class="h-[90px] w-[90px] max-lg:hidden">
+                  <img src="assets/img/svg/deco-3.svg" alt="deco" />
+                </div>
+                <p class="typography-h6 max-w-[500px]">
+                  Мы подберём оптимальное защитное решение для вашего проекта и подробно расскажем о возможностях наших
+                  технологий
+                </p>
+              </div>
+            </div>
+            <form class="relative grid content-start gap-5 rounded-[10px] bg-white p-5 md:gap-7.5 md:p-7.5" action="#">
+              <p class="typography-h5 max-md:hidden">Оставьте свои контакты — мы свяжемся с вами в ближайшее время</p>
+              <div class="grid gap-2.5 md:grid-cols-2">
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="name" type="text" placeholder=" " />
+                  <span class="input-label">Имя<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#user"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="phone" type="tel" placeholder=" " data-phone-mask />
+                  <span class="input-label">Номер телефона<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="email" type="email" placeholder=" " />
+                  <span class="input-label">Email<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#envelope"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper" data-custom-input>
+                  <input class="input" name="company" type="text" placeholder=" " />
+                  <span class="input-label">Название компании<span>*</span></span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#building"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-wrapper md:col-span-2" data-custom-input>
+                  <textarea class="input min-h-[110px] md:min-h-[130px]" name="message" placeholder=" "></textarea>
+                  <span class="input-label">Сообщение</span>
+                  <div class="input-icon">
+                    <svg width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#message"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-5">
+                <div class="grid gap-2.5 md:grid-cols-2">
+                  <label class="file-input" data-file-input-label>
+                    <input type="file" class="sr-only" data-file-input />
+                    <span class="file-text" data-file-text>Прикрепить файл</span>
+                    <svg class="file-icon" width="18" height="18">
+                      <use href="assets/img/svg/sprite.svg#clip"></use>
+                    </svg>
+                  </label>
+                  <button class="btn btn-blue justify-between" type="submit">
+                    Отправить
+                    <svg width="13" height="12">
+                      <use href="assets/img/svg/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <label class="form-checkbox-wrapper">
+                  <input class="form-checkbox" type="checkbox" name="consent" required />
+                  <span class="typography-tagm text-gray-element">
+                    Нажимая на кнопку «Отправить», я даю согласие
+                    <a class="link link-blue-light link-underline" href="#"> на обработку моих персональных данных </a>
+                  </span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-[50px] md:pb-[130px]" id="info">
+        <div class="container-base">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[1200px] border-collapse">
+              <tbody>
+                <tr>
+                  <td
+                    class="border-gray-element/30 border-y py-6 pr-6 align-top md:py-[50px] md:not-last:pr-12 2xl:not-last:pr-24"
+                  >
+                    <p class="typography-tagm text-gray-element mb-[15px]">Расчетный счет</p>
+                    <p class="typography-tagr text-gray-text">№ 40702810440110101155</p>
+                  </td>
+                  <td
+                    class="border-gray-element/30 border-y py-6 pr-6 align-top md:py-[50px] md:not-last:pr-12 2xl:not-last:pr-24"
+                  >
+                    <p class="typography-tagm text-gray-element mb-[15px]">Наименование банка</p>
+                    <p class="typography-tagr text-gray-text">ПАО «Сбербанк России» г. Москва</p>
+                  </td>
+                  <td
+                    class="border-gray-element/30 border-y py-6 pr-6 align-top md:py-[50px] md:not-last:pr-12 2xl:not-last:pr-24"
+                  >
+                    <p class="typography-tagm text-gray-element mb-[15px]">Корр./счет</p>
+                    <p class="typography-tagr text-gray-text">30101810400000000225</p>
+                  </td>
+                  <td
+                    class="border-gray-element/30 border-y py-6 pr-6 align-top md:py-[50px] md:not-last:pr-12 2xl:not-last:pr-24"
+                  >
+                    <p class="typography-tagm text-gray-element mb-[15px]">БИК</p>
+                    <p class="typography-tagr text-gray-text">044525225</p>
+                  </td>
+                  <td
+                    class="border-gray-element/30 border-y py-6 pr-6 align-top md:py-[50px] md:not-last:pr-12 2xl:not-last:pr-24"
+                  ></td>
+                  <td
+                    class="border-gray-element/30 border-y py-6 pr-6 align-top md:py-[50px] md:not-last:pr-12 2xl:not-last:pr-24"
+                  ></td>
+                </tr>
+                <tr>
+                  <td class="pt-6 pr-6 align-top md:pt-[50px] md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Полное наименование компании</p>
+                    <p class="typography-tagr text-gray-text">
+                      Акционерное общество «Научно производственное объединение «КРИПТЕН»
+                    </p>
+                  </td>
+                  <td class="pt-6 pr-6 align-top md:pt-[50px] md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Юридический адрес</p>
+                    <p class="typography-tagr text-gray-text">
+                      141981, г. Дубна, Московская область, ул. Приборостроителей, д. 2, здание 1Б, помещение 204
+                    </p>
+                  </td>
+                  <td class="pt-6 pr-6 align-top md:pt-[50px] md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Почтовый адрес</p>
+                    <p class="typography-tagr text-gray-text">
+                      ул. Приборостроителей, д. 2, зд. 1Б, пом. 204, г. Дубна, Московская область, 141981
+                    </p>
+                  </td>
+                  <td class="pt-6 pr-6 align-top md:pt-[50px] md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">ИНН</p>
+                    <p class="typography-tagr text-gray-text">5010020686</p>
+                  </td>
+                  <td class="pt-6 pr-6 align-top md:pt-[50px] md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">ОКТМО</p>
+                    <p class="typography-tagr text-gray-text">46718000</p>
+                  </td>
+                  <td class="pt-6 pr-6 align-top md:pt-[50px] md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">ОКОНХ</p>
+                    <p class="typography-tagr text-gray-text">19400, 95120</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Сокращенное наименование</p>
+                    <p class="typography-tagr text-gray-text">АО «НПО «КРИПТЕН»</p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Адрес местонахождения</p>
+                    <p class="typography-tagr text-gray-text">
+                      ул. Приборостроителей, д. 2, зд. 1Б, пом. 204, г. Дубна, Московская область, 141981
+                    </p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Телефон</p>
+                    <p class="typography-tagr text-gray-text">+7 (496) 217-13-95</p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">КПП</p>
+                    <p class="typography-tagr text-gray-text">501001001</p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">ОКПО</p>
+                    <p class="typography-tagr text-gray-text">45694788</p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">ОКВЭД</p>
+                    <p class="typography-tagr text-gray-text">18.12, 21.20.2, 22.29.2, 46.46.2, 46.90</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Дата регистрации</p>
+                    <p class="typography-tagr text-gray-text">«26» сентября 1997 года</p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24"></td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">Факс</p>
+                    <p class="typography-tagr text-gray-text">+7 (496) 217-13-96</p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24">
+                    <p class="typography-tagm text-gray-element mb-[15px]">ОГРН</p>
+                    <p class="typography-tagr text-gray-text">1025001418914</p>
+                  </td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24"></td>
+                  <td class="pt-5 pr-6 align-top md:pt-10 md:not-last:pr-12 2xl:not-last:pr-24"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-blue-dark relative overflow-hidden py-20 text-white">
+      <div class="container-base relative flex justify-between gap-5 max-2xl:flex-col md:gap-10">
+        <div class="flex flex-col justify-between gap-10">
+          <a class="link link-white aspect-182/29 max-w-[141px] md:max-w-[283px]">
+            <svg>
+              <use href="assets/img/svg/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="typography-pr grid gap-5 max-2xl:hidden">
+            <p class="text-white/50">Политика обработки персональных данных</p>
+            <div>
+              <p>© 2021 - 2025, АО «НПО «КРИПТЕН».</p>
+              <p class="text-white/50">Все права защищены.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between gap-7.5 max-lg:flex-col md:gap-[50px] 2xl:gap-[125px]">
+          <div class="flex flex-col justify-between gap-[65px]">
+            <div class="flex gap-x-10 max-lg:flex-col lg:gap-y-6">
+              <nav
+                class="grid content-start gap-2.5 border-b border-white/50 lg:border-none"
+                data-spoiler="footer-about"
+              >
+                <div class="group/item grid content-start lg:gap-[25px]">
+                  <button
+                    class="group/button flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="typography-pr text-white/50">Меню</span>
+                    <span class="w-2.5 group-hover/button:text-white group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="max-h-0 overflow-hidden lg:max-h-none! lg:overflow-visible" data-spoiler-content>
+                    <ul class="grid content-start gap-[15px] max-lg:pb-4">
+                      <li><a class="link link-white" href="about.html">О нас</a></li>
+                      <li><a class="link link-white" href="products.html">Продукция</a></li>
+                      <li><a class="link link-white" href="technology.html">Технологии</a></li>
+                      <li><a class="link link-white" href="progress.html">Достижения Криптена</a></li>
+                      <li><a class="link link-white" href="news.html">Медиа</a></li>
+                      <li><a class="link link-white" href="contacts.html">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav
+                class="grid content-start gap-2.5 border-b border-white/50 lg:border-none"
+                data-spoiler="footer-prod"
+              >
+                <div class="group/item grid content-start lg:gap-[25px]">
+                  <button
+                    class="group/button flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="typography-pr text-white/50">Продукция</span>
+                    <span class="w-2.5 group-hover/button:text-white group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="max-h-0 overflow-hidden lg:max-h-none! lg:overflow-visible" data-spoiler-content>
+                    <ul class="grid content-start gap-[15px] max-lg:pb-4">
+                      <li><a class="link link-white" href="#">Голографические этикетки</a></li>
+                      <li><a class="link link-white" href="#">Фотополимерные этикетки</a></li>
+                      <li><a class="link link-white" href="#">Пломбировочные этикетки</a></li>
+                      <li><a class="link link-white" href="#">Пломбировочный скотч</a></li>
+                      <li><a class="link link-white" href="#">Фольги горячей припрессовки</a></li>
+                      <li><a class="link link-white" href="#">Защитные ламинаты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <nav
+                class="grid content-start gap-2.5 border-b border-white/50 lg:border-none"
+                data-spoiler="footer-docs"
+              >
+                <div class="group/item grid content-start lg:gap-[25px]">
+                  <button
+                    class="group/button flex w-full cursor-pointer items-center justify-between gap-4 text-xs font-extrabold max-lg:py-4"
+                    data-spoiler-button
+                  >
+                    <span class="typography-pr text-white/50">Документы</span>
+                    <span class="w-2.5 group-hover/button:text-white group-data-active/item:rotate-180 lg:hidden">
+                      <svg width="10" height="6">
+                        <use href="assets/img/svg/sprite.svg#to-bottom"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="max-h-0 overflow-hidden lg:max-h-none! lg:overflow-visible" data-spoiler-content>
+                    <ul class="grid content-start gap-[15px] max-lg:pb-4">
+                      <li><a class="link link-white" href="requisites.html">Реквизиты</a></li>
+                      <li><a class="link link-white" href="report.html">Отчёт СОУТ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="flex gap-10 max-2xl:hidden">
+              <div class="grid gap-[15px]">
+                <p class="typography-pr text-white/50">Электронный каталог</p>
+                <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                  <div class="min-w-[50px] shrink-0">
+                    <svg width="50" height="50">
+                      <use href="assets/img/svg/sprite.svg#stor"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="typography-tagm">Доступно в</p>
+                    <p class="typography-h5">RuStore</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-[15px]">
+                <p class="typography-pr text-white/50">Smart-HIT® приложение</p>
+                <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                  <div class="min-w-[50px] shrink-0">
+                    <svg width="50" height="50">
+                      <use href="assets/img/svg/sprite.svg#stor"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="typography-tagm">Доступно в</p>
+                    <p class="typography-h5">RuStore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-blue-light relative overflow-hidden rounded-[20px] p-5 md:p-7.5 lg:min-w-[435px]">
+            <div
+              class="absolute top-1/2 left-[55%] h-[1471px] w-[1635px] -translate-y-1/2 rounded-full bg-[radial-gradient(46.75%_46.71%_at_50.76%_51.27%,#D1E4FF_0%,rgba(209,228,255,0.00)_100%)] blur-[22px]"
+            ></div>
+            <div class="relative grid gap-7.5">
+              <p class="typography-pr text-white/50">АО «НПО «КРИПТЕН»</p>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-h6">141981, г. Дубна, ул. Приборостроителей,<br />д.2, зд. 1б, пом. 204</p>
+                <p class="typography-pr">г. Дубна, Московская область</p>
+              </div>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-h6">08:00 – 12:00, 13:00 – 17:00</p>
+                <p class="typography-pr">Пн-Пт</p>
+              </div>
+              <div class="grid content-start gap-2.5">
+                <p class="typography-h6">
+                  <a href="tel:+78005006065">8 (800) 500-60-65</a><br />
+                  <a href="tel:+74957770722">+7 (495) 777-07-22</a>
+                </p>
+                <p class="typography-pr"><a href="mailto:sale@krypten.ru">sale@krypten.ru</a></p>
+              </div>
+              <div>
+                <button class="btn btn-white" type="button">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-7.5 2xl:hidden">
+          <div class="flex flex-wrap gap-5 md:gap-x-10">
+            <a class="grid gap-[15px]" href="#">
+              <p class="typography-pr text-white/50">Электронный каталог</p>
+              <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                <div class="min-w-[50px] shrink-0">
+                  <svg width="50" height="50">
+                    <use href="assets/img/svg/sprite.svg#stor"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="typography-tagm">Доступно в</p>
+                  <p class="typography-h5">RuStore</p>
+                </div>
+              </div>
+            </a>
+            <a class="grid gap-[15px]" href="#">
+              <p class="typography-pr text-white/50">Smart-HIT® приложение</p>
+              <div class="bg-blue-light inline-flex items-center gap-3.75 rounded-[15px] px-2.5 py-1.25 text-white">
+                <div class="min-w-[50px] shrink-0">
+                  <svg width="50" height="50">
+                    <use href="assets/img/svg/sprite.svg#stor"></use>
+                  </svg>
+                </div>
+                <div>
+                  <p class="typography-tagm">Доступно в</p>
+                  <p class="typography-h5">RuStore</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="typography-pr grid gap-5">
+            <p class="text-white/50">Политика обработки персональных данных</p>
+            <div>
+              <p>© 2021 - 2025, АО «НПО «КРИПТЕН».</p>
+              <p class="text-white/50">Все права защищены.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
