@@ -1591,6 +1591,20 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
+  .max-md\:pr-22\.5 {
+    @media (width < 48rem) {
+      padding-right: calc(var(--spacing) * 22.5);
+    }
+  }
+  .min-\[400px\]\:max-md\:first\:pr-22\.5 {
+    @media (width >= 400px) {
+      @media (width < 48rem) {
+        &:first-child {
+          padding-right: calc(var(--spacing) * 22.5);
+        }
+      }
+    }
+  }
   .sm\:basis-1\/2 {
     @media (width >= 40rem) {
       flex-basis: calc(1/2 * 100%);
