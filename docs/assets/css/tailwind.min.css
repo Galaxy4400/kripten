@@ -1556,6 +1556,12 @@
       display: none;
     }
   }
+  .max-md\:size-4 {
+    @media (width < 48rem) {
+      width: calc(var(--spacing) * 4);
+      height: calc(var(--spacing) * 4);
+    }
+  }
   .max-md\:min-h-\[300px\] {
     @media (width < 48rem) {
       min-height: 300px;
