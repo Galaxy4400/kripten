@@ -3213,7 +3213,7 @@
   }
   .file-input {
     display: flex;
-    min-height: calc(var(--spacing) * 16);
+    min-height: calc(var(--spacing) * 13.5);
     width: 100%;
     cursor: pointer;
     align-items: center;
@@ -3229,6 +3229,9 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+    @media (width >= 48rem) {
+      min-height: calc(var(--spacing) * 16);
+    }
   }
   .file-input:hover {
     border-color: var(--blue-hover);
